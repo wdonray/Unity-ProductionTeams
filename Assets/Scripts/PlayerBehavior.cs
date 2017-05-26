@@ -6,6 +6,7 @@ public class PlayerBehavior : MonoBehaviour
 {
 
     private int hp;
-    private int 
+    private int strength;
+
 
 }
