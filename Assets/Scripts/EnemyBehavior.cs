@@ -28,6 +28,7 @@ public class EnemyBehavior : MonoBehaviour
         else if (Vector3.Distance(this.transform.position, _target.transform.position) < TargetRange)
         {
             _nav.SetDestination(_target.transform.position);
+            Destroy(this);
         }
     }
 }
