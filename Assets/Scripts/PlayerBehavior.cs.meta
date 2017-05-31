@@ -1,10 +1,11 @@
 fileFormatVersion: 2
 guid: 8f100eca51c8fef429fe1322cd2a0446
-timeCreated: 1495820906
+timeCreated: 1496264307
 licenseType: Pro
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - bottle: {fileID: 1968180989858178, guid: 50016d2ab9554dc4cbb6f5113fbacf4f, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -12,6 +12,6 @@ public class RotateProjectile : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-        this.transform.Rotate(0,90*Time.deltaTime,0);
+        this.transform.Rotate(360 * Time.deltaTime, 0,0);
 	}
 }
