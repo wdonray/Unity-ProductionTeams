@@ -4,6 +4,8 @@ public class InputBehaviour : MonoBehaviour
 {
     private float _jumpTimer = 1;
 
+    //public MinionCop MinionTest;
+
     [Range(1, 10)] public int Speed;
 
     public bool IsMoveleft
@@ -51,7 +53,11 @@ public class InputBehaviour : MonoBehaviour
             GetComponent<Rigidbody>().AddForce(new Vector3(0, 200, 0));
             _jumpTimer = 1f;
         }
-
+        //MinionTest = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyBehavior>().Minion;
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    MinionTest.TakeDamage(3);
+        //}
         if (Input.GetKey(KeyCode.Escape))
             Application.Quit();
         _jumpTimer -= Time.deltaTime;
