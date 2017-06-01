@@ -39,7 +39,7 @@ public class EnemyBehavior : MonoBehaviour
     {
         _minion = ScriptableObject.CreateInstance<MinionCop>();
         _attackCd = _attackTimer;
-        Time.timeScale = 10;
+        //Time.timeScale = 10;
     }
 
     // Use this for initialization
