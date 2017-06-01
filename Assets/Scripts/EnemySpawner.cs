@@ -4,35 +4,36 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    public GameObject MinionCop;
 
-    public GameObject minionCop;
+    public List<GameObject> TheCops;
 
-    public bool currentlyActive;
+    [HideInInspector]
+    public bool CurrentlyActive;
 
-    public List<GameObject> theCops;
     private void Start()
     {
-        theCops = new List<GameObject>();
-        currentlyActive = true;
+        TheCops = new List<GameObject>();
+        CurrentlyActive = true;
         StartCoroutine(Spawner());
     }
-    IEnumerator Spawner()
+
+    private IEnumerator Spawner()
     {
-        while (currentlyActive)
+        while (CurrentlyActive)
         {
-            GameObject go = Instantiate<GameObject>(minionCop);
-            theCops.Add(go);
-            go.transform.position = this.transform.position;
+            var go = Instantiate(MinionCop);
+            TheCops.Add(go);
+            go.transform.position = transform.position;
+            var Minion = go.GetComponent<EnemyBehavior>().Minion;
 
-            var SpawnTime = Random.Range(2, 6);
+            Minion.Health = 5;
+            Minion.Damage = 3;
 
-            if (theCops.Count > 10)
-                SpawnTime = SpawnTime * 2;
-            else
-                SpawnTime = Random.Range(2, 6); 
+            var spawnTime = Random.Range(2, 6);
 
-            Debug.Log(SpawnTime);
-            yield return new WaitForSeconds(SpawnTime);
+            Debug.Log(spawnTime);
+            yield return new WaitForSeconds(spawnTime);
         }
     }
 }

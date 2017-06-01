@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 23952253815993338}
   - component: {fileID: 54982256252852480}
   m_Layer: 0
-  m_Name: Target
+  m_Name: TargetDon
   m_TagString: Target
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
