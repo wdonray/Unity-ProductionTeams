@@ -9,7 +9,7 @@ public class Tower : ScriptableObject, IDamageable
     {
         if (Health <= 0)
         {
-
+            Debug.Log("HE DEAD");
         }
         else
             Health -= amount;
