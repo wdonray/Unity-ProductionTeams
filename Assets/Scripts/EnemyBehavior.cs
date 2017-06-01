@@ -49,7 +49,7 @@ public class EnemyBehavior : MonoBehaviour
         _nav.SetDestination(_target.transform.position);
         _target = GameObject.FindWithTag("Target");
         _player = GameObject.FindWithTag("Player");
-        CopHpText = GameObject.FindGameObjectWithTag("EnemyHp").GetComponent<Text>();
+
         Health = _minion.Health;
         Damage = _minion.Damage;
         _attackRange = _nav.stoppingDistance;
@@ -101,7 +101,8 @@ public class EnemyBehavior : MonoBehaviour
                 //we aren't chasing player so find a tower
                 _nav.SetDestination(_target.transform.position);
             }
-            CopHpText.text = Health.ToString();
+            CopHpText = this.gameObject.GetComponentInChildren<Text>();
+            CopHpText.text = Minion.Health.ToString();
         }
         Health = _minion.Health;
         Damage = _minion.Damage;
