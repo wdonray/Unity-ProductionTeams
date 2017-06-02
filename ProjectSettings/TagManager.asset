@@ -9,6 +9,7 @@ TagManager:
   - Spawner
   - TowerHP
   - EnemyHp
+  - PlayerHP
   layers:
   - Default
   - TransparentFX

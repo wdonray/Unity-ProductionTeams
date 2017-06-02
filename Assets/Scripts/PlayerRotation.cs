@@ -2,22 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerRotation : MonoBehaviour {
+public class PlayerRotation : MonoBehaviour
+{
 
 
-
-    Ray cameraRay; // The ray that is cast from the camera to the mouse position
-    RaycastHit cameraRayHit; //RaycastHit cameraRayHit; // The object that the ray hits
+    public GameObject prefab;
+    //Ray cameraRay; // The ray that is cast from the camera to the mouse position
+    //RaycastHit cameraRayHit; //RaycastHit cameraRayHit; // The object that the ray hits
 
     public float theta;
     public void Update()
     {
 
+        
+        var worldPoint = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, 0, Input.mousePosition.y));
+        //transform.LookAt(worldPoint);
 
-        //top down only
-        //var worldPoint = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, 0, Input.mousePosition.y ));
-        Vector3 pos = Input.mousePosition;
-        // transform.LookAt(worldPoint);
+        if (Input.GetMouseButtonDown(0))
+        {
+            var go = Instantiate(prefab, worldPoint, Quaternion.identity);
+            Vector3 targetPos = new Vector3(go.transform.position.x, (go.transform.position.y - go.transform.position.y), go.transform.position.z);
+            gameObject.transform.LookAt(targetPos);
+        }
+
+
         //if (Input.GetMouseButtonDown(0))
         //{
         //var go = Instantiate(prefab, worldPoint, Quaternion.identity);
@@ -39,11 +47,11 @@ public class PlayerRotation : MonoBehaviour {
 
         //gameObject.transform.LookAt();
 
-
-        Vector3 targetPos = new Vector3(Input.mousePosition.x, (Input.mousePosition.y - Input.mousePosition.y), Input.mousePosition.z);
-        Vector3 dis = transform.position - targetPos;
-        theta = Vector3.Dot(transform.forward, targetPos);
-        transform.Rotate(Vector3.up, Mathf.Abs(theta) * Mathf.Rad2Deg);
+        //Vector3 targetPos = new Vector3(Input.mousePosition.x, (Input.mousePosition.y - Input.mousePosition.y),
+        //    Input.mousePosition.z);
+        //Vector3 dis = transform.position - targetPos;
+        //theta = Vector3.Dot(transform.forward, targetPos);
+        //transform.Rotate(Vector3.up, Mathf.Abs(theta) * Mathf.Rad2Deg);
 
 
         //theta = Vector3.Dot(transform.forward,  go.transform.position);
