@@ -7,6 +7,6 @@ public class TestText : MonoBehaviour
     private void Update()
     {
         transform.LookAt(Target);
-        Debug.DrawLine(transform.position, Camera.main.transform.position);
+        //Debug.DrawLine(transform.position, Camera.main.transform.position);
     }
 }

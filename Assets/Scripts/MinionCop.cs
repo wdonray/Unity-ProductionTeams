@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class MinionCop : ScriptableObject, IDamager, IDamageable
 {
-    public int Health, Damage;
+    public int CopHealth, CopDamage;
 
     // Use this for initialization
     public void DoDamage(IDamageable defender)
     {
-        defender.TakeDamage(Damage);
+        defender.TakeDamage(CopDamage);
     }
 
     public void TakeDamage(int amount)
     {
-        Health -= amount;
+        CopHealth -= amount;
     }
 }
