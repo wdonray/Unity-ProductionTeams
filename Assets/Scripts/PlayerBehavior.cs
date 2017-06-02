@@ -31,10 +31,7 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
         Destroy(bottle, 10);
     }
 
-    public void Dead()
-    {
-        gameObject.GetComponent<Material>().color = Color.red;
-    }
+ 
 
     public void Start()
     {
@@ -44,7 +41,8 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
     public void Update()
     {
         if(PlayerHealth <= 0)
-            Dead();
+            return;
+        
 
         //if(Input.GetMouseButtonDown(0))
         //    ThrowBottle();
