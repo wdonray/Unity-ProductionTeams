@@ -122,8 +122,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f100eca51c8fef429fe1322cd2a0446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
-  bottle: {fileID: 1968180989858178, guid: 50016d2ab9554dc4cbb6f5113fbacf4f, type: 2}
+  bottlePrefab: {fileID: 1968180989858178, guid: 50016d2ab9554dc4cbb6f5113fbacf4f,
+    type: 2}
+  healthText: {fileID: 0}
 --- !u!114 &114925152129209902
 MonoBehaviour:
   m_ObjectHideFlags: 1
