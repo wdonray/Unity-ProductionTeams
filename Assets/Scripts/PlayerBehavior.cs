@@ -43,11 +43,11 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
 
     public void Update()
     {
-        if(PlayerHealth == 0)
+        if(PlayerHealth <= 0)
             Dead();
 
-        if(Input.GetMouseButtonDown(0))
-            ThrowBottle();
+        //if(Input.GetMouseButtonDown(0))
+        //    ThrowBottle();
 
         playerHp.text = PlayerHealth.ToString();
     }
