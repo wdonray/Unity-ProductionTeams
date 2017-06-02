@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
-//[RequireComponent(typeof(Rigidbody))]
 public class EnemyBehavior : MonoBehaviour
 {
     private float _attackCd;
@@ -13,13 +12,19 @@ public class EnemyBehavior : MonoBehaviour
 
     private AudioSource _enemyAudio;
 
-    [SerializeField] private MinionCop _minion;
+    [SerializeField]
+    private MinionCop _minion;
 
     private NavMeshAgent _nav;
 
-    [SerializeField] private GameObject _player, _target;
+    [SerializeField]
+    private GameObject _player, _target;
 
-    [HideInInspector] public Tower ATower;
+    [HideInInspector]
+    public Tower ATower;
+
+    [HideInInspector]
+    public PlayerBehavior Player;
 
     public Text CopHpText;
 
@@ -27,7 +32,8 @@ public class EnemyBehavior : MonoBehaviour
 
     public AudioClip DeathClip, AttackClip;
 
-    [Range(1, 10)] public int PlayerRange;
+    [Range(1, 10)]
+    public int PlayerRange;
 
     public EnemySpawner SpawnerRef;
 
@@ -56,6 +62,7 @@ public class EnemyBehavior : MonoBehaviour
         Damage = _minion.CopDamage;
         _attackRange = _nav.stoppingDistance;
         ATower = _target.GetComponent<TowerBehaviour>().ATower;
+        Player = _player.GetComponent<PlayerBehavior>();
     }
 
     public void Sink()
@@ -92,6 +99,20 @@ public class EnemyBehavior : MonoBehaviour
         if (inPlayerRange) //chase player
         {
             TargetPlayer();
+            if (_attackTimer <= 0)
+            {
+                _minion.DoDamage(Player);
+                if (!_enemyAudio.isPlaying)
+                {
+                    _enemyAudio.clip = AttackClip;
+                    _enemyAudio.Play();
+                }
+                _attackTimer = _attackCd;
+            }
+            else
+            {
+                _attackTimer -= Time.deltaTime;
+            }
         }
         else
         {
@@ -126,7 +147,6 @@ public class EnemyBehavior : MonoBehaviour
             {
                 TargetTower();
             }
-
             CopHpText = gameObject.GetComponentInChildren<Text>();
             CopHpText.text = Minion.CopHealth.ToString();
         }

@@ -232,12 +232,14 @@ MonoBehaviour:
   _player: {fileID: 1340700661165544, guid: 2f0b1dedae7d50848837acd34305c93c, type: 2}
   _target: {fileID: 1145489933482382, guid: e27bab3a2bdbc9a4492423f9ce5f17bb, type: 2}
   ATower: {fileID: 0}
+  Player: {fileID: 0}
   CopHpText: {fileID: 0}
   Damage: 0
   Health: 0
+  DeathClip: {fileID: 8300000, guid: f95c8d9b492352749806dce730b95f08, type: 3}
+  AttackClip: {fileID: 8300000, guid: b0c47f840d195f54fb15de1c1aa81088, type: 3}
   PlayerRange: 8
   SpawnerRef: {fileID: 0}
-  deathClip: {fileID: 8300000, guid: f95c8d9b492352749806dce730b95f08, type: 3}
 --- !u!114 &114267083161164556
 MonoBehaviour:
   m_ObjectHideFlags: 1
