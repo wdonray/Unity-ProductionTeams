@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerBehavior : MonoBehaviour, IDamageable
 {
 
     private GameObject bottle;
     public GameObject bottlePrefab;
-
     private int _playerHealth = 100;
+    public Text playerHp;
 
     
     public int PlayerHealth
@@ -35,6 +36,10 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
         gameObject.GetComponent<Material>().color = Color.red;
     }
 
+    public void Start()
+    {
+        playerHp = GameObject.FindGameObjectWithTag("PlayerHP").GetComponent<Text>();
+    }
 
     public void Update()
     {
@@ -43,6 +48,8 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
 
         if(Input.GetMouseButtonDown(0))
             ThrowBottle();
+
+        playerHp.text = PlayerHealth.ToString();
     }
 
   
