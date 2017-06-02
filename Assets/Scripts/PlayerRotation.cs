@@ -21,8 +21,11 @@ public class PlayerRotation : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             var go = Instantiate(prefab, worldPoint, Quaternion.identity);
-            Vector3 targetPos = new Vector3(go.transform.position.x, (go.transform.position.y - go.transform.position.y), go.transform.position.z);
-            gameObject.transform.LookAt(targetPos);
+            var pos = go.transform.position - GetComponent<PlayerBehavior>().gameObject.transform.position;
+            var mag = pos.magnitude;
+            var v = mag * Mathf.Tan(90);
+            //Vector3 targetPos = new Vector3(go.transform.position.x, (go.transform.position.y - go.transform.position.y), go.transform.position.z);
+            //gameObject.transform.LookAt(targetPos);
         }
 
 
