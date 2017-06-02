@@ -1,28 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerBehavior : MonoBehaviour
+public class PlayerBehavior : MonoBehaviour, IDamageable
 {
 
-    public int hp = 100;
-    private int attackPower = 10;
-    public GameObject bottle;
-    private GameObject b;
-    public void ThrowBottle()
+    private GameObject bottle;
+    public GameObject bottlePrefab;
+
+    private int _playerHealth = 100;
+
+    
+    public int PlayerHealth
     {
-        b = Instantiate(bottle, transform, false);
-        b.transform.SetParent(null);
-        b.GetComponent<Rigidbody>().velocity += transform.TransformDirection(0, 0, 25);
+        get { return _playerHealth; }
+        set { _playerHealth = value; }
     }
 
-    public void TakeDamage()
+
+    public void TakeDamage(int amount)
     {
-        hp -= 10;
-        if (hp == 0)
-        {
-            Dead();
-        }
+        PlayerHealth -= amount;
+    }
+   
+
+    public void ThrowBottle()
+    {
+        bottle = Instantiate(bottlePrefab, transform, false);
+        bottle.transform.SetParent(null);
+        bottle.GetComponent<Rigidbody>().velocity += transform.TransformDirection(0, 0, 25);
+        Destroy(bottle, 10);
     }
 
     public void Dead()
@@ -30,18 +35,15 @@ public class PlayerBehavior : MonoBehaviour
         gameObject.GetComponent<Material>().color = Color.red;
     }
 
+
     public void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-            ThrowBottle();  
+        if(PlayerHealth == 0)
+            Dead();
 
-        if(Input.GetKeyDown(KeyCode.Q))
-            TakeDamage();
-
-        var screen = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y, 13.5f));
-        transform.LookAt(screen);        
-        Debug.DrawLine(transform.position, screen, Color.red);       
+        if(Input.GetMouseButtonDown(0))
+            ThrowBottle();
     }
 
-    
+  
 }
