@@ -8,7 +8,7 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
     public GameObject bottlePrefab;
     private int _playerHealth = 100;
     public Text playerHp;
-
+    public Slider HPSlider;
     
     public int PlayerHealth
     {
@@ -36,6 +36,7 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
     public void Start()
     {
         playerHp = GameObject.FindGameObjectWithTag("PlayerHP").GetComponent<Text>();
+        HPSlider.value = 100;
     }
 
     public void Update()
@@ -48,6 +49,7 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
         //    ThrowBottle();
 
         playerHp.text = PlayerHealth.ToString();
+        HPSlider.value = PlayerHealth;
     }
 
   
