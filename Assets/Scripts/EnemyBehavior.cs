@@ -64,7 +64,7 @@ public class EnemyBehavior : MonoBehaviour
         ATower = _target.GetComponent<TowerBehaviour>().ATower;
         Player = _player.GetComponent<PlayerBehavior>();
     }
-
+    //Sinks the dying enemy through the floor
     public void Sink()
     {
         StartCoroutine(ThroughFloor());
@@ -74,19 +74,18 @@ public class EnemyBehavior : MonoBehaviour
         SpawnerRef = GameObject.FindGameObjectWithTag("Spawner").GetComponent<EnemySpawner>();
         SpawnerRef.TheCops.Remove(gameObject);
     }
-
+    //Sets the Target to the Player
     public void TargetPlayer()
     {
         transform.LookAt(_player.transform.position);
         Debug.DrawLine(transform.position, _player.transform.position, Color.yellow);
         _nav.SetDestination(_player.transform.position);
     }
-
+    //Sets the Target to the Tower
     public void TargetTower()
     {
         transform.LookAt(_target.transform.position);
         Debug.DrawLine(transform.position, _target.transform.position, Color.blue);
-        //we aren't chasing player so find a tower
         _nav.SetDestination(_target.transform.position);
     }
 

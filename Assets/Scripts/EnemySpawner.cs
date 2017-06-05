@@ -61,6 +61,8 @@ public class EnemySpawner : MonoBehaviour
                 spawnTime = Random.Range(15, 21);
                 if (spawnTime == 16)
                     go.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                else if (spawnTime == 20)
+                    go.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
                 Test.text = "Spawning: Meduim Cops";
             }
             else if (HardMinion)
