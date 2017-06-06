@@ -5,77 +5,56 @@ using UnityEngine;
 public class PlayerRotation : MonoBehaviour
 {
 
-
-    public GameObject prefab;
-    //Ray cameraRay; // The ray that is cast from the camera to the mouse position
-    //RaycastHit cameraRayHit; //RaycastHit cameraRayHit; // The object that the ray hits
-
-    public float theta;
-    public void Update()
-    {
-
-        
-        var worldPoint = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, 0, Input.mousePosition.y));
-        //transform.LookAt(worldPoint);
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            var go = Instantiate(prefab, worldPoint, Quaternion.identity);
-            Vector3 targetPos = new Vector3(go.transform.position.x, (go.transform.position.y - go.transform.position.y), go.transform.position.z);
-            gameObject.transform.LookAt(targetPos);
-        }
-
-
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //var go = Instantiate(prefab, worldPoint, Quaternion.identity);
-
-
-        //var rotation = new Quaternion(0,Mathf.Sin());
-        //this.transform.LookAt(new Vector3(0,0,0));
-        //Vector3 targetPos = new Vector3(pos.x, 1, pos.y);
-        //Quaternion toRotate = new Quaternion(targetPos.x, targetPos.y, targetPos.z, 1);
-        //toRotate = toRotate * new Quaternion(0, Mathf.Sin((45f / 180f) * Mathf.PI) / 2, 0,
-        //               Mathf.Cos((45f / 180f) * Mathf.PI) / 2);
-        //targetPos = new Vector3(toRotate.x, toRotate.y, toRotate.z).normalized;
-        //float angle = Mathf.Deg2Rad * Vector3.Angle(this.transform.forward, targetPos);
-
-        //Debug.Log(angle);
-        //this.transform.rotation = this.transform.rotation *
-        //                          new Quaternion(0, Mathf.Sin(angle) / 2, 0, Mathf.Cos(angle) / 2);
-
-
-        //gameObject.transform.LookAt();
-
-        //Vector3 targetPos = new Vector3(Input.mousePosition.x, (Input.mousePosition.y - Input.mousePosition.y),
-        //    Input.mousePosition.z);
-        //Vector3 dis = transform.position - targetPos;
-        //theta = Vector3.Dot(transform.forward, targetPos);
-        //transform.Rotate(Vector3.up, Mathf.Abs(theta) * Mathf.Rad2Deg);
-
-
-        //theta = Vector3.Dot(transform.forward,  go.transform.position);
-        //transform.Rotate(Vector3.up, Mathf.Abs(theta) * Mathf.Rad2Deg);
-        //}
-
-        //// Cast a ray from the camera to the mouse cursor
-        //cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        //// If the ray strikes an object...  
-        //if (Physics.Raycast(cameraRay, out cameraRayHit))
-        //{
-        //    // ...and if that object is the ground...
-        //    if (cameraRayHit.transform.tag == "Ground")
-        //    {
-        //        // ...make the cube rotate (only on the Y axis) to face the ray hit's position 
-        //        Vector3 targetposition = new Vector3(Input.mousePosition.x, this.transform.position.y, Input.mousePosition.z);
-        //        this.transform.LookAt(targetposition);
-        //  }
-        // }
+	public GameObject prefab;
+	int floorMask;
+	float camRayLength = 100f;
 
 
 
+	public void Start()
+	{
+		floorMask = LayerMask.GetMask ("Floor");
+	}
+		
+	public void Update ()
+	{
+       
+		//var worldPoint = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, 14.0f ));
+	
+		//if (Input.GetMouseButtonDown (0)) {
+			//var go = Instantiate (prefab, worldPoint, Quaternion.identity); // spawngame object at mouse position in world space
+			//Vector3 num = go.transform.position - gameObject.transform.forward; // returns vector from two vectors
+			//float objToplayer = num.magnitude; // returns distace of vector
+			//float playTotarget = objToplayer * (Mathf.Cos (90) * Mathf.Rad2Deg); //get distance from player to target
+			//float a = Mathf.Pow (objToplayer, 2) - Mathf.Pow (playTotarget, 2);
+			//float objTotarget = Mathf.Sqrt (a); //distance from object to target
+		//gameObject.transform.LookAt (new Vector3(worldPoint.x, transform.position.y, worldPoint.z));
 
-    }
+		//}
+
+			// Create a ray from the mouse cursor on screen in the direction of the camera.
+			Ray camRay = Camera.main.ScreenPointToRay (Input.mousePosition);
+
+			// Create a RaycastHit variable to store information about what was hit by the ray.
+			RaycastHit floorHit;
+
+			// Perform the raycast and if it hits something on the floor layer...
+			if(Physics.Raycast (camRay, out floorHit, camRayLength, floorMask))
+			{
+				// Create a vector from the player to the point on the floor the raycast from the mouse hit.
+				Vector3 playerToMouse = floorHit.point - transform.position;
+
+				// Ensure the vector is entirely along the floor plane.
+				playerToMouse.y = 0f;
+
+				// Create a quaternion (rotation) based on looking down the vector from the player to the mouse.
+				Quaternion newRotation = Quaternion.LookRotation (playerToMouse);
+
+				// Set the player's rotation to this new rotation.
+			GetComponent<Rigidbody>().MoveRotation (newRotation);
+			}
+
+
+	}
 
 }
