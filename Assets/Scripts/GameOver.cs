@@ -16,7 +16,7 @@ public class GameOver : MonoBehaviour
     private void Update()
     {
         if (Player.PlayerHealth > 0) return;
-        StartCoroutine(Load(RestartDelay, "0.Donray"));
+        StartCoroutine(Load(RestartDelay, "10.MainMenu"));
     }
     IEnumerator Load(int delay, string load)
     {
