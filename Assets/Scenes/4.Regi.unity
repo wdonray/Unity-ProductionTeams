@@ -687,7 +687,7 @@ Prefab:
         type: 2}
       propertyPath: playerHp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 407243094}
     - target: {fileID: 1183379815690186, guid: a21cd781615e74e4c91ea5dd8d2eda1f, type: 2}
       propertyPath: m_IsActive
       value: 1

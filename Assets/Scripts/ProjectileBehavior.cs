@@ -8,11 +8,9 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
 
     private int _attackPower = 5;
     public IDamageable minion;
-    public Text power;
 
     private void Start()
     {
-        power = gameObject.GetComponent<Text>();
     }
 
     public int AttackPower
@@ -42,7 +40,7 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
     void Update()
     {
         this.transform.Rotate(360 * Time.deltaTime, 0, 0);
-        power.text = AttackPower.ToString();
+        Debug.Log(AttackPower);
     }
 
 

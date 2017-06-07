@@ -10,7 +10,6 @@ public class SpeedPickUp : MonoBehaviour {
         {
             other.gameObject.GetComponent<InputBehaviour>().Speed += 2;
               Destroy(gameObject);
-
         }
     }
 
