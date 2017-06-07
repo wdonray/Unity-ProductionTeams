@@ -6,37 +6,25 @@ using UnityEngine.UI;
 public class EnemyBehavior : MonoBehaviour
 {
     private float _attackCd;
-
     private float _attackRange = 2f;
     private float _attackTimer = 2.0f;
-
     private AudioSource _enemyAudio;
-
     [SerializeField]
     private MinionCop _minion;
-
     private NavMeshAgent _nav;
-
     [SerializeField]
     private GameObject _player, _target;
 
     [HideInInspector]
     public Tower ATower;
-
     [HideInInspector]
     public PlayerBehavior Player;
-
     public Text CopHpText;
-
     public int Damage, Health;
-
     public AudioClip DeathClip, AttackClip;
-
     [Range(1, 10)]
     public int PlayerRange;
-
     public EnemySpawner SpawnerRef;
-
     public MinionCop Minion
     {
         get { return _minion; }

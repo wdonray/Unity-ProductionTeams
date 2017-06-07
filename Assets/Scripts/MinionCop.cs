@@ -5,7 +5,6 @@ using UnityEngine;
 public class MinionCop : ScriptableObject, IDamager, IDamageable
 {
     public int CopHealth, CopDamage;
-
     // Use this for initialization
     public void DoDamage(IDamageable defender)
     {
