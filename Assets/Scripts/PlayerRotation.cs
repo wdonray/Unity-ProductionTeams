@@ -33,6 +33,7 @@ public class PlayerRotation : MonoBehaviour
 				Quaternion newRotation = Quaternion.LookRotation (playerToMouse);
 
 				// Set the player's rotation to this new rotation.
+
 			GetComponent<Rigidbody>().MoveRotation (newRotation);
 			}
 	}
