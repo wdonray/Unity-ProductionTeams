@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
 
     public GameObject MinionCop;
 
-    public Text spawnText;
+    public Text SpawnText;
 
     public List<GameObject> TheCops;
 
@@ -49,49 +49,48 @@ public class EnemySpawner : MonoBehaviour
             {
                 minion.CopHealth = 5;
                 minion.CopDamage = 3;
-                spawnTime = Random.Range(20, 26);
-                if (spawnTime == 21)
+                spawnTime = Random.Range(10, 15);
+                if (spawnTime == 11)
                 {
                     minion.CopDamage = 15;
                     minion.CopHealth = 15;
                     go.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
                 }
-                spawnText.text = "Spawning: Easy Cops";
+                SpawnText.text = "Spawning: Easy Cops";
             }
             else if (MediumMinion)
             {
                 minion.CopHealth = 10;
                 minion.CopDamage = 6;
-                spawnTime = Random.Range(15, 21);
-                if (spawnTime == 16)
+                spawnTime = Random.Range(5, 11);
+                if (spawnTime == 6)
                 {
                     minion.CopHealth = 25;
                     minion.CopDamage = 25;
                     go.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
                 }
-                spawnText.text = "Spawning: Meduim Cops";
+                SpawnText.text = "Spawning: Meduim Cops";
             }
             else if (HardMinion)
             {
                 minion.CopHealth = 20;
                 minion.CopDamage = 10;
-                spawnTime = Random.Range(10, 16);
-                if (spawnTime == 11)
+                spawnTime = Random.Range(1, 6);
+                if (spawnTime == 1)
                 {
                     minion.CopHealth = 35;
                     minion.CopDamage = 35;
                     go.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
                 }
-                spawnText.text = "Spawning: Hard Cops";
+                SpawnText.text = "Spawning: Hard Cops";
             }
             else
             {
                 minion.CopHealth = 40;
                 minion.CopDamage = 20;
-                spawnTime = 5;
-                spawnText.text = "Wow why are you still playing";
+                spawnTime = 1;
+                SpawnText.text = "Wow why are you still playing";
             }
-            Debug.Log(spawnTime);
             yield return new WaitForSeconds(spawnTime);
         }
     }
