@@ -6,6 +6,13 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
 {
 
     private int _attackPower = 10;
+    public MinionCop minion;
+
+    private void Start()
+    {
+        minion = GetComponent<MinionCop>();
+    }
+
     public int AttackPower
     {
         get { return _attackPower; }
@@ -17,11 +24,12 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
         defender.TakeDamage(AttackPower);
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void OnCollisionEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            DoDamage(GetComponent<MinionCop>());
+            DoDamage(minion);
+            DestroyImmediate(gameObject);
         }
     }
 
