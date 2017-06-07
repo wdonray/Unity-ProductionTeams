@@ -24,10 +24,9 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
 
     public void ThrowBottle()
     {
-        bottle = Instantiate(bottlePrefab, transform, false);
-        bottle.transform.SetParent(null);
+        bottle = Instantiate(bottlePrefab, transform);
         bottle.GetComponent<Rigidbody>().velocity += transform.TransformDirection(0, 0, 25);
-        Destroy(bottle, 10);
+        Destroy(bottle, 5);
     }
 
  
@@ -39,12 +38,11 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
 
     public void Update()
     {
-        if(PlayerHealth <= 0)
+        if (PlayerHealth <= 0)
             return;
-        
 
-        //if(Input.GetMouseButtonDown(0))
-        //    ThrowBottle();
+        if (Input.GetMouseButtonDown(0))
+            ThrowBottle();
 
         playerHp.text = PlayerHealth.ToString();
     }
