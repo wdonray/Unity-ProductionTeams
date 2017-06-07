@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentlyActive: 0
   MinionCop: {fileID: 1492963295460596, guid: f002b409bcbb9a34ca5120a81c9eccfa, type: 2}
-  Test: {fileID: 1468845884}
+  spawnText: {fileID: 1468845884}
   TheCops: []
 --- !u!23 &699373185
 MeshRenderer:
@@ -1205,6 +1205,9 @@ MonoBehaviour:
   Timer: 0
   TimeText: {fileID: 1994926803}
   MinionCount: {fileID: 398685723}
+  coinText: {fileID: 0}
+  Coins: 0
+  testing: 0
 --- !u!114 &799977026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1599,11 +1602,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4809920048458100, guid: a041a3eff66a85c44958a0706ecf144c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 17.6
+      value: 18.76
       objectReference: {fileID: 0}
     - target: {fileID: 4809920048458100, guid: a041a3eff66a85c44958a0706ecf144c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -25.2
+      value: -12.62
       objectReference: {fileID: 0}
     - target: {fileID: 4809920048458100, guid: a041a3eff66a85c44958a0706ecf144c, type: 2}
       propertyPath: m_LocalRotation.x
