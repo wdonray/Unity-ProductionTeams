@@ -8,7 +8,8 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
     public GameObject bottlePrefab;
     private int _playerHealth = 100;
     public Text playerHp;
-    
+
+
     public int PlayerHealth
     {
         get { return _playerHealth; }
@@ -20,21 +21,21 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
     {
         PlayerHealth -= amount;
     }
-   
+
 
     public void ThrowBottle()
     {
-        bottle = Instantiate(bottlePrefab, transform);
+        bottle = Instantiate(bottlePrefab, transform.position, new Quaternion(0, 0, 0, 0));
         bottle.GetComponent<Rigidbody>().velocity += transform.TransformDirection(0, 0, 25);
         Destroy(bottle, 5);
     }
 
- 
 
     public void Start()
     {
         playerHp = GameObject.FindGameObjectWithTag("PlayerHP").GetComponent<Text>();
     }
+
 
     public void Update()
     {
@@ -46,6 +47,4 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
 
         playerHp.text = PlayerHealth.ToString();
     }
-
-  
 }
