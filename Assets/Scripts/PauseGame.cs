@@ -1,43 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseGame : MonoBehaviour
 {
-    public Transform Canvas;
+    public Transform ControlsMenu;
+    public Transform PauseMenu;
+
     public GameObject Player;
-    public Transform controlsMenu;
-    public Transform pauseMenu;
+
+    private void Start()
+    {
+        PauseMenu.gameObject.SetActive(false);
+        ControlsMenu.gameObject.SetActive(false);
+    }
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
-        {
             Pause();
-        }
     }
+
     public void Pause()
     {
         Player.GetComponent<InputBehaviour>();
-        if (Canvas.gameObject.activeInHierarchy == false)
+        if (PauseMenu.gameObject.activeInHierarchy == false)
         {
-            if (pauseMenu.gameObject.activeInHierarchy == false)
-            {
-                pauseMenu.gameObject.SetActive(true);
-                controlsMenu.gameObject.SetActive(false);
-            }
+            PauseMenu.gameObject.SetActive(true);
+            ControlsMenu.gameObject.SetActive(false);
             Time.timeScale = 0;
             Player.SetActive(false);
-            Canvas.gameObject.SetActive(true);
+            PauseMenu.gameObject.SetActive(true);
         }
         else
         {
             Time.timeScale = 1;
             Player.SetActive(true);
-            Canvas.gameObject.SetActive(false);
+            PauseMenu.gameObject.SetActive(false);
         }
     }
+
     public void Exit()
     {
         SceneManager.LoadScene("10.MainMenu");
@@ -47,13 +48,13 @@ public class PauseGame : MonoBehaviour
     {
         if (open)
         {
-            controlsMenu.gameObject.SetActive(true);
-            pauseMenu.gameObject.SetActive(false);
+            ControlsMenu.gameObject.SetActive(true);
+            PauseMenu.gameObject.SetActive(false);
         }
-        if (!open)
+        else
         {
-            controlsMenu.gameObject.SetActive(false);
-            pauseMenu.gameObject.SetActive(true);
+            ControlsMenu.gameObject.SetActive(false);
+            PauseMenu.gameObject.SetActive(true);
         }
     }
 }

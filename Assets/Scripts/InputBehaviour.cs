@@ -9,6 +9,7 @@ public class InputBehaviour : MonoBehaviour
     [Range(1, 10)]
     public int Speed;
 
+    public Animator ani;
     public bool IsMoveleft
     {
         get { return Input.GetKey(KeyCode.A); }
@@ -38,16 +39,28 @@ public class InputBehaviour : MonoBehaviour
     private void Update()
     {
         if (IsMoveleft)
+        {
             transform.position += new Vector3(-0.1f, 0, 0) * Speed;
+            ani.SetTrigger("walk");
+        }
 
         if (IsMoveup)
+        {
             transform.position += new Vector3(0, 0, .1f) * Speed;
+            ani.SetTrigger("walk");
+        }
 
         if (IsMovedown)
+        {
             transform.position += new Vector3(0, 0, -.1f) * Speed;
+            ani.SetTrigger("walk");
+        }
 
         if (IsMoveright)
+        {
             transform.position += new Vector3(.1f, 0, 0) * Speed;
+            ani.SetTrigger("walk");
+        }
 
         if (IsJump)
         {
@@ -59,8 +72,6 @@ public class InputBehaviour : MonoBehaviour
         //{
         //    MinionTest.TakeDamage(3);
         //}
-        if (Input.GetKey(KeyCode.Escape))
-            Application.Quit();
         _jumpTimer -= Time.deltaTime;
     }
 }

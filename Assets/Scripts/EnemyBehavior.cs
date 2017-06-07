@@ -46,8 +46,8 @@ public class EnemyBehavior : MonoBehaviour
         _target = GameObject.FindWithTag("Target");
         _player = GameObject.FindWithTag("Player");
 
-        Health = _minion.CopHealth;
-        Damage = _minion.CopDamage;
+        Health = Minion.CopHealth;
+        Damage = Minion.CopDamage;
         _attackRange = _nav.stoppingDistance;
         ATower = _target.GetComponent<TowerBehaviour>().ATower;
         Player = _player.GetComponent<PlayerBehavior>();
@@ -88,7 +88,7 @@ public class EnemyBehavior : MonoBehaviour
             TargetPlayer();
             if (_attackTimer <= 0)
             {
-                _minion.DoDamage(Player);
+                Minion.DoDamage(Player);
                 if (!_enemyAudio.isPlaying)
                 {
                     _enemyAudio.clip = AttackClip;
@@ -105,19 +105,19 @@ public class EnemyBehavior : MonoBehaviour
         {
             if (Health <= 0)
             {
+                Sink();
                 if (!_enemyAudio.isPlaying)
                 {
                     _enemyAudio.clip = DeathClip;
                     _enemyAudio.Play();
                 }
-                Sink();
             }
             //if a tower is in range
             else if (inTowerRange)
             {
                 if (_attackTimer <= 0)
                 {
-                    _minion.DoDamage(ATower);
+                    Minion.DoDamage(ATower);
                     if (!_enemyAudio.isPlaying)
                     {
                         _enemyAudio.clip = AttackClip;
@@ -137,15 +137,15 @@ public class EnemyBehavior : MonoBehaviour
             CopHpText = gameObject.GetComponentInChildren<Text>();
             CopHpText.text = Minion.CopHealth.ToString();
         }
-        Health = _minion.CopHealth;
-        Damage = _minion.CopDamage;
+        Health = Minion.CopHealth;
+        Damage = Minion.CopDamage;
     }
 
     private IEnumerator ThroughFloor()
     {
         while (true)
         {
-            transform.position -= new Vector3(0, .01f, 0);
+            transform.position -= new Vector3(0, .1f, 0);
             yield return new WaitForEndOfFrame();
         }
     }
