@@ -5,12 +5,11 @@ using UnityEngine;
 public class ProjectileBehavior : MonoBehaviour, IDamager
 {
 
-    private int _attackPower = 10;
-    public MinionCop minion;
+    private int _attackPower = 5;
+    public IDamageable minion;
 
     private void Start()
     {
-        minion = GetComponent<MinionCop>();
     }
 
     public int AttackPower
@@ -24,12 +23,12 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
         defender.TakeDamage(AttackPower);
     }
 
-    public void OnCollisionEnter(Collider other)
+    public void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            DoDamage(minion);
-            DestroyImmediate(gameObject);
+            DoDamage(other.gameObject.GetComponent<EnemyBehavior>().Minion);
+            Destroy(gameObject);
         }
     }
 
