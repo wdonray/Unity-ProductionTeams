@@ -53,7 +53,7 @@ public class EnemySpawner : MonoBehaviour
                 if (spawnTime == 11)
                 {
                     minion.CopDamage = 15;
-                    minion.CopHealth = 200;
+                    minion.CopHealth = 15;
                     go.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
                 }
                 SpawnText.text = "Spawning: Easy Cops";
@@ -91,7 +91,7 @@ public class EnemySpawner : MonoBehaviour
                 spawnTime = 1;
                 SpawnText.text = "Wow why are you still playing";
             }
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(spawnTime);
         }
     }
 }
