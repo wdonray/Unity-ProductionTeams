@@ -59,8 +59,6 @@ public class InputBehaviour : MonoBehaviour
         //{
         //    MinionTest.TakeDamage(3);
         //}
-        if (Input.GetKey(KeyCode.Escape))
-            Application.Quit();
         _jumpTimer -= Time.deltaTime;
     }
 }

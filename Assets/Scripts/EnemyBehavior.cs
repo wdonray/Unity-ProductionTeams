@@ -75,6 +75,7 @@ public class EnemyBehavior : MonoBehaviour
         transform.LookAt(_target.transform.position);
         Debug.DrawLine(transform.position, _target.transform.position, Color.blue);
         _nav.SetDestination(_target.transform.position);
+        this.gameObject.transform.position = new Vector3(0,3,0);
     }
 
     private void Update()
