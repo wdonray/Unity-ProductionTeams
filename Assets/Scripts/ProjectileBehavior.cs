@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProjectileBehavior : MonoBehaviour, IDamager
 {
 
-    private int _attackPower = 10;
+    private int _attackPower = 5;
     public int AttackPower
     {
         get { return _attackPower; }
