@@ -47,8 +47,8 @@ public class EnemySpawner : MonoBehaviour
 
             if (EasyMinion)
             {
-                minion.CopHealth = 5;
-                minion.CopDamage = 3;
+                minion.CopHealth = 10;
+                minion.CopDamage = 5;
                 spawnTime = Random.Range(10, 15);
                 if (spawnTime == 11)
                 {
@@ -60,8 +60,8 @@ public class EnemySpawner : MonoBehaviour
             }
             else if (MediumMinion)
             {
-                minion.CopHealth = 10;
-                minion.CopDamage = 6;
+                minion.CopHealth = 20;
+                minion.CopDamage = 10;
                 spawnTime = Random.Range(5, 11);
                 if (spawnTime == 6)
                 {
@@ -73,12 +73,12 @@ public class EnemySpawner : MonoBehaviour
             }
             else if (HardMinion)
             {
-                minion.CopHealth = 20;
-                minion.CopDamage = 10;
+                minion.CopHealth = 35;
+                minion.CopDamage = 25;
                 spawnTime = Random.Range(1, 6);
                 if (spawnTime == 1)
                 {
-                    minion.CopHealth = 35;
+                    minion.CopHealth = 45;
                     minion.CopDamage = 35;
                     go.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
                 }
@@ -86,8 +86,8 @@ public class EnemySpawner : MonoBehaviour
             }
             else
             {
-                minion.CopHealth = 40;
-                minion.CopDamage = 20;
+                minion.CopHealth = 50;
+                minion.CopDamage = 50;
                 spawnTime = 1;
                 SpawnText.text = "Wow why are you still playing";
             }
