@@ -9,22 +9,25 @@ public class EnemyBehavior : MonoBehaviour
     private float _attackRange = 2f;
     private float _attackTimer = 2.0f;
     private AudioSource _enemyAudio;
-    [SerializeField]
-    private MinionCop _minion;
-    private NavMeshAgent _nav;
-    [SerializeField]
-    private GameObject _player, _target;
 
-    [HideInInspector]
-    public Tower ATower;
-    [HideInInspector]
-    public PlayerBehavior Player;
+    [SerializeField] private MinionCop _minion;
+
+    private NavMeshAgent _nav;
+
+    [SerializeField] private GameObject _player, _target;
+
+    [HideInInspector] public Tower ATower;
+
     public Text CopHpText;
     public int Damage, Health;
     public AudioClip DeathClip, AttackClip;
-    [Range(1, 10)]
-    public int PlayerRange;
+
+    [HideInInspector] public PlayerBehavior Player;
+
+    [Range(1, 10)] public int PlayerRange;
+
     public EnemySpawner SpawnerRef;
+
     public MinionCop Minion
     {
         get { return _minion; }
@@ -52,6 +55,7 @@ public class EnemyBehavior : MonoBehaviour
         ATower = _target.GetComponent<TowerBehaviour>().ATower;
         Player = _player.GetComponent<PlayerBehavior>();
     }
+
     //Sinks the dying enemy through the floor
     public void Sink()
     {
@@ -62,6 +66,7 @@ public class EnemyBehavior : MonoBehaviour
         SpawnerRef = GameObject.FindGameObjectWithTag("Spawner").GetComponent<EnemySpawner>();
         SpawnerRef.TheCops.Remove(gameObject);
     }
+
     //Sets the Target to the Player
     public void TargetPlayer()
     {
@@ -69,6 +74,7 @@ public class EnemyBehavior : MonoBehaviour
         Debug.DrawLine(transform.position, _player.transform.position, Color.yellow);
         _nav.SetDestination(_player.transform.position);
     }
+
     //Sets the Target to the Tower
     public void TargetTower()
     {
@@ -97,26 +103,26 @@ public class EnemyBehavior : MonoBehaviour
             if (inPlayerRange) //chase player
             {
                 TargetPlayer();
-                if (_attackTimer <= 0)
-                {
-                    Minion.DoDamage(Player);
-                    if (!_enemyAudio.isPlaying)
+                if (Vector3.Distance(transform.position, _player.transform.position) < 4)
+                    if (_attackTimer <= 0)
                     {
-                        _enemyAudio.clip = AttackClip;
-                        _enemyAudio.Play();
+                        Minion.DoDamage(Player);
+                        if (!_enemyAudio.isPlaying)
+                        {
+                            _enemyAudio.clip = AttackClip;
+                            _enemyAudio.Play();
+                        }
+                        _attackTimer = _attackCd;
                     }
-                    _attackTimer = _attackCd;
-                }
-                else
-                {
-                    _attackTimer -= Time.deltaTime;
-                }
+                    else
+                    {
+                        _attackTimer -= Time.deltaTime;
+                    }
             }
             else
             {
                 //if a tower is in range
                 if (inTowerRange)
-                {
                     if (_attackTimer <= 0)
                     {
                         Minion.DoDamage(ATower);
@@ -131,11 +137,8 @@ public class EnemyBehavior : MonoBehaviour
                     {
                         _attackTimer -= Time.deltaTime;
                     }
-                }
                 else
-                {
                     TargetTower();
-                }
             }
         }
         CopHpText = gameObject.GetComponentInChildren<Text>();
@@ -152,4 +155,13 @@ public class EnemyBehavior : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
     }
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.black;        
+        Gizmos.DrawWireCube(transform.position, new Vector3(5, 5, 5));
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawLine(transform.position, transform.position + transform.forward * 2);
+    }
+#endif
 }
