@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: 20cb7dcdde5c3c24f8d2a5d689ad261f
+timeCreated: 1496939214
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: HughRig_Head_JawEndSHJnt
+    100004: HughRig_Head_JawSHJnt
+    100006: HughRig_Head_TopSHJnt
+    100008: HughRig_l_Arm_ClavicleSHJnt
+    100010: HughRig_l_Arm_ElbowSHJnt
+    100012: HughRig_l_Arm_ShoulderSHJnt
+    100014: HughRig_l_Arm_WristSHJnt
+    100016: HughRig_l_Finger_01_01SHJnt
+    100018: HughRig_l_Finger_01_02SHJnt
+    100020: HughRig_l_Finger_01_03SHJnt
+    100022: HughRig_l_Finger_01_04SHJnt
+    100024: HughRig_l_Finger_02_01SHJnt
+    100026: HughRig_l_Finger_02_02SHJnt
+    100028: HughRig_l_Finger_02_03SHJnt
+    100030: HughRig_l_Finger_02_04SHJnt
+    100032: HughRig_l_Finger_03_01SHJnt
+    100034: HughRig_l_Finger_03_02SHJnt
+    100036: HughRig_l_Finger_03_03SHJnt
+    100038: HughRig_l_Finger_03_04SHJnt
+    100040: HughRig_l_Finger_04_01SHJnt
+    100042: HughRig_l_Finger_04_02SHJnt
+    100044: HughRig_l_Finger_04_03SHJnt
+    100046: HughRig_l_Finger_04_04SHJnt
+    100048: HughRig_l_Leg_AnkleSHJnt
+    100050: HughRig_l_Leg_BallSHJnt
+    100052: HughRig_l_Leg_HipSHJnt
+    100054: HughRig_l_Leg_KneeSHJnt
+    100056: HughRig_l_Leg_ToeSHJnt
+    100058: HughRig_l_Thumb_01_01SHJnt
+    100060: HughRig_l_Thumb_01_02SHJnt
+    100062: HughRig_l_Thumb_01_03SHJnt
+    100064: HughRig_l_Thumb_01_04SHJnt
+    100066: HughRig_Neck_01SHJnt
+    100068: HughRig_Neck_02SHJnt
+    100070: HughRig_Neck_TopSHJnt
+    100072: HughRig_r_Arm_ClavicleSHJnt
+    100074: HughRig_r_Arm_ElbowSHJnt
+    100076: HughRig_r_Arm_ShoulderSHJnt
+    100078: HughRig_r_Arm_WristSHJnt
+    100080: HughRig_r_Finger_01_01SHJnt
+    100082: HughRig_r_Finger_01_02SHJnt
+    100084: HughRig_r_Finger_01_03SHJnt
+    100086: HughRig_r_Finger_01_04SHJnt
+    100088: HughRig_r_Finger_02_01SHJnt
+    100090: HughRig_r_Finger_02_02SHJnt
+    100092: HughRig_r_Finger_02_03SHJnt
+    100094: HughRig_r_Finger_02_04SHJnt
+    100096: HughRig_r_Finger_03_01SHJnt
+    100098: HughRig_r_Finger_03_02SHJnt
+    100100: HughRig_r_Finger_03_03SHJnt
+    100102: HughRig_r_Finger_03_04SHJnt
+    100104: HughRig_r_Finger_04_01SHJnt
+    100106: HughRig_r_Finger_04_02SHJnt
+    100108: HughRig_r_Finger_04_03SHJnt
+    100110: HughRig_r_Finger_04_04SHJnt
+    100112: HughRig_r_Leg_AnkleSHJnt
+    100114: HughRig_r_Leg_BallSHJnt
+    100116: HughRig_r_Leg_HipSHJnt
+    100118: HughRig_r_Leg_KneeSHJnt
+    100120: HughRig_r_Leg_ToeSHJnt
+    100122: HughRig_r_Thumb_01_01SHJnt
+    100124: HughRig_r_Thumb_01_02SHJnt
+    100126: HughRig_r_Thumb_01_03SHJnt
+    100128: HughRig_r_Thumb_01_04SHJnt
+    100130: HughRig_ROOTSHJnt
+    100132: HughRig_SHJntGrp
+    100134: HughRig_Spine_01SHJnt
+    100136: HughRig_Spine_02SHJnt
+    100138: HughRig_Spine_03SHJnt
+    100140: HughRig_Spine_04SHJnt
+    100142: HughRig_Spine_TopSHJnt
+    100144: polySurface1
+    400000: //RootNode
+    400002: HughRig_Head_JawEndSHJnt
+    400004: HughRig_Head_JawSHJnt
+    400006: HughRig_Head_TopSHJnt
+    400008: HughRig_l_Arm_ClavicleSHJnt
+    400010: HughRig_l_Arm_ElbowSHJnt
+    400012: HughRig_l_Arm_ShoulderSHJnt
+    400014: HughRig_l_Arm_WristSHJnt
+    400016: HughRig_l_Finger_01_01SHJnt
+    400018: HughRig_l_Finger_01_02SHJnt
+    400020: HughRig_l_Finger_01_03SHJnt
+    400022: HughRig_l_Finger_01_04SHJnt
+    400024: HughRig_l_Finger_02_01SHJnt
+    400026: HughRig_l_Finger_02_02SHJnt
+    400028: HughRig_l_Finger_02_03SHJnt
+    400030: HughRig_l_Finger_02_04SHJnt
+    400032: HughRig_l_Finger_03_01SHJnt
+    400034: HughRig_l_Finger_03_02SHJnt
+    400036: HughRig_l_Finger_03_03SHJnt
+    400038: HughRig_l_Finger_03_04SHJnt
+    400040: HughRig_l_Finger_04_01SHJnt
+    400042: HughRig_l_Finger_04_02SHJnt
+    400044: HughRig_l_Finger_04_03SHJnt
+    400046: HughRig_l_Finger_04_04SHJnt
+    400048: HughRig_l_Leg_AnkleSHJnt
+    400050: HughRig_l_Leg_BallSHJnt
+    400052: HughRig_l_Leg_HipSHJnt
+    400054: HughRig_l_Leg_KneeSHJnt
+    400056: HughRig_l_Leg_ToeSHJnt
+    400058: HughRig_l_Thumb_01_01SHJnt
+    400060: HughRig_l_Thumb_01_02SHJnt
+    400062: HughRig_l_Thumb_01_03SHJnt
+    400064: HughRig_l_Thumb_01_04SHJnt
+    400066: HughRig_Neck_01SHJnt
+    400068: HughRig_Neck_02SHJnt
+    400070: HughRig_Neck_TopSHJnt
+    400072: HughRig_r_Arm_ClavicleSHJnt
+    400074: HughRig_r_Arm_ElbowSHJnt
+    400076: HughRig_r_Arm_ShoulderSHJnt
+    400078: HughRig_r_Arm_WristSHJnt
+    400080: HughRig_r_Finger_01_01SHJnt
+    400082: HughRig_r_Finger_01_02SHJnt
+    400084: HughRig_r_Finger_01_03SHJnt
+    400086: HughRig_r_Finger_01_04SHJnt
+    400088: HughRig_r_Finger_02_01SHJnt
+    400090: HughRig_r_Finger_02_02SHJnt
+    400092: HughRig_r_Finger_02_03SHJnt
+    400094: HughRig_r_Finger_02_04SHJnt
+    400096: HughRig_r_Finger_03_01SHJnt
+    400098: HughRig_r_Finger_03_02SHJnt
+    400100: HughRig_r_Finger_03_03SHJnt
+    400102: HughRig_r_Finger_03_04SHJnt
+    400104: HughRig_r_Finger_04_01SHJnt
+    400106: HughRig_r_Finger_04_02SHJnt
+    400108: HughRig_r_Finger_04_03SHJnt
+    400110: HughRig_r_Finger_04_04SHJnt
+    400112: HughRig_r_Leg_AnkleSHJnt
+    400114: HughRig_r_Leg_BallSHJnt
+    400116: HughRig_r_Leg_HipSHJnt
+    400118: HughRig_r_Leg_KneeSHJnt
+    400120: HughRig_r_Leg_ToeSHJnt
+    400122: HughRig_r_Thumb_01_01SHJnt
+    400124: HughRig_r_Thumb_01_02SHJnt
+    400126: HughRig_r_Thumb_01_03SHJnt
+    400128: HughRig_r_Thumb_01_04SHJnt
+    400130: HughRig_ROOTSHJnt
+    400132: HughRig_SHJntGrp
+    400134: HughRig_Spine_01SHJnt
+    400136: HughRig_Spine_02SHJnt
+    400138: HughRig_Spine_03SHJnt
+    400140: HughRig_Spine_04SHJnt
+    400142: HughRig_Spine_TopSHJnt
+    400144: polySurface1
+    4300000: polySurface1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: polySurface1
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
