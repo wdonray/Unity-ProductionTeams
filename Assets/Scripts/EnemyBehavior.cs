@@ -9,24 +9,18 @@ public class EnemyBehavior : MonoBehaviour
     private float _attackRange = 2f;
     private float _attackTimer = 2.0f;
     private AudioSource _enemyAudio;
-
     [SerializeField] private MinionCop _minion;
-
     private NavMeshAgent _nav;
 
     [SerializeField] private GameObject _player, _target;
-
     [HideInInspector] public Tower ATower;
-
     public Text CopHpText;
     public int Damage, Health;
     public AudioClip DeathClip, AttackClip;
-
     [HideInInspector] public PlayerBehavior Player;
-
     [Range(1, 10)] public int PlayerRange;
-
     public EnemySpawner SpawnerRef;
+    public Animator ani;
 
     public MinionCop Minion
     {
@@ -73,6 +67,7 @@ public class EnemyBehavior : MonoBehaviour
         transform.LookAt(_player.transform.position);
         Debug.DrawLine(transform.position, _player.transform.position, Color.yellow);
         _nav.SetDestination(_player.transform.position);
+        ani.SetTrigger("walk");
     }
 
     //Sets the Target to the Tower
@@ -81,6 +76,7 @@ public class EnemyBehavior : MonoBehaviour
         transform.LookAt(_target.transform.position);
         Debug.DrawLine(transform.position, _target.transform.position, Color.blue);
         _nav.SetDestination(_target.transform.position);
+        ani.SetTrigger("walk");
     }
 
     private void Update()

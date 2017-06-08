@@ -3,15 +3,15 @@
 public class InputBehaviour : MonoBehaviour
 {
     private float _jumpTimer = 1;
-    private Vector3 currentPos, previousPos;
-
-    public Rigidbody rb;
-    //public MinionCop MinionTest;
-
-    [Range(1, 10)]
-    public int Speed;
 
     public Animator ani;
+    private Vector3 currentPos, previousPos;
+
+    private Rigidbody rb;
+    //public MinionCop MinionTest;
+
+    [Range(1, 10)] public int Speed;
+
     public bool IsMoveleft
     {
         get { return Input.GetKey(KeyCode.A); }
@@ -40,43 +40,27 @@ public class InputBehaviour : MonoBehaviour
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
-        currentPos = this.transform.position;
+        currentPos = transform.position;
     }
 
     // Update is called once per frame
     private void Update()
     {
         if (IsMoveleft)
-        {
             transform.position += new Vector3(-0.1f, 0, 0) * Speed;
-            ani.SetTrigger("walk");
-        }
-
         if (IsMoveup)
-        {
             transform.position += new Vector3(0, 0, .1f) * Speed;
-            ani.SetTrigger("walk");
-        }
-
         if (IsMovedown)
-        {
             transform.position += new Vector3(0, 0, -.1f) * Speed;
-            ani.SetTrigger("walk");
-        }
-
         if (IsMoveright)
-        {
             transform.position += new Vector3(.1f, 0, 0) * Speed;
-            ani.SetTrigger("walk");
-        }
-
         if (IsJump)
         {
             GetComponent<Rigidbody>().AddForce(new Vector3(0, 200, 0));
             _jumpTimer = 1f;
         }
         previousPos = currentPos;
-        currentPos = this.transform.position;
+        currentPos = transform.position;
         ani.SetFloat("speed", (currentPos - previousPos).magnitude);
         _jumpTimer -= Time.deltaTime;
         //MinionTest = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyBehavior>().Minion;
