@@ -9,16 +9,21 @@ public class EnemyBehavior : MonoBehaviour
     private float _attackRange = 2f;
     private float _attackTimer = 2.0f;
     private AudioSource _enemyAudio;
-    [SerializeField] private MinionCop _minion;
+    [SerializeField]
+    private MinionCop _minion;
     private NavMeshAgent _nav;
 
-    [SerializeField] private GameObject _player, _target;
-    [HideInInspector] public Tower ATower;
+    [SerializeField]
+    private GameObject _player, _target;
+    [HideInInspector]
+    public Tower ATower;
     public Text CopHpText;
     public int Damage, Health;
     public AudioClip DeathClip, AttackClip;
-    [HideInInspector] public PlayerBehavior Player;
-    [Range(1, 10)] public int PlayerRange;
+    [HideInInspector]
+    public PlayerBehavior Player;
+    [Range(1, 10)]
+    public int PlayerRange;
     public EnemySpawner SpawnerRef;
     public Animator ani;
 
@@ -53,6 +58,7 @@ public class EnemyBehavior : MonoBehaviour
     //Sinks the dying enemy through the floor
     public void Sink()
     {
+        ani.SetTrigger("death");
         StartCoroutine(ThroughFloor());
         _nav.enabled = false;
         GetComponent<Collider>().isTrigger = true;
@@ -123,13 +129,13 @@ public class EnemyBehavior : MonoBehaviour
                     if (_attackTimer <= 0)
                     {
                         Minion.DoDamage(ATower);
-                        ani.SetTrigger("attack");
                         if (!_enemyAudio.isPlaying)
                         {
                             _enemyAudio.clip = AttackClip;
                             _enemyAudio.Play();
                         }
                         _attackTimer = _attackCd;
+                        ani.SetTrigger("attack");
                     }
                     else
                     {
@@ -155,7 +161,7 @@ public class EnemyBehavior : MonoBehaviour
     }
 #if UNITY_EDITOR
     private void OnDrawGizmos()
-    {        
+    {
         Gizmos.color = Color.cyan;
         Gizmos.DrawLine(transform.position, transform.position + transform.forward * 2);
     }
