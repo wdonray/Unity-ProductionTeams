@@ -31,12 +31,6 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
     }
 
 
-    public void Start()
-    {
-        playerHp = GameObject.FindGameObjectWithTag("PlayerHP").GetComponent<Text>();
-    }
-
-
     public void Update()
     {
         if (PlayerHealth <= 0)
