@@ -46,6 +46,5 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
             ThrowBottle();
 
         playerHp.text = PlayerHealth.ToString();
-        Debug.Log("speed is " + gameObject.GetComponent<InputBehaviour>().Speed);
     }
 }

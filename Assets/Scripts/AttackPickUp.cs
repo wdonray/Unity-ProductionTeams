@@ -9,10 +9,8 @@ public class AttackPickUp : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<PlayerBehavior>().bottlePrefab.GetComponent<ProjectileBehavior>()
-                .AttackPower += 5;
+            other.gameObject.GetComponent<PlayerBehavior>().bottlePrefab.GetComponent<ProjectileBehavior>().AttackPower += 5;
             Destroy(gameObject);
-
         }
     }
 	

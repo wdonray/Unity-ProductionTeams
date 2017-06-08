@@ -32,15 +32,16 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
             {
                 return;
             }
+            GetComponent<AudioSource>().Play();
             DoDamage(other.gameObject.GetComponent<EnemyBehavior>().Minion);
             Destroy(gameObject);
         }
     }
 
-    void Update()
+    public void Update()
     {
         this.transform.Rotate(360 * Time.deltaTime, 0, 0);
-        Debug.Log(AttackPower);
+        Debug.Log("attack " + AttackPower);
     }
 
 
