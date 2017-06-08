@@ -46,8 +46,8 @@ public class EnemyBehavior : MonoBehaviour
         _target = GameObject.FindWithTag("Target");
         _player = GameObject.FindWithTag("Player");
 
-        Health = _minion.CopHealth;
-        Damage = _minion.CopDamage;
+        Health = Minion.CopHealth;
+        Damage = Minion.CopDamage;
         _attackRange = _nav.stoppingDistance;
         ATower = _target.GetComponent<TowerBehaviour>().ATower;
         Player = _player.GetComponent<PlayerBehavior>();
@@ -83,41 +83,23 @@ public class EnemyBehavior : MonoBehaviour
                                 _player.transform.position) < PlayerRange;
         var inTowerRange = Vector3.Distance(transform.position,
                                _target.transform.position) < _attackRange;
-        if (inPlayerRange) //chase player
+        if (Health <= 0)
         {
-            TargetPlayer();
-            if (_attackTimer <= 0)
+            Sink();
+            if (!_enemyAudio.isPlaying)
             {
-                _minion.DoDamage(Player);
-                if (!_enemyAudio.isPlaying)
-                {
-                    _enemyAudio.clip = AttackClip;
-                    _enemyAudio.Play();
-                }
-                _attackTimer = _attackCd;
-            }
-            else
-            {
-                _attackTimer -= Time.deltaTime;
+                _enemyAudio.clip = DeathClip;
+                _enemyAudio.Play();
             }
         }
         else
         {
-            if (Health <= 0)
+            if (inPlayerRange) //chase player
             {
-                if (!_enemyAudio.isPlaying)
-                {
-                    _enemyAudio.clip = DeathClip;
-                    _enemyAudio.Play();
-                }
-                Sink();
-            }
-            //if a tower is in range
-            else if (inTowerRange)
-            {
+                TargetPlayer();
                 if (_attackTimer <= 0)
                 {
-                    _minion.DoDamage(ATower);
+                    Minion.DoDamage(Player);
                     if (!_enemyAudio.isPlaying)
                     {
                         _enemyAudio.clip = AttackClip;
@@ -132,20 +114,41 @@ public class EnemyBehavior : MonoBehaviour
             }
             else
             {
-                TargetTower();
+                //if a tower is in range
+                if (inTowerRange)
+                {
+                    if (_attackTimer <= 0)
+                    {
+                        Minion.DoDamage(ATower);
+                        if (!_enemyAudio.isPlaying)
+                        {
+                            _enemyAudio.clip = AttackClip;
+                            _enemyAudio.Play();
+                        }
+                        _attackTimer = _attackCd;
+                    }
+                    else
+                    {
+                        _attackTimer -= Time.deltaTime;
+                    }
+                }
+                else
+                {
+                    TargetTower();
+                }
             }
-            CopHpText = gameObject.GetComponentInChildren<Text>();
-            CopHpText.text = Minion.CopHealth.ToString();
         }
-        Health = _minion.CopHealth;
-        Damage = _minion.CopDamage;
+        CopHpText = gameObject.GetComponentInChildren<Text>();
+        CopHpText.text = Minion.CopHealth.ToString();
+        Health = Minion.CopHealth;
+        Damage = Minion.CopDamage;
     }
 
     private IEnumerator ThroughFloor()
     {
         while (true)
         {
-            transform.position -= new Vector3(0, .01f, 0);
+            transform.position -= new Vector3(0, .1f, 0);
             yield return new WaitForEndOfFrame();
         }
     }
