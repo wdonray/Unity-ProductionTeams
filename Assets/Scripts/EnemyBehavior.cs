@@ -12,19 +12,21 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField]
     private MinionCop _minion;
     private NavMeshAgent _nav;
+
     [SerializeField]
     private GameObject _player, _target;
-
     [HideInInspector]
     public Tower ATower;
-    [HideInInspector]
-    public PlayerBehavior Player;
     public Text CopHpText;
     public int Damage, Health;
     public AudioClip DeathClip, AttackClip;
+    [HideInInspector]
+    public PlayerBehavior Player;
     [Range(1, 10)]
     public int PlayerRange;
     public EnemySpawner SpawnerRef;
+    public Animator ani;
+
     public MinionCop Minion
     {
         get { return _minion; }
@@ -46,15 +48,17 @@ public class EnemyBehavior : MonoBehaviour
         _target = GameObject.FindWithTag("Target");
         _player = GameObject.FindWithTag("Player");
 
-        Health = _minion.CopHealth;
-        Damage = _minion.CopDamage;
+        Health = Minion.CopHealth;
+        Damage = Minion.CopDamage;
         _attackRange = _nav.stoppingDistance;
         ATower = _target.GetComponent<TowerBehaviour>().ATower;
         Player = _player.GetComponent<PlayerBehavior>();
     }
+
     //Sinks the dying enemy through the floor
     public void Sink()
     {
+        ani.SetTrigger("death");
         StartCoroutine(ThroughFloor());
         _nav.enabled = false;
         GetComponent<Collider>().isTrigger = true;
@@ -62,19 +66,23 @@ public class EnemyBehavior : MonoBehaviour
         SpawnerRef = GameObject.FindGameObjectWithTag("Spawner").GetComponent<EnemySpawner>();
         SpawnerRef.TheCops.Remove(gameObject);
     }
+
     //Sets the Target to the Player
     public void TargetPlayer()
     {
         transform.LookAt(_player.transform.position);
         Debug.DrawLine(transform.position, _player.transform.position, Color.yellow);
         _nav.SetDestination(_player.transform.position);
+        ani.SetTrigger("walk");
     }
+
     //Sets the Target to the Tower
     public void TargetTower()
     {
         transform.LookAt(_target.transform.position);
         Debug.DrawLine(transform.position, _target.transform.position, Color.blue);
         _nav.SetDestination(_target.transform.position);
+        ani.SetTrigger("walk");
     }
 
     private void Update()
@@ -83,70 +91,79 @@ public class EnemyBehavior : MonoBehaviour
                                 _player.transform.position) < PlayerRange;
         var inTowerRange = Vector3.Distance(transform.position,
                                _target.transform.position) < _attackRange;
-        if (inPlayerRange) //chase player
+        if (Health <= 0)
         {
-            TargetPlayer();
-            if (_attackTimer <= 0)
+            Sink();
+            if (!_enemyAudio.isPlaying)
             {
-                _minion.DoDamage(Player);
-                if (!_enemyAudio.isPlaying)
-                {
-                    _enemyAudio.clip = AttackClip;
-                    _enemyAudio.Play();
-                }
-                _attackTimer = _attackCd;
-            }
-            else
-            {
-                _attackTimer -= Time.deltaTime;
+                _enemyAudio.clip = DeathClip;
+                _enemyAudio.Play();
             }
         }
         else
         {
-            if (Health <= 0)
+            if (inPlayerRange) //chase player
             {
-                if (!_enemyAudio.isPlaying)
-                {
-                    _enemyAudio.clip = DeathClip;
-                    _enemyAudio.Play();
-                }
-                Sink();
-            }
-            //if a tower is in range
-            else if (inTowerRange)
-            {
-                if (_attackTimer <= 0)
-                {
-                    _minion.DoDamage(ATower);
-                    if (!_enemyAudio.isPlaying)
+                TargetPlayer();
+                if (Vector3.Distance(transform.position, _player.transform.position) < 4)
+                    if (_attackTimer <= 0)
                     {
-                        _enemyAudio.clip = AttackClip;
-                        _enemyAudio.Play();
+                        Minion.DoDamage(Player);
+                        ani.SetTrigger("attack");
+                        if (!_enemyAudio.isPlaying)
+                        {
+                            _enemyAudio.clip = AttackClip;
+                            _enemyAudio.Play();
+                        }
+                        _attackTimer = _attackCd;
                     }
-                    _attackTimer = _attackCd;
-                }
-                else
-                {
-                    _attackTimer -= Time.deltaTime;
-                }
+                    else
+                    {
+                        _attackTimer -= Time.deltaTime;
+                    }
             }
             else
             {
-                TargetTower();
+                //if a tower is in range
+                if (inTowerRange)
+                    if (_attackTimer <= 0)
+                    {
+                        Minion.DoDamage(ATower);
+                        if (!_enemyAudio.isPlaying)
+                        {
+                            _enemyAudio.clip = AttackClip;
+                            _enemyAudio.Play();
+                        }
+                        _attackTimer = _attackCd;
+                        ani.SetTrigger("attack");
+                    }
+                    else
+                    {
+                        _attackTimer -= Time.deltaTime;
+                    }
+                else
+                    TargetTower();
             }
-            CopHpText = gameObject.GetComponentInChildren<Text>();
-            CopHpText.text = Minion.CopHealth.ToString();
         }
-        Health = _minion.CopHealth;
-        Damage = _minion.CopDamage;
+        CopHpText = gameObject.GetComponentInChildren<Text>();
+        CopHpText.text = Minion.CopHealth.ToString();
+        Health = Minion.CopHealth;
+        Damage = Minion.CopDamage;
     }
 
     private IEnumerator ThroughFloor()
     {
         while (true)
         {
-            transform.position -= new Vector3(0, .01f, 0);
+            transform.position -= new Vector3(0, .1f, 0);
             yield return new WaitForEndOfFrame();
         }
     }
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawLine(transform.position, transform.position + transform.forward * 2);
+    }
+#endif
 }

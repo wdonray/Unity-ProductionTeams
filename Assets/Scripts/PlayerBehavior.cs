@@ -29,13 +29,6 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
         Destroy(bottle, 5);
     }
 
- 
-
-    public void Start()
-    {
-        playerHp = GameObject.FindGameObjectWithTag("PlayerHP").GetComponent<Text>();
-    }
-
     public void Update()
     {
         if (PlayerHealth <= 0)
