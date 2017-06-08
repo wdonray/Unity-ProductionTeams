@@ -103,6 +103,7 @@ public class EnemyBehavior : MonoBehaviour
                     if (_attackTimer <= 0)
                     {
                         Minion.DoDamage(Player);
+                        ani.SetTrigger("attack");
                         if (!_enemyAudio.isPlaying)
                         {
                             _enemyAudio.clip = AttackClip;
@@ -122,6 +123,7 @@ public class EnemyBehavior : MonoBehaviour
                     if (_attackTimer <= 0)
                     {
                         Minion.DoDamage(ATower);
+                        ani.SetTrigger("attack");
                         if (!_enemyAudio.isPlaying)
                         {
                             _enemyAudio.clip = AttackClip;
@@ -153,9 +155,7 @@ public class EnemyBehavior : MonoBehaviour
     }
 #if UNITY_EDITOR
     private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.black;        
-        Gizmos.DrawWireCube(transform.position, new Vector3(5, 5, 5));
+    {        
         Gizmos.color = Color.cyan;
         Gizmos.DrawLine(transform.position, transform.position + transform.forward * 2);
     }
