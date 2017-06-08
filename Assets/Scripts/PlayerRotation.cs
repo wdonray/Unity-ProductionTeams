@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerRotation : MonoBehaviour
 {
 
-	public GameObject prefab;
 	int floorMask;
 	float camRayLength = 100f;
 

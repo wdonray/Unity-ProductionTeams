@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class HealthPickUp : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerBehavior>().PlayerHealth += 10;
+            Destroy(gameObject);
+        }
+    }
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }
