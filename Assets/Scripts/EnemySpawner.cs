@@ -54,7 +54,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     minion.CopDamage = 15;
                     minion.CopHealth = 15;
-                    go.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                    //go.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
                 }
                 SpawnText.text = "Spawning: Easy Cops";
             }
@@ -67,7 +67,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     minion.CopHealth = 25;
                     minion.CopDamage = 25;
-                    go.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                    go.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
                 }
                 SpawnText.text = "Spawning: Meduim Cops";
             }
@@ -80,7 +80,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     minion.CopHealth = 45;
                     minion.CopDamage = 35;
-                    go.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                    go.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
                 }
                 SpawnText.text = "Spawning: Hard Cops";
             }

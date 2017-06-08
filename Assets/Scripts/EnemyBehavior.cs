@@ -9,18 +9,30 @@ public class EnemyBehavior : MonoBehaviour
     private float _attackRange = 2f;
     private float _attackTimer = 2.0f;
     private AudioSource _enemyAudio;
-    [SerializeField] private MinionCop _minion;
+
+    [SerializeField]
+    private MinionCop _minion;
+
     private NavMeshAgent _nav;
 
-    [SerializeField] private GameObject _player, _target;
-    [HideInInspector] public Tower ATower;
+    [SerializeField]
+    private GameObject _player, _target;
+
+    public Animator ani;
+
+    [HideInInspector]
+    public Tower ATower;
+
     public Text CopHpText;
     public int Damage, Health;
     public AudioClip DeathClip, AttackClip;
-    [HideInInspector] public PlayerBehavior Player;
-    [Range(1, 10)] public int PlayerRange;
+    [HideInInspector]
+    public PlayerBehavior Player;
+
+    [Range(1, 10)]
+    public int PlayerRange;
+
     public EnemySpawner SpawnerRef;
-    public Animator ani;
 
     public MinionCop Minion
     {
@@ -79,8 +91,29 @@ public class EnemyBehavior : MonoBehaviour
         ani.SetTrigger("walk");
     }
 
+    public void HitPlayer()
+    {
+        Minion.DoDamage(Player);
+        if (!_enemyAudio.isPlaying)
+        {
+            _enemyAudio.clip = AttackClip;
+            _enemyAudio.Play();
+        }
+    }
+
+    public void HitTower()
+    {
+        Minion.DoDamage(ATower);
+        if (!_enemyAudio.isPlaying)
+        {
+            _enemyAudio.clip = AttackClip;
+            _enemyAudio.Play();
+        }
+    }
+
     private void Update()
     {
+        ani.SetInteger("health", Health);
         var inPlayerRange = Vector3.Distance(transform.position,
                                 _player.transform.position) < PlayerRange;
         var inTowerRange = Vector3.Distance(transform.position,
@@ -98,22 +131,23 @@ public class EnemyBehavior : MonoBehaviour
         {
             if (inPlayerRange) //chase player
             {
-                TargetPlayer();
-                if (Vector3.Distance(transform.position, _player.transform.position) < 4)
+
+                if (Vector3.Distance(transform.position,
+                        _player.transform.position) < 4)
                     if (_attackTimer <= 0)
                     {
-                        Minion.DoDamage(Player);
-                        if (!_enemyAudio.isPlaying)
-                        {
-                            _enemyAudio.clip = AttackClip;
-                            _enemyAudio.Play();
-                        }
+                        ani.SetTrigger("attack");
                         _attackTimer = _attackCd;
                     }
                     else
                     {
                         _attackTimer -= Time.deltaTime;
+                        ani.SetTrigger("idle");
                     }
+                else
+                {
+                    TargetPlayer();
+                }
             }
             else
             {
@@ -121,17 +155,13 @@ public class EnemyBehavior : MonoBehaviour
                 if (inTowerRange)
                     if (_attackTimer <= 0)
                     {
-                        Minion.DoDamage(ATower);
-                        if (!_enemyAudio.isPlaying)
-                        {
-                            _enemyAudio.clip = AttackClip;
-                            _enemyAudio.Play();
-                        }
+                        ani.SetTrigger("attack");
                         _attackTimer = _attackCd;
                     }
                     else
                     {
                         _attackTimer -= Time.deltaTime;
+                        ani.SetTrigger("idle");
                     }
                 else
                     TargetTower();
@@ -147,15 +177,13 @@ public class EnemyBehavior : MonoBehaviour
     {
         while (true)
         {
-            transform.position -= new Vector3(0, .1f, 0);
+            transform.position -= new Vector3(0, .001f, 0);
             yield return new WaitForEndOfFrame();
         }
     }
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.black;        
-        Gizmos.DrawWireCube(transform.position, new Vector3(5, 5, 5));
         Gizmos.color = Color.cyan;
         Gizmos.DrawLine(transform.position, transform.position + transform.forward * 2);
     }
