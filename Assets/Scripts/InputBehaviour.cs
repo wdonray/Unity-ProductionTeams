@@ -3,7 +3,9 @@
 public class InputBehaviour : MonoBehaviour
 {
     private float _jumpTimer = 1;
+    private Vector3 currentPos, previousPos;
 
+    public Rigidbody rb;
     //public MinionCop MinionTest;
 
     [Range(1, 10)]
@@ -33,6 +35,12 @@ public class InputBehaviour : MonoBehaviour
     public bool IsJump
     {
         get { return Input.GetKeyDown(KeyCode.Space) && _jumpTimer < .5f; }
+    }
+
+    private void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody>();
+        currentPos = this.transform.position;
     }
 
     // Update is called once per frame
@@ -67,11 +75,14 @@ public class InputBehaviour : MonoBehaviour
             GetComponent<Rigidbody>().AddForce(new Vector3(0, 200, 0));
             _jumpTimer = 1f;
         }
+        previousPos = currentPos;
+        currentPos = this.transform.position;
+        ani.SetFloat("speed", (currentPos - previousPos).magnitude);
+        _jumpTimer -= Time.deltaTime;
         //MinionTest = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyBehavior>().Minion;
         //if (Input.GetKeyDown(KeyCode.Space))
         //{
         //    MinionTest.TakeDamage(3);
         //}
-        _jumpTimer -= Time.deltaTime;
     }
 }
