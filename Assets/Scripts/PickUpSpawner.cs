@@ -5,8 +5,9 @@ using UnityEngine;
 public class PickUpSpawner : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+	    float timer = 20.0f;
 	}
 	
 	// Update is called once per frame
