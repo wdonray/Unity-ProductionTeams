@@ -5,14 +5,20 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+    private AudioSource _backSound;
     public Image BackImage;
     public Text MiddleText;
+    public AudioClip MusicClip;
+    public Slider MySlider;
 
     private void Start()
     {
-        MiddleText.text = "WELCOME TO ___________";
+        _backSound = GetComponent<AudioSource>();
+        MiddleText.text = "Welcome To\n King of The Booze";
         Time.timeScale = 1;
         StartCoroutine(ColorPicker());
+        _backSound.clip = MusicClip;
+        _backSound.Play();
     }
 
     public void QuitGame()
@@ -40,13 +46,21 @@ public class MainMenu : MonoBehaviour
                           "\n\nArtist:\n Michael Muguira\n Shane Clarius\n Wedge Denaille";
     }
 
+    public void Slider(float value)
+    {
+        _backSound.volume = value;
+    }
+
     public IEnumerator ColorPicker()
     {
-        var newColor = new Color(Random.value, Random.value,
-            Random.value, 1.0f);
-        BackImage.color = newColor;
-        yield return new WaitForSeconds(2);
-        yield return StartCoroutine(ColorPicker());
+        while (true)
+        {
+            var newColor = new Color(Random.value, Random.value,
+                Random.value, 1.0f);
+            BackImage.color = newColor;
+            yield return new WaitForSeconds(2);
+        }
+        //yield return StartCoroutine(ColorPicker());
     }
 
     public IEnumerator Load()
