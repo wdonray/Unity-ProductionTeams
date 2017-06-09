@@ -42,8 +42,8 @@ public class MainMenu : MonoBehaviour
 
     public void Credits()
     {
-        MiddleText.text = "Programmers:\n <color=green>Donray Williams</color>\n Reginald Reed " +
-                          "\n\nArtist:\n Michael Muguira\n Shane Clarius\n Wedge Denaille";
+        MiddleText.text = "Programmers:\n <color=green>Donray Williams</color>\n <color=green>Reginald Reed</color> " +
+                          "\n\nArtist:\n <color=green>Michael Muguira</color>\n <color=red>Shane Clarius</color>\n <color=red>Wedge Denaille</color>";
     }
 
     public void Slider(float value)
