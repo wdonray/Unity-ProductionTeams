@@ -7,10 +7,10 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
 {
 
     private int _attackPower = 5;
-    public IDamageable minion;
 
     private void Start()
     {
+        
     }
 
     public int AttackPower

@@ -31,8 +31,9 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
 
     public void ThrowBottle()
     {
-        bottle = Instantiate(bottlePrefab, transform);
-        bottle.GetComponent<Rigidbody>().velocity += transform.TransformDirection(0, 0, 25);
+        bottle = Instantiate(bottlePrefab, transform, false);
+        Physics.IgnoreCollision(GetComponent<Collider>(), bottle.GetComponent<Collider>(), true);
+        bottle.GetComponent<Rigidbody>().velocity += transform.TransformDirection(0, 0, 50);
         Destroy(bottle, 5);
     }
 
@@ -43,7 +44,11 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
             return;
 
         if (Input.GetMouseButtonDown(0))
-            ThrowBottle();      
+            animator.SetTrigger("attack");
+        //else
+        //{
+        //    animator.SetTrigger("idle");
+        //}
         animator.SetInteger("health", PlayerHealth);
     }
 }

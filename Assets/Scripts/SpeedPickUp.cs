@@ -8,7 +8,7 @@ public class SpeedPickUp : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<InputBehaviour>().Speed += 2;
+            other.gameObject.GetComponent<BubbaInputBehaviour>().Speed += 2;
               Destroy(gameObject);
         }
     }
