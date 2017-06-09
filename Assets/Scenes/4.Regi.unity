@@ -108,6 +108,207 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 23800000, guid: a41cf2e602323e94282539d61bb7ed14, type: 2}
+--- !u!1 &18320664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 18320665}
+  - component: {fileID: 18320666}
+  m_Layer: 0
+  m_Name: BubbaMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &18320665
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 18320664}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2009578064}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &18320666
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13700000, guid: 55e8da18e5fa573459e00500e520d601,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 18320664}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 11ac5b835d4d15240a451804a9c75193, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_Bones:
+  - {fileID: 362609727}
+  - {fileID: 133021513}
+  - {fileID: 142323790}
+  - {fileID: 1450873081}
+  - {fileID: 677847382}
+  - {fileID: 551939982}
+  - {fileID: 1656200480}
+  - {fileID: 970520423}
+  - {fileID: 1594548229}
+  - {fileID: 1273048635}
+  - {fileID: 1002180876}
+  - {fileID: 1303732284}
+  - {fileID: 2000451691}
+  - {fileID: 1221008708}
+  - {fileID: 1787010962}
+  - {fileID: 1742449924}
+  - {fileID: 407167002}
+  - {fileID: 1340977516}
+  - {fileID: 1183411091}
+  - {fileID: 1360387757}
+  - {fileID: 202075818}
+  - {fileID: 559224584}
+  - {fileID: 1084941369}
+  - {fileID: 1540412007}
+  - {fileID: 855891467}
+  - {fileID: 1098128720}
+  - {fileID: 797347049}
+  - {fileID: 1593231790}
+  - {fileID: 1907390134}
+  - {fileID: 496918608}
+  - {fileID: 739495186}
+  - {fileID: 1558897951}
+  - {fileID: 1829311965}
+  - {fileID: 2053043979}
+  - {fileID: 928578089}
+  - {fileID: 1462554573}
+  - {fileID: 1579756849}
+  - {fileID: 353048602}
+  - {fileID: 256764731}
+  - {fileID: 1034323293}
+  - {fileID: 337378887}
+  - {fileID: 1118506725}
+  - {fileID: 1205776627}
+  - {fileID: 2004602357}
+  - {fileID: 2085963386}
+  - {fileID: 755310252}
+  - {fileID: 476421648}
+  - {fileID: 1336447399}
+  - {fileID: 1885617343}
+  - {fileID: 633504379}
+  - {fileID: 374913221}
+  - {fileID: 343236821}
+  - {fileID: 108687654}
+  - {fileID: 44442101}
+  - {fileID: 184516549}
+  - {fileID: 1487861991}
+  - {fileID: 1039808271}
+  - {fileID: 263395501}
+  - {fileID: 83545913}
+  - {fileID: 561551679}
+  - {fileID: 1530856151}
+  - {fileID: 770779237}
+  - {fileID: 1362666746}
+  - {fileID: 65642648}
+  - {fileID: 1422151580}
+  - {fileID: 929659786}
+  - {fileID: 733947797}
+  - {fileID: 1094895372}
+  - {fileID: 351200260}
+  - {fileID: 370232170}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 362609727}
+  m_AABB:
+    m_Center: {x: -0.093715966, y: -0.07264644, z: 0.030622467}
+    m_Extent: {x: 0.84626514, y: 0.527212, z: 0.4929564}
+  m_DirtyAABB: 0
+--- !u!1 &44442100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100130, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 44442101}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Thumb_01_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &44442101
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400130, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44442100}
+  m_LocalRotation: {x: 0, y: 0.18023182, z: -0, w: 0.98362416}
+  m_LocalPosition: {x: 0.036713973, y: -1.7763567e-16, z: 3.907985e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 108687654}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &65642647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100052, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 65642648}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Leg_BallSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &65642648
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400052, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 65642647}
+  m_LocalRotation: {x: 0.0077695493, y: 0.8638962, z: 0.010604351, w: 0.50349826}
+  m_LocalPosition: {x: -0.019467892, y: 0.00051477423, z: 0.083740555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1422151580}
+  m_Father: {fileID: 1362666746}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &75088804
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +349,179 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &83545912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 83545913}
+  m_Layer: 0
+  m_Name: BubbaRig_Head_JawEndSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &83545913
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 83545912}
+  m_LocalRotation: {x: 0.8344444, y: 0, z: 0, w: 0.55109215}
+  m_LocalPosition: {x: 2.4902597e-17, y: -0.04523734, z: 0.12230874}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 263395501}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &93955439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100074, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 93955440}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Arm_ElbowSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &93955440
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400074, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 93955439}
+  m_LocalRotation: {x: 0, y: -0.15608692, z: -0, w: 0.9877434}
+  m_LocalPosition: {x: 0.34300393, y: -4.2632563e-16, z: 1.7763567e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1491157584}
+  m_Father: {fileID: 1807254289}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &97489546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100102, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 97489547}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_03_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &97489547
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400102, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 97489546}
+  m_LocalRotation: {x: 0.019501846, y: -0.08106307, z: -0.23308821, w: 0.9688748}
+  m_LocalPosition: {x: 0.052016027, y: -0.012716725, z: 0.005265699}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 305350057}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &108687653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100128, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 108687654}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Thumb_01_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &108687654
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400128, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 108687653}
+  m_LocalRotation: {x: -0.09205317, y: 0.43350184, z: -0.19066319, w: 0.87592804}
+  m_LocalPosition: {x: 0.04121782, y: 0.0026539993, z: -0.011628551}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 44442101}
+  m_Father: {fileID: 343236821}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &133021512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100134, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 133021513}
+  m_Layer: 0
+  m_Name: BubbaRig_Spine_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &133021513
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400134, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 133021512}
+  m_LocalRotation: {x: 0.09222752, y: -0.05221301, z: 0.16063459, w: 0.9813075}
+  m_LocalPosition: {x: -0.117184006, y: 0.008031544, z: 4.7283344e-18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 142323790}
+  m_Father: {fileID: 362609727}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &142323789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100136, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 142323790}
+  m_Layer: 0
+  m_Name: BubbaRig_Spine_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &142323790
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400136, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 142323789}
+  m_LocalRotation: {x: -0.0046728607, y: -0.018397273, z: -0.23014775, w: 0.9729706}
+  m_LocalPosition: {x: -0.10835751, y: 0.044840187, z: 0.0071099447}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1450873081}
+  m_Father: {fileID: 133021513}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &149956608
 GameObject:
@@ -231,7 +604,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &149956613
 MonoBehaviour:
@@ -248,48 +621,723 @@ MonoBehaviour:
   MinionCop: {fileID: 1082040161552792, guid: fdcce65b03490ea4894b44086eaf9d2f, type: 2}
   SpawnText: {fileID: 400996442}
   TheCops: []
---- !u!1001 &300452471
-Prefab:
+--- !u!1 &155840717
+GameObject:
   m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1486270546629872, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 155840718}
+  - component: {fileID: 155840719}
+  m_Layer: 0
+  m_Name: finished_quaddraw_bubba_RoadKillOut
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &155840718
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4423597443616064, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 155840717}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2009578064}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &155840719
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 137691794926775162, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 155840717}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
   serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 7ce5750397d89014881eed93792ac9ee, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.71421
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7ce5750397d89014881eed93792ac9ee, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.929191e-17
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7ce5750397d89014881eed93792ac9ee, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.688305
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7ce5750397d89014881eed93792ac9ee, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7ce5750397d89014881eed93792ac9ee, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7ce5750397d89014881eed93792ac9ee, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7ce5750397d89014881eed93792ac9ee, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 7ce5750397d89014881eed93792ac9ee, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 7ce5750397d89014881eed93792ac9ee, type: 3}
-  m_IsPrefabParent: 0
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: 07bf8e79c82b0d44dbe12f27f67d846b, type: 3}
+  m_Bones:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 0}
+  m_AABB:
+    m_Center: {x: -0.09859824, y: -0.044193804, z: -0.00526309}
+    m_Extent: {x: 0.85386777, y: 0.4400342, z: 0.49759442}
+  m_DirtyAABB: 0
+--- !u!1 &184516548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100068, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 184516549}
+  m_Layer: 0
+  m_Name: BubbaRig_Neck_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &184516549
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400068, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 184516548}
+  m_LocalRotation: {x: 1.6653345e-16, y: 5.551115e-17, z: 2.7755576e-17, w: 1}
+  m_LocalPosition: {x: -0.02938763, y: 1.687539e-16, z: 1.3447552e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1487861991}
+  m_Father: {fileID: 551939982}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &202075817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100038, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 202075818}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_03_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &202075818
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400038, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 202075817}
+  m_LocalRotation: {x: 0.0040105428, y: -0.015979074, z: 0.12920253, w: 0.99148136}
+  m_LocalPosition: {x: -0.044079006, y: 0.0008836036, z: -0.0011445524}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 559224584}
+  m_Father: {fileID: 1360387757}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &229432330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100104, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 229432331}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_04_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &229432331
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400104, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 229432330}
+  m_LocalRotation: {x: -0.05269638, y: 0.12917669, z: -0.20535354, w: 0.96869314}
+  m_LocalPosition: {x: 0.10143083, y: -0.00027230938, z: -0.062955864}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1333795547}
+  m_Father: {fileID: 1491157584}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &256764730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100090, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 256764731}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_02_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &256764731
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400090, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 256764730}
+  m_LocalRotation: {x: -0.02358284, y: -0.07155293, z: -0.3121332, w: 0.9470464}
+  m_LocalPosition: {x: 0.12952742, y: 0.039552268, z: 0.014645985}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1034323293}
+  m_Father: {fileID: 2053043979}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &263395500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 263395501}
+  m_Layer: 0
+  m_Name: BubbaRig_Head_JawSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &263395501
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 263395500}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -0.07100177, y: -0.01183363, z: 6.0145014e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 83545913}
+  m_Father: {fileID: 1039808271}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &303214995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100088, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 303214996}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_02_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &303214996
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400088, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 303214995}
+  m_LocalRotation: {x: 0.02689282, y: 0.08159578, z: -0.31186545, w: 0.94623405}
+  m_LocalPosition: {x: 0.12952742, y: 0.039552268, z: 0.014645985}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1288129327}
+  m_Father: {fileID: 1491157584}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &304683017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 304683019}
+  - component: {fileID: 304683018}
+  m_Layer: 0
+  m_Name: Bubba@Attack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &304683018
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec,
+    type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 304683017}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_Controller: {fileID: 9100000, guid: 08b1e16842ae727459a46696c4be1b26, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &304683019
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 304683017}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 482689639}
+  - {fileID: 783349789}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &305350056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100100, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 305350057}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_03_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &305350057
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400100, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 305350056}
+  m_LocalRotation: {x: 0, y: -0, z: -0.11917317, w: 0.9928735}
+  m_LocalPosition: {x: 0.044079006, y: 0.0008836036, z: -0.0011445524}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 97489547}
+  m_Father: {fileID: 1563089919}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &337378886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100094, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 337378887}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_02_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &337378887
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400094, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 337378886}
+  m_LocalRotation: {x: 0, y: -0, z: -0.3893281, w: 0.9210992}
+  m_LocalPosition: {x: 0.052748963, y: 0.0026799187, z: -0.0024369194}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1118506725}
+  m_Father: {fileID: 1034323293}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &340363128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100028, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 340363129}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_02_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &340363129
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400028, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 340363128}
+  m_LocalRotation: {x: 0, y: 0, z: 0.012971701, w: 0.9999159}
+  m_LocalPosition: {x: -0.052748963, y: 0.0026799187, z: -0.0024369194}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 926338523}
+  m_Father: {fileID: 349691445}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &343236820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100126, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 343236821}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Thumb_01_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &343236821
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400126, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 343236820}
+  m_LocalRotation: {x: 0.20842853, y: -0.004059705, z: 0.057939567, w: 0.9763115}
+  m_LocalPosition: {x: 0.036713973, y: -1.7763567e-16, z: -3.907985e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 108687654}
+  m_Father: {fileID: 374913221}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &344384455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100054, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 344384456}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Leg_KneeSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &344384456
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400054, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 344384455}
+  m_LocalRotation: {x: 0, y: -0.29322505, z: -0, w: 0.9560434}
+  m_LocalPosition: {x: -0.28713223, y: 8.8817837e-17, z: -1.7763567e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 663169256}
+  m_Father: {fileID: 1006342684}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &349691444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100026, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 349691445}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_02_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &349691445
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400026, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 349691444}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0052697593, w: 0.9999861}
+  m_LocalPosition: {x: -0.040340353, y: 0.0003034144, z: -0.002306758}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 340363129}
+  m_Father: {fileID: 627242047}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &351200259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100116, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 351200260}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Leg_BallSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &351200260
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400116, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 351200259}
+  m_LocalRotation: {x: 0.00018592966, y: 0.74877316, z: 0.00097294233, w: 0.6628256}
+  m_LocalPosition: {x: -0.019467892, y: -0.00051477423, z: 0.083740555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 370232170}
+  m_Father: {fileID: 1094895372}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &353048601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100088, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 353048602}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_01_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &353048602
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400088, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353048601}
+  m_LocalRotation: {x: 0, y: -0, z: -0.4544697, w: 0.8907622}
+  m_LocalPosition: {x: 0.046927724, y: -0.003085243, z: -0.0004571042}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1579756849}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &362609726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100132, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 362609727}
+  m_Layer: 0
+  m_Name: BubbaRig_ROOTSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &362609727
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400132, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362609726}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0.7136789, z: -0.04930643}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1530856151}
+  - {fileID: 929659786}
+  - {fileID: 133021513}
+  m_Father: {fileID: 2009578064}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &370232169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100122, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 370232170}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Leg_ToeSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &370232170
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400122, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370232169}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04594385, y: -0.00057495484, z: -0.0051769144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 351200260}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &374913220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100124, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 374913221}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Thumb_01_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &374913221
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400124, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 374913220}
+  m_LocalRotation: {x: 0.5256208, y: -0.33942723, z: -0.50343615, w: 0.59587246}
+  m_LocalPosition: {x: 0.030455744, y: -0.022079676, z: 0.078116335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 343236821}
+  m_Father: {fileID: 2053043979}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &388563466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100138, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 388563467}
+  m_Layer: 0
+  m_Name: BubbaRig_Spine_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &388563467
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400138, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 388563466}
+  m_LocalRotation: {x: 0.0021710359, y: 0.013857457, z: 0.12649064, w: 0.9918687}
+  m_LocalPosition: {x: -0.11797992, y: 0.008013944, z: 0.0060018874}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1814655777}
+  m_Father: {fileID: 928581093}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &400996440
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +1412,35 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 400996440}
+--- !u!1 &407167001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100030, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 407167002}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_02_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &407167002
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400030, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 407167001}
+  m_LocalRotation: {x: 0, y: 0, z: 0.29017395, w: 0.9569739}
+  m_LocalPosition: {x: -0.052748963, y: 0.0026799187, z: -0.0024369194}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1340977516}
+  m_Father: {fileID: 1742449924}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &407243092
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +1515,343 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 407243092}
+--- !u!1 &410861604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1841557399818834, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 410861605}
+  - component: {fileID: 410861607}
+  - component: {fileID: 410861606}
+  m_Layer: 0
+  m_Name: Bottle_RoadKillOut
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &410861605
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4432540329331398, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410861604}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.34853148, y: 0.6430483, z: 0.012774372}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2009578064}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &410861606
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23397887629860606, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410861604}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 0224bf41fec2dee4a88cf6a786dffc06, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &410861607
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33874343353024800, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410861604}
+  m_Mesh: {fileID: 4300004, guid: 07bf8e79c82b0d44dbe12f27f67d846b, type: 3}
+--- !u!1 &476421647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100106, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 476421648}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_04_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &476421648
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400106, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 476421647}
+  m_LocalRotation: {x: -0.07660521, y: 0.013744667, z: -0.19768314, w: 0.9771715}
+  m_LocalPosition: {x: 0.10143083, y: -0.00027230926, z: -0.062955864}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1336447399}
+  m_Father: {fileID: 2053043979}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &482689638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100130, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 482689639}
+  m_Layer: 0
+  m_Name: BubbaRig_ROOTSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &482689639
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400130, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 482689638}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 5.5220264e-32, y: 0.7383954, z: -0.04930643}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1006342684}
+  - {fileID: 1796932926}
+  - {fileID: 1126375771}
+  m_Father: {fileID: 304683019}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &487242789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100064, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 487242790}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Thumb_01_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &487242790
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400064, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 487242789}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.036713973, y: -1.5543122e-16, z: 4.6185276e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1441845303}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &495193625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100014, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 495193626}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Arm_WristSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &495193626
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400014, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 495193625}
+  m_LocalRotation: {x: -0.22925174, y: -0.05583393, z: 0.060161397, w: 0.9699004}
+  m_LocalPosition: {x: -0.35335636, y: -7.81597e-16, z: 6.217249e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1693191885}
+  - {fileID: 627242047}
+  - {fileID: 1004625069}
+  - {fileID: 823597372}
+  - {fileID: 1856338998}
+  m_Father: {fileID: 1841481513}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &496918607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100066, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 496918608}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Thumb_01_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &496918608
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400066, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496918607}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.036713973, y: -3.5527135e-16, z: 2.842171e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1907390134}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &551939981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100142, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 551939982}
+  m_Layer: 0
+  m_Name: BubbaRig_Spine_TopSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &551939982
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400142, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551939981}
+  m_LocalRotation: {x: -0.0962861, y: 0.050492536, z: -0.14845218, w: 0.98292494}
+  m_LocalPosition: {x: -0.104882486, y: 0.04387086, z: 0.005902239}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1656200480}
+  - {fileID: 184516549}
+  - {fileID: 739495186}
+  m_Father: {fileID: 677847382}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &559224583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100040, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 559224584}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_03_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &559224584
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400040, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 559224583}
+  m_LocalRotation: {x: 0.030953739, y: 0.07741711, z: 0.3699625, w: 0.9252979}
+  m_LocalPosition: {x: -0.052016027, y: -0.012716725, z: 0.005265699}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 202075818}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &561551678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 561551679}
+  m_Layer: 0
+  m_Name: BubbaRig_Head_TopSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &561551679
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 561551678}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -0.22463308, y: -8.881784e-18, z: 1.7703654e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1039808271}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &569657642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100086, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 569657643}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_01_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &569657643
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400086, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 569657642}
+  m_LocalRotation: {x: 0, y: -0, z: -0.30211908, w: 0.9532702}
+  m_LocalPosition: {x: 0.046927724, y: -0.003085243, z: -0.0004571042}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 716104054}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &584052056
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +1879,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &584052058
 MonoBehaviour:
@@ -480,6 +1894,165 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 30
   pickup: {fileID: 1516110681418608, guid: 259d638bd1615d94999981872cd3a7cb, type: 2}
+--- !u!1 &616281429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100022, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 616281430}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_01_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &616281430
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400022, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 616281429}
+  m_LocalRotation: {x: 0, y: 0, z: 0.15698446, w: 0.9876011}
+  m_LocalPosition: {x: -0.046927724, y: -0.003085243, z: -0.0004571042}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2081527038}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &627242046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100024, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 627242047}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_02_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &627242047
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400024, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 627242046}
+  m_LocalRotation: {x: 0.02210969, y: -0.06708323, z: 0.31224102, w: 0.94737357}
+  m_LocalPosition: {x: -0.12952742, y: 0.039552268, z: 0.014645985}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 349691445}
+  m_Father: {fileID: 495193626}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &633504378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100112, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 633504379}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_04_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &633504379
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400112, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 633504378}
+  m_LocalRotation: {x: 0.034304313, y: -0.12389664, z: -0.2646249, w: 0.95574397}
+  m_LocalPosition: {x: 0.03818098, y: -0.008484446, z: 0.0053299568}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1885617343}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &637935184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100046, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 637935185}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_04_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &637935185
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400046, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 637935184}
+  m_LocalRotation: {x: 0.000797096, y: 0.13304487, z: 0.006375145, w: 0.9910892}
+  m_LocalPosition: {x: -0.03818098, y: -0.008484446, z: 0.0053299568}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1973689287}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &648683111
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 08b1e16842ae727459a46696c4be1b26, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &651454298
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,6 +2155,92 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 2009578057}
+--- !u!1 &662005207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100038, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 662005208}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_03_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &662005208
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400038, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 662005207}
+  m_LocalRotation: {x: 0.011803774, y: 0.085543364, z: 0.12167992, w: 0.9888059}
+  m_LocalPosition: {x: -0.052016027, y: -0.012716725, z: 0.005265699}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1918513365}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &663169255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100048, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 663169256}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Leg_AnkleSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &663169256
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400048, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 663169255}
+  m_LocalRotation: {x: -0.030355057, y: 0.15800816, z: 0.010050297, w: 0.98692}
+  m_LocalPosition: {x: -0.2799902, y: 3.1974422e-15, z: 5.2402524e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 740185295}
+  m_Father: {fileID: 344384456}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &667022576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100124, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 667022577}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Thumb_01_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &667022577
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400124, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 667022576}
+  m_LocalRotation: {x: 0, y: -0.10814848, z: -0, w: 0.9941348}
+  m_LocalPosition: {x: 0.036713973, y: -1.4210854e-16, z: -1.4210854e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1366844787}
+  m_Father: {fileID: 1940269314}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &672578656
 Prefab:
   m_ObjectHideFlags: 0
@@ -619,7 +2278,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4977428440685770, guid: e27bab3a2bdbc9a4492423f9ce5f17bb, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 54982256252852480, guid: e27bab3a2bdbc9a4492423f9ce5f17bb,
         type: 2}
@@ -629,6 +2288,208 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e27bab3a2bdbc9a4492423f9ce5f17bb, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &677847381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100140, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 677847382}
+  m_Layer: 0
+  m_Name: BubbaRig_Spine_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &677847382
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400140, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677847381}
+  m_LocalRotation: {x: 0.0032917105, y: 0.011949594, z: 0.18953782, w: 0.9817952}
+  m_LocalPosition: {x: -0.11351249, y: -0.00005004209, z: 0.0090787895}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 551939982}
+  m_Father: {fileID: 1450873081}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &716104053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100084, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 716104054}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_01_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &716104054
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400084, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 716104053}
+  m_LocalRotation: {x: 0, y: -0, z: -0.09411881, w: 0.995561}
+  m_LocalPosition: {x: 0.041407593, y: -0.000831029, z: -0.0002223432}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 569657643}
+  m_Father: {fileID: 1548112182}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &733947796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100120, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 733947797}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Leg_KneeSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &733947797
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400120, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 733947796}
+  m_LocalRotation: {x: 0, y: 0.0000000020623787, z: -0, w: 1}
+  m_LocalPosition: {x: -0.28713223, y: 1.7763568e-17, z: -1.0658141e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1094895372}
+  m_Father: {fileID: 929659786}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &739495185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100074, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 739495186}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Arm_ClavicleSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &739495186
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400074, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 739495185}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -0.01760922, y: 0.00037856805, z: 0.12329587}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1558897951}
+  m_Father: {fileID: 551939982}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &740185294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100050, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 740185295}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Leg_BallSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &740185295
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400050, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 740185294}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.019467892, y: 0.00051477423, z: 0.083740555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1159551486}
+  m_Father: {fileID: 663169256}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &755310251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100104, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 755310252}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_03_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &755310252
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400104, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 755310251}
+  m_LocalRotation: {x: 0.03042038, y: -0.07762824, z: -0.36358777, w: 0.92782134}
+  m_LocalPosition: {x: 0.052016027, y: -0.012716725, z: 0.005265699}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2085963386}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &770779236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100056, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 770779237}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Leg_KneeSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &770779237
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400056, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 770779236}
+  m_LocalRotation: {x: 0, y: 0.0000000020623778, z: -0, w: 1}
+  m_LocalPosition: {x: -0.28713223, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1362666746}
+  m_Father: {fileID: 1530856151}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &771965905
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,91 +2553,846 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &975559017
-Prefab:
+--- !u!1 &783349788
+GameObject:
   m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100142, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 783349789}
+  - component: {fileID: 783349790}
+  m_Layer: 0
+  m_Name: finished_quaddraw_bubba_RoadKillOut
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &783349789
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400142, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 783349788}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 304683019}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &783349790
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13700000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec,
+    type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 783349788}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
   serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4968176442716452, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968176442716452, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968176442716452, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968176442716452, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968176442716452, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968176442716452, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968176442716452, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968176442716452, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114133824272075406, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
-        type: 2}
-      propertyPath: ani
-      value: 
-      objectReference: {fileID: 2009578063}
-    - target: {fileID: 4968176442716452, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968176442716452, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968176442716452, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114246824676934760, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114183615294334984, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114133824272075406, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65191814003615110, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1729494261528998, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d5ddbaecf59030e4f8a6a9f7745d5921, type: 2}
-  m_IsPrefabParent: 0
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_Bones:
+  - {fileID: 482689639}
+  - {fileID: 1126375771}
+  - {fileID: 1689579168}
+  - {fileID: 928581093}
+  - {fileID: 388563467}
+  - {fileID: 1814655777}
+  - {fileID: 1373653956}
+  - {fileID: 1434367439}
+  - {fileID: 1841481513}
+  - {fileID: 495193626}
+  - {fileID: 1693191885}
+  - {fileID: 1444791094}
+  - {fileID: 2081527038}
+  - {fileID: 616281430}
+  - {fileID: 627242047}
+  - {fileID: 349691445}
+  - {fileID: 340363129}
+  - {fileID: 926338523}
+  - {fileID: 1004625069}
+  - {fileID: 842421521}
+  - {fileID: 1918513365}
+  - {fileID: 662005208}
+  - {fileID: 823597372}
+  - {fileID: 1956022089}
+  - {fileID: 1973689287}
+  - {fileID: 637935185}
+  - {fileID: 1856338998}
+  - {fileID: 2063563164}
+  - {fileID: 1441845303}
+  - {fileID: 487242790}
+  - {fileID: 1336638630}
+  - {fileID: 1807254289}
+  - {fileID: 93955440}
+  - {fileID: 1491157584}
+  - {fileID: 1541405960}
+  - {fileID: 1548112182}
+  - {fileID: 716104054}
+  - {fileID: 569657643}
+  - {fileID: 303214996}
+  - {fileID: 1288129327}
+  - {fileID: 1194958109}
+  - {fileID: 1336909637}
+  - {fileID: 915214558}
+  - {fileID: 1563089919}
+  - {fileID: 305350057}
+  - {fileID: 97489547}
+  - {fileID: 229432331}
+  - {fileID: 1333795547}
+  - {fileID: 1741554856}
+  - {fileID: 1963965570}
+  - {fileID: 1940269314}
+  - {fileID: 667022577}
+  - {fileID: 1366844787}
+  - {fileID: 1267311825}
+  - {fileID: 1461744228}
+  - {fileID: 841522426}
+  - {fileID: 1072997361}
+  - {fileID: 1484294575}
+  - {fileID: 2068043227}
+  - {fileID: 1696401807}
+  - {fileID: 1006342684}
+  - {fileID: 344384456}
+  - {fileID: 663169256}
+  - {fileID: 740185295}
+  - {fileID: 1159551486}
+  - {fileID: 1796932926}
+  - {fileID: 1208513362}
+  - {fileID: 1632704384}
+  - {fileID: 996325707}
+  - {fileID: 1296949155}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 482689639}
+  m_AABB:
+    m_Center: {x: -0.08992043, y: -0.035999954, z: -0.006246075}
+    m_Extent: {x: 0.8357123, y: 0.414392, z: 0.4985773}
+  m_DirtyAABB: 0
+--- !u!1 &797347048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100060, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 797347049}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Thumb_01_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &797347049
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400060, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797347048}
+  m_LocalRotation: {x: 0.27903003, y: 0.27149945, z: 0.045599468, w: 0.9199734}
+  m_LocalPosition: {x: -0.030455744, y: -0.022079676, z: 0.078116335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1593231790}
+  m_Father: {fileID: 1273048635}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &823597371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100040, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 823597372}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_04_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &823597372
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400040, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 823597371}
+  m_LocalRotation: {x: -0.059624158, y: -0.09628011, z: 0.2034501, w: 0.97251385}
+  m_LocalPosition: {x: -0.10143083, y: -0.00027230935, z: -0.062955864}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1956022089}
+  m_Father: {fileID: 495193626}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &841522425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100068, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 841522426}
+  m_Layer: 0
+  m_Name: BubbaRig_Neck_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &841522426
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400068, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 841522425}
+  m_LocalRotation: {x: 1.6653345e-16, y: 5.551115e-17, z: 2.7755576e-17, w: 1}
+  m_LocalPosition: {x: -0.02938763, y: 0, z: 1.3458565e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1072997361}
+  m_Father: {fileID: 1461744228}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &842421520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100034, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 842421521}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_03_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &842421521
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400034, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 842421520}
+  m_LocalRotation: {x: -0.0019572473, y: 0.0018729756, z: 0.0017502044, w: 0.9999948}
+  m_LocalPosition: {x: -0.036713973, y: -7.9936056e-16, z: -1.2656542e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1918513365}
+  m_Father: {fileID: 1004625069}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &855891466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100046, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 855891467}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_04_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &855891467
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400046, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 855891466}
+  m_LocalRotation: {x: 0, y: 0, z: 0.1584883, w: 0.9873609}
+  m_LocalPosition: {x: -0.03882308, y: 0.0074458653, z: 0.0023031144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1098128720}
+  m_Father: {fileID: 1540412007}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &915214557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100096, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 915214558}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_03_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &915214558
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400096, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 915214557}
+  m_LocalRotation: {x: 0.008292337, y: 0.03229933, z: -0.2485313, w: 0.9680497}
+  m_LocalPosition: {x: 0.12037602, y: 0.028647112, z: -0.03265319}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1563089919}
+  m_Father: {fileID: 1491157584}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &926338522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100030, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 926338523}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_02_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &926338523
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400030, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 926338522}
+  m_LocalRotation: {x: 0.0002341778, y: 0.061825175, z: 0.0037804688, w: 0.99807984}
+  m_LocalPosition: {x: -0.057370596, y: -0.0026052897, z: 0.0028203498}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 340363129}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &928578088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100082, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 928578089}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_01_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &928578089
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400082, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 928578088}
+  m_LocalRotation: {x: 0.052649807, y: -0.14797992, z: -0.20643848, w: 0.9657707}
+  m_LocalPosition: {x: 0.111451335, y: 0.023901768, z: 0.051245693}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1462554573}
+  m_Father: {fileID: 2053043979}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &928581092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100136, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 928581093}
+  m_Layer: 0
+  m_Name: BubbaRig_Spine_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &928581093
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400136, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 928581092}
+  m_LocalRotation: {x: -6.661338e-16, y: 9.436896e-16, z: 5.551115e-17, w: 1}
+  m_LocalPosition: {x: -0.11532471, y: 0.026631588, z: 0.0015824642}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 388563467}
+  m_Father: {fileID: 1689579168}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &929659785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100118, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 929659786}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Leg_HipSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &929659786
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400118, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929659785}
+  m_LocalRotation: {x: 0.15410319, y: 0.6922139, z: -0.6896409, w: -0.1465869}
+  m_LocalPosition: {x: 0.14738545, y: 0.006209323, z: 0.15201293}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 733947797}
+  m_Father: {fileID: 362609727}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &970520422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100014, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 970520423}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Arm_ShoulderSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &970520423
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400014, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 970520422}
+  m_LocalRotation: {x: -0.044870272, y: 0.28957736, z: 0.5960547, w: 0.747563}
+  m_LocalPosition: {x: -0.1313722, y: -0.027516035, z: 0.00200854}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1594548229}
+  m_Father: {fileID: 1656200480}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &996325706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100114, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 996325707}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Leg_BallSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &996325707
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400114, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 996325706}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.019467892, y: -0.00051477423, z: 0.083740555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1296949155}
+  m_Father: {fileID: 1632704384}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1002180875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100018, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1002180876}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_01_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1002180876
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400018, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1002180875}
+  m_LocalRotation: {x: 0.08116486, y: 0.010659102, z: 0.19697998, w: 0.9769839}
+  m_LocalPosition: {x: -0.111451335, y: 0.023901768, z: 0.051245693}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1303732284}
+  m_Father: {fileID: 1273048635}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1004625068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100032, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1004625069}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_03_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1004625069
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400032, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1004625068}
+  m_LocalRotation: {x: 0.007911872, y: -0.03239463, z: 0.25989994, w: 0.96505964}
+  m_LocalPosition: {x: -0.12037602, y: 0.028647112, z: -0.03265319}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 842421521}
+  m_Father: {fileID: 495193626}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1006342683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100052, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1006342684}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Leg_HipSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1006342684
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400052, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1006342683}
+  m_LocalRotation: {x: -0.09422793, y: -0.6993378, z: 0.70127875, w: 0.10127164}
+  m_LocalPosition: {x: 0.14738545, y: 0.006209323, z: -0.15201293}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 344384456}
+  m_Father: {fileID: 482689639}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1034323292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100092, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1034323293}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_02_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1034323293
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400092, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1034323292}
+  m_LocalRotation: {x: 0, y: -0, z: -0.2855513, w: 0.9583634}
+  m_LocalPosition: {x: 0.040340353, y: 0.0003034144, z: -0.002306758}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 337378887}
+  m_Father: {fileID: 256764731}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1039808270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100072, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1039808271}
+  m_Layer: 0
+  m_Name: BubbaRig_Neck_TopSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1039808271
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400072, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039808270}
+  m_LocalRotation: {x: 1.6653345e-16, y: 5.551115e-17, z: 2.7755576e-17, w: 1}
+  m_LocalPosition: {x: -0.02938763, y: -9.7699626e-17, z: 7.900828e-18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 263395501}
+  - {fileID: 561551679}
+  m_Father: {fileID: 1487861991}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1072997360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100070, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1072997361}
+  m_Layer: 0
+  m_Name: BubbaRig_Neck_TopSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1072997361
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400070, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1072997360}
+  m_LocalRotation: {x: 1.6653345e-16, y: 5.551115e-17, z: 2.7755576e-17, w: 1}
+  m_LocalPosition: {x: -0.02938763, y: -3.5527136e-17, z: 1.3458565e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1484294575}
+  - {fileID: 1696401807}
+  m_Father: {fileID: 841522426}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1084941368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100042, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1084941369}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_04_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1084941369
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400042, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1084941368}
+  m_LocalRotation: {x: -0.052613832, y: -0.12956606, z: 0.2053747, w: 0.96864116}
+  m_LocalPosition: {x: -0.10143083, y: -0.00027230938, z: -0.062955864}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1540412007}
+  m_Father: {fileID: 1273048635}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1094895371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100114, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1094895372}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Leg_AnkleSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1094895372
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400114, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1094895371}
+  m_LocalRotation: {x: 0.030115, y: -0.020345293, z: 0.0068053775, w: 0.9993162}
+  m_LocalPosition: {x: -0.2799902, y: -3.2152058e-15, z: -1.0658141e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 351200260}
+  m_Father: {fileID: 733947797}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1098128719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100048, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1098128720}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_04_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1098128720
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400048, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1098128719}
+  m_LocalRotation: {x: 0.018959995, y: 0.1271522, z: 0.14625822, w: 0.9808575}
+  m_LocalPosition: {x: -0.03818098, y: -0.008484446, z: 0.0053299568}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 855891467}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1118506724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100096, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1118506725}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_02_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1118506725
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400096, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1118506724}
+  m_LocalRotation: {x: 0.016068447, y: -0.05970102, z: -0.2594023, w: 0.9637884}
+  m_LocalPosition: {x: 0.057370596, y: -0.0026052897, z: 0.0028203498}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 337378887}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1126375770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100132, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1126375771}
+  m_Layer: 0
+  m_Name: BubbaRig_Spine_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1126375771
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400132, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1126375770}
+  m_LocalRotation: {x: 0.10609659, y: -0.04045982, z: 0.054854784, w: 0.9920169}
+  m_LocalPosition: {x: -0.116693676, y: 0.020443754, z: 2.7520688e-18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1689579168}
+  m_Father: {fileID: 482689639}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1159551485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100056, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1159551486}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Leg_ToeSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1159551486
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400056, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1159551485}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04594385, y: 0.00057495484, z: -0.0051769144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 740185295}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1167155710
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +3467,584 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1167155710}
+--- !u!1 &1183411090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100034, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1183411091}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_03_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1183411091
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400034, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1183411090}
+  m_LocalRotation: {x: 0.008292337, y: -0.03229933, z: 0.2485313, w: 0.9680497}
+  m_LocalPosition: {x: -0.12037602, y: 0.028647112, z: -0.03265319}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1360387757}
+  m_Father: {fileID: 1273048635}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1194958108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100092, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1194958109}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_02_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1194958109
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400092, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1194958108}
+  m_LocalRotation: {x: 0, y: -0, z: -0.08840242, w: 0.99608487}
+  m_LocalPosition: {x: 0.052748963, y: 0.0026799187, z: -0.0024369194}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1336909637}
+  m_Father: {fileID: 1288129327}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1205776626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100098, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1205776627}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_03_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1205776627
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400098, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205776626}
+  m_LocalRotation: {x: -0.02220477, y: -0.08648939, z: -0.24767625, w: 0.9647192}
+  m_LocalPosition: {x: 0.12037602, y: 0.028647112, z: -0.03265319}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2004602357}
+  m_Father: {fileID: 2053043979}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1208513361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100118, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1208513362}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Leg_KneeSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208513362
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400118, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1208513361}
+  m_LocalRotation: {x: 0, y: -0.29322505, z: -0, w: 0.9560434}
+  m_LocalPosition: {x: -0.28713223, y: 5.3290704e-17, z: -1.5987211e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1632704384}
+  m_Father: {fileID: 1796932926}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1221008707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100024, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1221008708}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_01_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1221008708
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400024, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1221008707}
+  m_LocalRotation: {x: -0.020431867, y: 0.033409312, z: 0.26683685, w: 0.96294576}
+  m_LocalPosition: {x: -0.046927724, y: -0.003085243, z: -0.0004571042}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2000451691}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1267311824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100128, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1267311825}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Thumb_01_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1267311825
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400128, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1267311824}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.036713973, y: -4.2632563e-16, z: 7.105427e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1366844787}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1273048634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100016, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1273048635}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Arm_WristSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1273048635
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400016, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1273048634}
+  m_LocalRotation: {x: -0.22925174, y: -0.05583393, z: 0.060161397, w: 0.9699004}
+  m_LocalPosition: {x: -0.35335636, y: -1.1368684e-15, z: -7.105427e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1002180876}
+  - {fileID: 1787010962}
+  - {fileID: 1183411091}
+  - {fileID: 1084941369}
+  - {fileID: 797347049}
+  m_Father: {fileID: 1594548229}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1288129326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100090, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1288129327}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_02_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1288129327
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400090, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1288129326}
+  m_LocalRotation: {x: 0, y: -0, z: -0.40878844, w: 0.9126292}
+  m_LocalPosition: {x: 0.040340353, y: 0.0003034144, z: -0.002306758}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1194958109}
+  m_Father: {fileID: 303214996}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1296949154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100120, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1296949155}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Leg_ToeSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1296949155
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400120, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1296949154}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04594385, y: -0.00057495484, z: -0.0051769144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 996325707}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1303732283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100020, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1303732284}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_01_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1303732284
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400020, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303732283}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.036713973, y: -7.4606985e-16, z: -2.842171e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2000451691}
+  m_Father: {fileID: 1002180876}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1333795546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100106, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1333795547}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_04_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1333795547
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400106, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1333795546}
+  m_LocalRotation: {x: 0, y: -0, z: -0.32531196, w: 0.94560677}
+  m_LocalPosition: {x: 0.036713973, y: 4.0856205e-16, z: 1.4190037e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1741554856}
+  m_Father: {fileID: 229432331}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1336447398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100108, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1336447399}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_04_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1336447399
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400108, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336447398}
+  m_LocalRotation: {x: 0, y: -0, z: -0.36774802, w: 0.9299255}
+  m_LocalPosition: {x: 0.036713973, y: 7.81597e-16, z: 2.842171e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1885617343}
+  m_Father: {fileID: 476421648}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1336638629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100072, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1336638630}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Arm_ClavicleSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1336638630
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400072, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1336638629}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -0.01760922, y: 0.00037856805, z: 0.12329587}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1807254289}
+  m_Father: {fileID: 1814655777}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1336909636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100094, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1336909637}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_02_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1336909637
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400094, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1336909636}
+  m_LocalRotation: {x: 0.011476028, y: -0.060751203, z: -0.18526421, w: 0.980742}
+  m_LocalPosition: {x: 0.057370596, y: -0.0026052897, z: 0.0028203498}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1194958109}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1340977515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100032, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1340977516}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_02_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1340977516
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400032, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340977515}
+  m_LocalRotation: {x: 0.018296601, y: 0.05905626, z: 0.29537266, w: 0.9533796}
+  m_LocalPosition: {x: -0.057370596, y: -0.0026052897, z: 0.0028203498}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 407167002}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1360387756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100036, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1360387757}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_03_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1360387757
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400036, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360387756}
+  m_LocalRotation: {x: 0, y: 0, z: 0.2640182, w: 0.9645177}
+  m_LocalPosition: {x: -0.036713973, y: -8.5265126e-16, z: -5.684342e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 202075818}
+  m_Father: {fileID: 1183411091}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1362666745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100050, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1362666746}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Leg_AnkleSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1362666746
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400050, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1362666745}
+  m_LocalRotation: {x: -0.034519874, y: -0.16820325, z: 0.027089728, w: 0.9847752}
+  m_LocalPosition: {x: -0.2799902, y: 3.1796787e-15, z: 6.3948843e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 65642648}
+  m_Father: {fileID: 770779237}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1366844786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100126, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1366844787}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Thumb_01_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1366844787
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400126, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1366844786}
+  m_LocalRotation: {x: 0.35234088, y: 0.57362646, z: -0.22363502, w: 0.70483756}
+  m_LocalPosition: {x: 0.04121782, y: 0.0026539993, z: -0.011628551}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1267311825}
+  m_Father: {fileID: 667022577}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1373653955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1373653956}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Arm_ClavicleSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1373653956
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1373653955}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -0.01760922, y: 0.00037856805, z: -0.12329587}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1434367439}
+  m_Father: {fileID: 1814655777}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1422151579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100058, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1422151580}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Leg_ToeSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1422151580
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400058, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1422151579}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04594385, y: 0.00057495484, z: -0.0051769144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 65642648}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1424220057
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,7 +4127,123 @@ Transform:
   m_LocalScale: {x: 10, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1434367438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100012, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1434367439}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Arm_ShoulderSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1434367439
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400012, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1434367438}
+  m_LocalRotation: {x: 0.1078211, y: 0.07448256, z: 0.60580325, w: 0.784748}
+  m_LocalPosition: {x: -0.1313722, y: -0.027516035, z: 0.00200854}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1841481513}
+  m_Father: {fileID: 1373653956}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1441845302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100062, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1441845303}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Thumb_01_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1441845303
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400062, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1441845302}
+  m_LocalRotation: {x: -0.071784765, y: -0.23632948, z: 0.090770535, w: 0.96475697}
+  m_LocalPosition: {x: -0.04121782, y: 0.0026539993, z: -0.011628551}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 487242790}
+  m_Father: {fileID: 2063563164}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1444791093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100018, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1444791094}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_01_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1444791094
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400018, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1444791093}
+  m_LocalRotation: {x: 0, y: 0, z: 0.014474499, w: 0.9998953}
+  m_LocalPosition: {x: -0.036713973, y: -3.907985e-16, z: 3.1086245e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2081527038}
+  m_Father: {fileID: 1693191885}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1450873080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100138, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1450873081}
+  m_Layer: 0
+  m_Name: BubbaRig_Spine_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1450873081
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400138, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1450873080}
+  m_LocalRotation: {x: -0.00007908141, y: -0.0010548126, z: -0.013928976, w: 0.9999024}
+  m_LocalPosition: {x: -0.11183665, y: 0.028588712, z: 0.003335525}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 677847382}
+  m_Father: {fileID: 142323790}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1453867038
 GameObject:
@@ -996,6 +4306,155 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1461744227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100066, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1461744228}
+  m_Layer: 0
+  m_Name: BubbaRig_Neck_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1461744228
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400066, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1461744227}
+  m_LocalRotation: {x: 1.6653345e-16, y: 5.551115e-17, z: 2.7755576e-17, w: 1}
+  m_LocalPosition: {x: -0.02938763, y: -3.5527136e-17, z: 2.3603817e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 841522426}
+  m_Father: {fileID: 1814655777}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1462554572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100084, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1462554573}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_01_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1462554573
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400084, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1462554572}
+  m_LocalRotation: {x: 0, y: -0, z: -0.3106311, w: 0.9505305}
+  m_LocalPosition: {x: 0.036713973, y: -3.1974422e-16, z: 1.687539e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1579756849}
+  m_Father: {fileID: 928578089}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1484294574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1484294575}
+  m_Layer: 0
+  m_Name: BubbaRig_Head_JawSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1484294575
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1484294574}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -0.07100177, y: -0.01183363, z: 6.073623e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2068043227}
+  m_Father: {fileID: 1072997361}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1487861990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100070, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1487861991}
+  m_Layer: 0
+  m_Name: BubbaRig_Neck_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1487861991
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400070, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1487861990}
+  m_LocalRotation: {x: 1.6653345e-16, y: 5.551115e-17, z: 2.7755576e-17, w: 1}
+  m_LocalPosition: {x: -0.02938763, y: 7.9936054e-17, z: 8.564541e-18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1039808271}
+  m_Father: {fileID: 184516549}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1491157583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100078, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1491157584}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Arm_WristSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1491157584
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400078, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1491157583}
+  m_LocalRotation: {x: -0.22925174, y: 0.05583393, z: -0.060161397, w: 0.9699004}
+  m_LocalPosition: {x: 0.35335636, y: -1.2079227e-15, z: -7.105427e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1541405960}
+  - {fileID: 303214996}
+  - {fileID: 915214558}
+  - {fileID: 229432331}
+  - {fileID: 1940269314}
+  m_Father: {fileID: 93955440}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1522553233
 GameObject:
@@ -1093,6 +4552,489 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1530856150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100054, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1530856151}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Leg_HipSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1530856151
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400054, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1530856150}
+  m_LocalRotation: {x: -0.21757458, y: 0.67472225, z: -0.6731136, w: 0.21054527}
+  m_LocalPosition: {x: 0.14738545, y: 0.006209323, z: -0.15201293}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 770779237}
+  m_Father: {fileID: 362609727}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1540412006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100044, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1540412007}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_04_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1540412007
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400044, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1540412006}
+  m_LocalRotation: {x: 0, y: 0, z: 0.2558274, w: 0.9667225}
+  m_LocalPosition: {x: -0.036713973, y: -1.8873792e-17, z: -4.2632563e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 855891467}
+  m_Father: {fileID: 1084941369}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1541405959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100080, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1541405960}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_01_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1541405960
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400080, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1541405959}
+  m_LocalRotation: {x: 0.088218726, y: 0.024595756, z: -0.19392346, w: 0.97673243}
+  m_LocalPosition: {x: 0.111451335, y: 0.023901768, z: 0.051245693}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1548112182}
+  m_Father: {fileID: 1491157584}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1548112181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100082, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1548112182}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_01_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1548112182
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400082, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1548112181}
+  m_LocalRotation: {x: 0, y: -0, z: -0.35638833, w: 0.9343379}
+  m_LocalPosition: {x: 0.036713973, y: -7.81597e-16, z: 1.0658141e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 716104054}
+  m_Father: {fileID: 1541405960}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1558897950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100078, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1558897951}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Arm_ShoulderSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1558897951
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400078, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1558897950}
+  m_LocalRotation: {x: 0.22015588, y: 0.087986626, z: -0.6033399, w: 0.76142675}
+  m_LocalPosition: {x: 0.1313722, y: -0.027516035, z: 0.00200854}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1829311965}
+  m_Father: {fileID: 739495186}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1563089918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100098, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1563089919}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_03_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1563089919
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400098, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1563089918}
+  m_LocalRotation: {x: 0, y: -0, z: -0.38981396, w: 0.9208936}
+  m_LocalPosition: {x: 0.036713973, y: -5.595524e-16, z: -5.3290704e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 305350057}
+  m_Father: {fileID: 915214558}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1579756848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100086, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1579756849}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_01_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1579756849
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400086, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1579756848}
+  m_LocalRotation: {x: 0, y: -0, z: -0.27081266, w: 0.9626321}
+  m_LocalPosition: {x: 0.041407593, y: -0.000831029, z: -0.0002223432}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 353048602}
+  m_Father: {fileID: 1462554573}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1593231789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100062, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1593231790}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Thumb_01_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1593231790
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400062, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1593231789}
+  m_LocalRotation: {x: 0, y: -0.14134425, z: -0, w: 0.9899605}
+  m_LocalPosition: {x: -0.036713973, y: -1.4210854e-16, z: -5.684342e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1907390134}
+  m_Father: {fileID: 797347049}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1594548228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100012, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1594548229}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Arm_ElbowSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1594548229
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400012, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594548228}
+  m_LocalRotation: {x: 0, y: 0.15608692, z: -0, w: 0.9877434}
+  m_LocalPosition: {x: -0.34300393, y: -7.105427e-17, z: 7.105427e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1273048635}
+  m_Father: {fileID: 970520423}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1632704383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100112, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1632704384}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Leg_AnkleSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1632704384
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400112, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1632704383}
+  m_LocalRotation: {x: 0.030355057, y: 0.15800816, z: -0.010050297, w: 0.98692}
+  m_LocalPosition: {x: -0.2799902, y: -3.2329693e-15, z: -5.3290704e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 996325707}
+  m_Father: {fileID: 1208513362}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1645860613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1351413838937700, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1645860614}
+  - component: {fileID: 1645860616}
+  - component: {fileID: 1645860615}
+  m_Layer: 0
+  m_Name: PLAYER.Hp
+  m_TagString: PlayerHP
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1645860614
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224771095658318250, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1645860613}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1905784137}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1645860615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114438838181988928, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1645860613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "PLAYER\n HP\n"
+--- !u!222 &1645860616
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222149438933713468, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1645860613}
+--- !u!1 &1656200479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100010, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1656200480}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Arm_ClavicleSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1656200480
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400010, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1656200479}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -0.01760922, y: 0.00037856805, z: -0.12329587}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 970520423}
+  m_Father: {fileID: 551939982}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1689579167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100134, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1689579168}
+  m_Layer: 0
+  m_Name: BubbaRig_Spine_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1689579168
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400134, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1689579167}
+  m_LocalRotation: {x: -0.0021710359, y: -0.013857457, z: -0.12649064, w: 0.9918687}
+  m_LocalPosition: {x: -0.1123096, y: 0.037401225, z: 0.0026850926}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 928581093}
+  m_Father: {fileID: 1126375771}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1693191884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100016, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1693191885}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_01_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1693191885
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400016, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1693191884}
+  m_LocalRotation: {x: 0.09252499, y: -0.046389613, z: 0.19190618, w: 0.97594017}
+  m_LocalPosition: {x: -0.111451335, y: 0.023901768, z: 0.051245693}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1444791094}
+  m_Father: {fileID: 495193626}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1696401806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1696401807}
+  m_Layer: 0
+  m_Name: BubbaRig_Head_TopSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1696401807
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1696401806}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -0.22463308, y: -3.5527136e-17, z: 2.1444546e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1072997361}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1699826969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,7 +5062,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1699826971
 MonoBehaviour:
@@ -1135,13 +5077,1009 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 30
   pickup: {fileID: 1634858559164878, guid: 64ad63d05a3a2f348adc9dbafbb598a5, type: 2}
---- !u!1 &2009578057 stripped
+--- !u!1 &1701680258
 GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1073156301320454, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1701680259}
+  - component: {fileID: 1701680260}
+  m_Layer: 0
+  m_Name: polySurface1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1701680259
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4984185568840498, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1701680258}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.00036655183, y: -0.025765141, z: -0.048644178}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2009578064}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &1701680260
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 137972742604518568, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1701680258}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300002, guid: 07bf8e79c82b0d44dbe12f27f67d846b, type: 3}
+  m_Bones:
+  - {fileID: 0}
+  - {fileID: 0}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 0}
+  m_AABB:
+    m_Center: {x: -0.18344797, y: -0.044156425, z: 0.0000872761}
+    m_Extent: {x: 0.09070255, y: 0.17622125, z: 0.12484441}
+  m_DirtyAABB: 0
+--- !u!1 &1741554855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100108, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1741554856}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_04_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1741554856
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400108, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1741554855}
+  m_LocalRotation: {x: 0, y: -0, z: -0.34473372, w: 0.9387005}
+  m_LocalPosition: {x: 0.03882308, y: 0.0074458653, z: 0.0023031144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1963965570}
+  m_Father: {fileID: 1333795547}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1742449923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100028, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1742449924}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_02_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1742449924
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400028, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1742449923}
+  m_LocalRotation: {x: 0, y: 0, z: 0.052707057, w: 0.99861}
+  m_LocalPosition: {x: -0.040340353, y: 0.0003034144, z: -0.002306758}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 407167002}
+  m_Father: {fileID: 1787010962}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1787010961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100026, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1787010962}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_02_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1787010962
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400026, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1787010961}
+  m_LocalRotation: {x: 0.024744766, y: -0.075078346, z: 0.31204322, w: 0.94677347}
+  m_LocalPosition: {x: -0.12952742, y: 0.039552268, z: 0.014645985}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1742449924}
+  m_Father: {fileID: 1273048635}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1796932925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100116, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1796932926}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Leg_HipSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1796932926
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400116, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1796932925}
+  m_LocalRotation: {x: 0.10127164, y: 0.70127875, z: -0.6993378, w: -0.09422793}
+  m_LocalPosition: {x: 0.14738545, y: 0.006209323, z: 0.15201293}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1208513362}
+  m_Father: {fileID: 482689639}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1807254288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100076, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1807254289}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Arm_ShoulderSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807254289
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400076, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1807254288}
+  m_LocalRotation: {x: 0.06285203, y: -0.09184234, z: -0.6313655, w: 0.7674583}
+  m_LocalPosition: {x: 0.1313722, y: -0.027516035, z: 0.00200854}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 93955440}
+  m_Father: {fileID: 1336638630}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1814655776
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100140, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1814655777}
+  m_Layer: 0
+  m_Name: BubbaRig_Spine_TopSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1814655777
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400140, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1814655776}
+  m_LocalRotation: {x: -0.10609659, y: 0.04045982, z: -0.05485478, w: 0.9920169}
+  m_LocalPosition: {x: -0.113559894, y: 0.03356253, z: 0.0036149942}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1373653956}
+  - {fileID: 1461744228}
+  - {fileID: 1336638630}
+  m_Father: {fileID: 388563467}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1829311964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100076, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1829311965}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Arm_ElbowSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1829311965
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400076, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1829311964}
+  m_LocalRotation: {x: 0, y: -0.15608692, z: -0, w: 0.9877434}
+  m_LocalPosition: {x: 0.34300393, y: -1.4210854e-16, z: -7.105427e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2053043979}
+  m_Father: {fileID: 1558897951}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1841481512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100010, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1841481513}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Arm_ElbowSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1841481513
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400010, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1841481512}
+  m_LocalRotation: {x: 0, y: 0.15608692, z: -0, w: 0.9877434}
+  m_LocalPosition: {x: -0.34300393, y: -3.5527135e-16, z: 1.4210854e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 495193626}
+  m_Father: {fileID: 1434367439}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1856338997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100058, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1856338998}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Thumb_01_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1856338998
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400058, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1856338997}
+  m_LocalRotation: {x: 0.40536985, y: 0.20855434, z: 0.2833142, w: 0.84374964}
+  m_LocalPosition: {x: -0.030455744, y: -0.022079676, z: 0.078116335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2063563164}
+  m_Father: {fileID: 495193626}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1885617342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100110, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1885617343}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_04_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1885617343
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400110, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1885617342}
+  m_LocalRotation: {x: 0, y: -0, z: -0.3147249, w: 0.9491829}
+  m_LocalPosition: {x: 0.03882308, y: 0.0074458653, z: 0.0023031144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 633504379}
+  m_Father: {fileID: 1336447399}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1905784136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1432702932203174, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1905784137}
+  - component: {fileID: 1905784141}
+  - component: {fileID: 1905784140}
+  - component: {fileID: 1905784139}
+  - component: {fileID: 1905784138}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1905784137
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224245172324387972, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905784136}
+  m_LocalRotation: {x: 0.002834442, y: 0.9761247, z: 0.21681866, w: -0.012739722}
+  m_LocalPosition: {x: 0, y: 0, z: 0.54}
+  m_LocalScale: {x: 0.10000015, y: 0.1, z: 0}
+  m_Children:
+  - {fileID: 1645860614}
+  m_Father: {fileID: 2009578064}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.24, y: 3.16}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1905784138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114062269267949030, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905784136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0294ca38d6d127f46839a6dfe06195d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+--- !u!114 &1905784139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114150263650637966, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905784136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1905784140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114814427266353366, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905784136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1905784141
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 223311843041723008, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905784136}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!1 &1907390133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100064, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1907390134}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Thumb_01_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1907390134
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400064, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1907390133}
+  m_LocalRotation: {x: -0.12763888, y: -0.25340497, z: 0.16892175, w: 0.9439066}
+  m_LocalPosition: {x: -0.04121782, y: 0.0026539993, z: -0.011628551}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 496918608}
+  m_Father: {fileID: 1593231790}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1918513364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100036, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1918513365}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_03_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1918513365
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400036, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1918513364}
+  m_LocalRotation: {x: 0, y: 0, z: 0.011567666, w: 0.9999331}
+  m_LocalPosition: {x: -0.044079006, y: 0.0008836036, z: -0.0011445524}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 662005208}
+  m_Father: {fileID: 842421521}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1940269313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100122, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1940269314}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Thumb_01_01SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1940269314
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400122, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1940269313}
+  m_LocalRotation: {x: 0.5004391, y: -0.394798, z: -0.49664032, w: 0.58910406}
+  m_LocalPosition: {x: 0.030455744, y: -0.022079676, z: 0.078116335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 667022577}
+  m_Father: {fileID: 1491157584}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1956022088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100042, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1956022089}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_04_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1956022089
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400042, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1956022088}
+  m_LocalRotation: {x: -0.0014915005, y: 0.00049419096, z: 0.0069854325, w: 0.99997437}
+  m_LocalPosition: {x: -0.036713973, y: 1.4210854e-16, z: -1.2434498e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1973689287}
+  m_Father: {fileID: 823597372}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1963965569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100110, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1963965570}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_04_04SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1963965570
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400110, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1963965569}
+  m_LocalRotation: {x: 0.016160762, y: -0.1275382, z: -0.12466479, w: 0.9838351}
+  m_LocalPosition: {x: 0.03818098, y: -0.008484446, z: 0.0053299568}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1741554856}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1973689286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100044, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1973689287}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_04_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1973689287
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400044, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 1973689286}
+  m_LocalRotation: {x: 0, y: 0, z: 0.012449435, w: 0.9999225}
+  m_LocalPosition: {x: -0.03882308, y: 0.0074458653, z: 0.0023031144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 637935185}
+  m_Father: {fileID: 1956022089}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2000451690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100022, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2000451691}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_01_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2000451691
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400022, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2000451690}
+  m_LocalRotation: {x: 0, y: 0, z: 0.14229842, w: 0.9898238}
+  m_LocalPosition: {x: -0.041407593, y: -0.000831029, z: -0.0002223432}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1221008708}
+  m_Father: {fileID: 1303732284}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2004602356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100100, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2004602357}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_03_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2004602357
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400100, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004602356}
+  m_LocalRotation: {x: 0, y: -0, z: -0.3611545, w: 0.932506}
+  m_LocalPosition: {x: 0.036713973, y: -7.81597e-16, z: 3.5527136e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2085963386}
+  m_Father: {fileID: 1205776627}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2009578057
+GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1729494261528998, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
     type: 2}
-  m_PrefabInternal: {fileID: 975559017}
---- !u!95 &2009578063 stripped
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2009578064}
+  - component: {fileID: 2009578063}
+  - component: {fileID: 2009578062}
+  - component: {fileID: 2009578061}
+  - component: {fileID: 2009578060}
+  - component: {fileID: 2009578059}
+  - component: {fileID: 2009578058}
+  - component: {fileID: 2009578065}
+  m_Layer: 0
+  m_Name: New Player
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2009578058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114246824676934760, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009578057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f100eca51c8fef429fe1322cd2a0446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottlePrefab: {fileID: 1365954284118680, guid: 458ff4114b5817a4f9d45bc08299db4f,
+    type: 2}
+  playerHp: {fileID: 1645860615}
+--- !u!114 &2009578059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114183615294334984, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009578057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53656286a17d4cc4f8f44e49fbd9eee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2009578060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114133824272075406, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009578057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b669644a0abe6439ce20d03159fc75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ani: {fileID: 2009578063}
+  Speed: 2
+--- !u!65 &2009578061
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65191814003615110, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009578057}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!54 &2009578062
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 54492421709122124, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009578057}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!95 &2009578063
 Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 95668910448163992, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
     type: 2}
-  m_PrefabInternal: {fileID: 975559017}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009578057}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 6e18d369935287340ba439e5d22cfbb5, type: 3}
+  m_Controller: {fileID: 9100000, guid: 08b1e16842ae727459a46696c4be1b26, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &2009578064
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4968176442716452, guid: d5ddbaecf59030e4f8a6a9f7745d5921,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009578057}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children:
+  - {fileID: 18320665}
+  - {fileID: 362609727}
+  - {fileID: 410861605}
+  - {fileID: 155840718}
+  - {fileID: 1701680259}
+  - {fileID: 1905784137}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2009578065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2009578057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35199c39b0204bd408395bfbfde9207d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  RestartDelay: 5
+--- !u!1 &2053043978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100080, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2053043979}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Arm_WristSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2053043979
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400080, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2053043978}
+  m_LocalRotation: {x: -0.22925174, y: 0.05583393, z: -0.060161397, w: 0.9699004}
+  m_LocalPosition: {x: 0.35335636, y: -1.1368684e-15, z: -7.105427e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 928578089}
+  - {fileID: 256764731}
+  - {fileID: 1205776627}
+  - {fileID: 476421648}
+  - {fileID: 374913221}
+  m_Father: {fileID: 1829311965}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2063563163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100060, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2063563164}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Thumb_01_02SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2063563164
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400060, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 2063563163}
+  m_LocalRotation: {x: 0.0000308679, y: -0.003644781, z: 0.008468709, w: 0.9999575}
+  m_LocalPosition: {x: -0.036713973, y: 7.105427e-17, z: -3.1974422e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1441845303}
+  m_Father: {fileID: 1856338998}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2068043226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2068043227}
+  m_Layer: 0
+  m_Name: BubbaRig_Head_JawEndSHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2068043227
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 2068043226}
+  m_LocalRotation: {x: 0.8344444, y: 0, z: 0, w: 0.55109215}
+  m_LocalPosition: {x: -4.3736424e-17, y: -0.04523734, z: 0.12230874}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1484294575}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2081527037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100020, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2081527038}
+  m_Layer: 0
+  m_Name: BubbaRig_l_Finger_01_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2081527038
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400020, guid: 14db24bb0fe72cd47bdeaf5a34a229ec, type: 3}
+  m_PrefabInternal: {fileID: 648683111}
+  m_GameObject: {fileID: 2081527037}
+  m_LocalRotation: {x: 0, y: 0, z: 0.011005912, w: 0.99993944}
+  m_LocalPosition: {x: -0.041407593, y: -0.000831029, z: -0.0002223432}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 616281430}
+  m_Father: {fileID: 1444791094}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2085963385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100102, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2085963386}
+  m_Layer: 0
+  m_Name: BubbaRig_r_Finger_03_03SHJnt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2085963386
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400102, guid: 55e8da18e5fa573459e00500e520d601, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2085963385}
+  m_LocalRotation: {x: 0, y: -0, z: -0.20168361, w: 0.9794507}
+  m_LocalPosition: {x: 0.044079006, y: 0.0008836036, z: -0.0011445524}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 755310252}
+  m_Father: {fileID: 2004602357}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

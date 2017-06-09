@@ -12,7 +12,7 @@ public class BubbaInputBehaviour : MonoBehaviour
     private void Start()
     {
         ani = GetComponent<Animator>();
-        Speed = 1;
+        Speed = 2;
     }
 
     // Update is called once per frame

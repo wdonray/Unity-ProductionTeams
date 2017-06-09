@@ -27,7 +27,6 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
     {
         PlayerHealth -= amount;
     }
-   
 
     public void ThrowBottle()
     {
@@ -40,15 +39,10 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
     public void Update()
     {
         playerHp.text = PlayerHealth.ToString();
-        if (PlayerHealth <= 0)
-            return;
 
         if (Input.GetMouseButtonDown(0))
             animator.SetTrigger("attack");
-        //else
-        //{
-        //    animator.SetTrigger("idle");
-        //}
+        
         animator.SetInteger("health", PlayerHealth);
     }
 }
