@@ -997,7 +997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentlyActive: 0
-  MinionCop: {fileID: 1082040161552792, guid: fdcce65b03490ea4894b44086eaf9d2f, type: 2}
+  MinionCop: {fileID: 1206831334533714, guid: 8c607c778a6d607428c8e93cc107eb79, type: 2}
   SpawnText: {fileID: 1468845884}
   TheCops: []
 --- !u!23 &699373185
