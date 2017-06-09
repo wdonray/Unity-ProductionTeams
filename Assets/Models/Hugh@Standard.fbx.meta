@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 191918813d5aed1429f52b579e3901b4
-timeCreated: 1497030749
+guid: c5d0d791fc84846458b22d47d5e73958
+timeCreated: 1497037238
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -153,11 +153,12 @@ ModelImporter:
     400142: HughRig_Spine_04SHJnt
     400144: HughRig_Spine_TopSHJnt
     400146: RoadKillOut
+    2300000: Baton
+    3300000: Baton
     4300000: RoadKillOut
     4300002: Baton
     9500000: //RootNode
-    13700000: Baton
-    13700002: RoadKillOut
+    13700000: RoadKillOut
   materials:
     importMaterials: 0
     materialName: 0
