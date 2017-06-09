@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e05cf12cd00fb224880d20d72dcdb7e6
+timeCreated: 1497043565
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: King Of The Hill
+  fontNames:
+  - King Of The Hill
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
