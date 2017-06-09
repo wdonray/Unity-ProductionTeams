@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 02bde70f3067ef948928b4d2392a40b0
-timeCreated: 1496959454
+guid: c5d0d791fc84846458b22d47d5e73958
+timeCreated: 1497037238
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -78,7 +78,7 @@ ModelImporter:
     100140: HughRig_Spine_03SHJnt
     100142: HughRig_Spine_04SHJnt
     100144: HughRig_Spine_TopSHJnt
-    100146: polySurface1
+    100146: RoadKillOut
     400000: Baton
     400002: //RootNode
     400004: HughRig_Head_JawEndSHJnt
@@ -152,12 +152,13 @@ ModelImporter:
     400140: HughRig_Spine_03SHJnt
     400142: HughRig_Spine_04SHJnt
     400144: HughRig_Spine_TopSHJnt
-    400146: polySurface1
-    4300000: polySurface1
+    400146: RoadKillOut
+    2300000: Baton
+    3300000: Baton
+    4300000: RoadKillOut
     4300002: Baton
     9500000: //RootNode
-    13700000: Baton
-    13700002: polySurface1
+    13700000: RoadKillOut
   materials:
     importMaterials: 0
     materialName: 0
