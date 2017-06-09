@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33441014212362140}
   - component: {fileID: 23879527702120930}
   - component: {fileID: 95597724416428092}
+  - component: {fileID: 136637449807427406}
   m_Layer: 0
   m_Name: fence_post
   m_TagString: Untagged
@@ -98,3 +99,16 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &136637449807427406
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1545576284983544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.016751794
+  m_Height: 0.63420635
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.31710318, z: -0.0001108906}
