@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseGame : MonoBehaviour
 {
     public Transform ControlsMenu;
     public Transform PauseMenu;
-
     public GameObject Player;
 
     private void Start()
