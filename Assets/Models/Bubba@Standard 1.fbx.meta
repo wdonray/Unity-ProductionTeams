@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 764ed568d2914d94685fd0c79e67654f
-timeCreated: 1496962056
+guid: 07bf8e79c82b0d44dbe12f27f67d846b
+timeCreated: 1497020241
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -79,6 +79,7 @@ ModelImporter:
     100142: BubbaRig_Spine_04SHJnt
     100144: BubbaRig_Spine_TopSHJnt
     100146: finished_quaddraw_bubba_RoadKillOut
+    100148: polySurface1
     400000: Bottle_RoadKillOut
     400002: //RootNode
     400004: BubbaRig_Head_JawEndSHJnt
@@ -153,11 +154,15 @@ ModelImporter:
     400142: BubbaRig_Spine_04SHJnt
     400144: BubbaRig_Spine_TopSHJnt
     400146: finished_quaddraw_bubba_RoadKillOut
+    400148: polySurface1
+    2300000: Bottle_RoadKillOut
+    3300000: Bottle_RoadKillOut
     4300000: finished_quaddraw_bubba_RoadKillOut
-    4300002: Bottle_RoadKillOut
+    4300002: polySurface1
+    4300004: Bottle_RoadKillOut
     9500000: //RootNode
-    13700000: Bottle_RoadKillOut
-    13700002: finished_quaddraw_bubba_RoadKillOut
+    13700000: finished_quaddraw_bubba_RoadKillOut
+    13700002: polySurface1
   materials:
     importMaterials: 0
     materialName: 0
