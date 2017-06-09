@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4515007482282502}
   - component: {fileID: 33026849706443398}
   - component: {fileID: 23230379799866384}
+  - component: {fileID: 65224919903269618}
   m_Layer: 0
   m_Name: stairs
   m_TagString: Untagged
@@ -38,6 +39,7 @@ GameObject:
   - component: {fileID: 4595149786211676}
   - component: {fileID: 33173498445740040}
   - component: {fileID: 23050732056711734}
+  - component: {fileID: 65889290101614482}
   m_Layer: 0
   m_Name: dish_stand
   m_TagString: Untagged
@@ -55,6 +57,7 @@ GameObject:
   - component: {fileID: 4813272519091798}
   - component: {fileID: 33826537699489930}
   - component: {fileID: 23853197751226214}
+  - component: {fileID: 65426143291906766}
   m_Layer: 0
   m_Name: satellite
   m_TagString: Untagged
@@ -88,6 +91,7 @@ GameObject:
   - component: {fileID: 4072462519417224}
   - component: {fileID: 33100671833938258}
   - component: {fileID: 23819258088937858}
+  - component: {fileID: 65650225070002038}
   m_Layer: 0
   m_Name: block2
   m_TagString: Untagged
@@ -105,6 +109,7 @@ GameObject:
   - component: {fileID: 4157033620554550}
   - component: {fileID: 33314176257320088}
   - component: {fileID: 23454493520028770}
+  - component: {fileID: 65567893632680548}
   m_Layer: 0
   m_Name: trailer1
   m_TagString: Untagged
@@ -122,6 +127,7 @@ GameObject:
   - component: {fileID: 4523237123409482}
   - component: {fileID: 33041303213671790}
   - component: {fileID: 23180240211079576}
+  - component: {fileID: 65803809857246128}
   m_Layer: 0
   m_Name: block1
   m_TagString: Untagged
@@ -460,6 +466,78 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553580553732138}
   m_Mesh: {fileID: 4300004, guid: b66634ddc38f3f3448e6b3c80d1bd190, type: 3}
+--- !u!65 &65224919903269618
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1046108202662558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2259831, y: 0.8433237, z: 1.0183629}
+  m_Center: {x: -1.4904149, y: 0.42240125, z: -0.35902485}
+--- !u!65 &65426143291906766
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1553580553732138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.82589793, y: 0.23002256, z: 0.46360368}
+  m_Center: {x: -0.0000031739473, y: -0.30286503, z: -0.000009097159}
+--- !u!65 &65567893632680548
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1846201683819452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1797426, y: 2.5074964, z: 4.910802}
+  m_Center: {x: 0, y: 1.6104059, z: 0.00000011920929}
+--- !u!65 &65650225070002038
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571941976458406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9904176, y: 0.35319936, z: 0.9904176}
+  m_Center: {x: 0, y: -0.3028694, z: 0.000000029802322}
+--- !u!65 &65803809857246128
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1879523799133660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9904176, y: 0.35319936, z: 0.9904177}
+  m_Center: {x: 0, y: -0.3028694, z: 0.000000044703484}
+--- !u!65 &65889290101614482
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095764042507470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13648394, y: 0.50629485, z: 0.27135086}
+  m_Center: {x: 0.0000000037252903, y: -0.30286938, z: 0}
 --- !u!95 &95487404963161822
 Animator:
   serializedVersion: 3
