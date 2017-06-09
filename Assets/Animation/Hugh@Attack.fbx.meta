@@ -189,7 +189,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -204,14 +204,6 @@ ModelImporter:
       events:
       - time: 0.6801481
         functionName: HitPlayer
-        data: 
-        objectReferenceParameter: {fileID: 1954953760669120, guid: f0e193314f73e86478cb4411522aa7ed,
-          type: 2}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.6801481
-        functionName: HitTower
         data: 
         objectReferenceParameter: {fileID: 1954953760669120, guid: f0e193314f73e86478cb4411522aa7ed,
           type: 2}

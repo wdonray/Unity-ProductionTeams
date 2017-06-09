@@ -93,24 +93,18 @@ public class EnemyBehavior : MonoBehaviour
 
     public void HitPlayer()
     {
-        Minion.DoDamage(Player);
+        var inPlayerRange = Vector3.Distance(transform.position,
+                                _player.transform.position) < PlayerRange;
+        if (inPlayerRange)
+            Minion.DoDamage(Player);
+        else
+            Minion.DoDamage(ATower);
         if (!_enemyAudio.isPlaying)
         {
             _enemyAudio.clip = AttackClip;
             _enemyAudio.Play();
         }
     }
-
-    public void HitTower()
-    {
-        Minion.DoDamage(ATower);
-        if (!_enemyAudio.isPlaying)
-        {
-            _enemyAudio.clip = AttackClip;
-            _enemyAudio.Play();
-        }
-    }
-
     private void Update()
     {
         ani.SetInteger("health", Health);
@@ -131,38 +125,22 @@ public class EnemyBehavior : MonoBehaviour
         {
             if (inPlayerRange) //chase player
             {
-
                 if (Vector3.Distance(transform.position,
                         _player.transform.position) < 4)
-                    if (_attackTimer <= 0)
-                    {
-                        ani.SetTrigger("attack");
-                        _attackTimer = _attackCd;
-                    }
-                    else
-                    {
-                        _attackTimer -= Time.deltaTime;
-                        ani.SetTrigger("idle");
-                    }
-                else
                 {
-                    TargetPlayer();
+                    ani.SetTrigger("attack");
+                    _attackTimer = _attackCd;
                 }
+                else
+                    TargetPlayer();
             }
             else
             {
-                //if a tower is in range
-                if (inTowerRange)
-                    if (_attackTimer <= 0)
-                    {
-                        ani.SetTrigger("attack");
-                        _attackTimer = _attackCd;
-                    }
-                    else
-                    {
-                        _attackTimer -= Time.deltaTime;
-                        ani.SetTrigger("idle");
-                    }
+                if (inTowerRange) //if a tower is in range
+                {
+                    ani.SetTrigger("attack");
+                    _attackTimer = _attackCd;
+                }
                 else
                     TargetTower();
             }
