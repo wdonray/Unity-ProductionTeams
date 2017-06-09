@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
         _backSound = GetComponent<AudioSource>();
         MiddleText.text = "Welcome To King of The Booze";
         Time.timeScale = 1;
-        //StartCoroutine(ColorPicker());
+        StartCoroutine(ColorPicker());
         _backSound.clip = MusicClip;
         _backSound.Play();
     }
@@ -53,14 +53,21 @@ public class MainMenu : MonoBehaviour
 
     public IEnumerator ColorPicker()
     {
+        //while (true)
+        //{
+        //    var newColor = new Color(Random.value, Random.value,
+        //        Random.value, 1.0f);
+        //    BackImage.color = newColor;
+        //    yield return new WaitForSeconds(2);
+        //}
+        //yield return StartCoroutine(ColorPicker());
         while (true)
         {
-            var newColor = new Color(Random.value, Random.value,
-                Random.value, 1.0f);
-            BackImage.color = newColor;
-            yield return new WaitForSeconds(2);
+            BackImage.CrossFadeAlpha(0, 1, true);
+            yield return new WaitForSeconds(.5f);
+            BackImage.CrossFadeAlpha(1, 1, true);
+            yield return new WaitForSeconds(.5f);
         }
-        //yield return StartCoroutine(ColorPicker());
     }
 
     public IEnumerator Load()
