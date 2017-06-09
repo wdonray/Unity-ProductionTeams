@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 518b0eaa5a6201b49ae235bb27bc3fda
-timeCreated: 1496934818
+guid: c05e5c7f8681cce4697a43bd63c29ff7
+timeCreated: 1497043148
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -71,13 +71,12 @@ ModelImporter:
     100126: BubbaRig_r_Thumb_01_03SHJnt
     100128: BubbaRig_r_Thumb_01_04SHJnt
     100130: BubbaRig_ROOTSHJnt
-    100132: BubbaRig_SHJntGrp
-    100134: BubbaRig_Spine_01SHJnt
-    100136: BubbaRig_Spine_02SHJnt
-    100138: BubbaRig_Spine_03SHJnt
-    100140: BubbaRig_Spine_04SHJnt
-    100142: BubbaRig_Spine_TopSHJnt
-    100144: finished_quaddraw_bubba_RoadKillOut
+    100132: BubbaRig_Spine_01SHJnt
+    100134: BubbaRig_Spine_02SHJnt
+    100136: BubbaRig_Spine_03SHJnt
+    100138: BubbaRig_Spine_04SHJnt
+    100140: BubbaRig_Spine_TopSHJnt
+    100142: finished_quaddraw_bubba_RoadKillOut
     400000: //RootNode
     400002: BubbaRig_Head_JawEndSHJnt
     400004: BubbaRig_Head_JawSHJnt
@@ -144,13 +143,12 @@ ModelImporter:
     400126: BubbaRig_r_Thumb_01_03SHJnt
     400128: BubbaRig_r_Thumb_01_04SHJnt
     400130: BubbaRig_ROOTSHJnt
-    400132: BubbaRig_SHJntGrp
-    400134: BubbaRig_Spine_01SHJnt
-    400136: BubbaRig_Spine_02SHJnt
-    400138: BubbaRig_Spine_03SHJnt
-    400140: BubbaRig_Spine_04SHJnt
-    400142: BubbaRig_Spine_TopSHJnt
-    400144: finished_quaddraw_bubba_RoadKillOut
+    400132: BubbaRig_Spine_01SHJnt
+    400134: BubbaRig_Spine_02SHJnt
+    400136: BubbaRig_Spine_03SHJnt
+    400138: BubbaRig_Spine_04SHJnt
+    400140: BubbaRig_Spine_TopSHJnt
+    400142: finished_quaddraw_bubba_RoadKillOut
     4300000: finished_quaddraw_bubba_RoadKillOut
     7400000: Take 001
     9500000: //RootNode
