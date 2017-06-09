@@ -14,9 +14,9 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         _backSound = GetComponent<AudioSource>();
-        MiddleText.text = "Welcome To\n King of The Booze";
+        MiddleText.text = "Welcome To King of The Booze";
         Time.timeScale = 1;
-        StartCoroutine(ColorPicker());
+        //StartCoroutine(ColorPicker());
         _backSound.clip = MusicClip;
         _backSound.Play();
     }
@@ -35,15 +35,15 @@ public class MainMenu : MonoBehaviour
 
     public void Controls()
     {
-        MiddleText.text = "Left Click: Shoots " +
-                          "\n\nW,A,S,D: Moves" +
+        MiddleText.text = "[Left Click] Shoots " +
+                          "\n\n[W,A,S,D] Moves" +
                           "\n\nESC: Pause";
     }
 
     public void Credits()
     {
-        MiddleText.text = "Programmers:\n Donray Williams\n Reginald Reed " +
-                          "\n\nArtist:\n Michael Muguira\n Shane Clarius\n Wedge Denaille";
+        MiddleText.text = "Programmers:\n <color=green>Donray Williams</color>\n <color=green>Reginald Reed</color> " +
+                          "\n\nArtist:\n <color=green>Michael Muguira</color>\n <color=red>Shane Clarius</color>\n <color=red>Wedge Denaille</color>";
     }
 
     public void Slider(float value)

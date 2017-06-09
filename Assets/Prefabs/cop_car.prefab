@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33816257692390922}
   - component: {fileID: 23416289072665626}
   - component: {fileID: 95903605838767356}
+  - component: {fileID: 65372671825650768}
   m_Layer: 0
   m_Name: cop_car
   m_TagString: Untagged
@@ -81,6 +82,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1138234051578484}
   m_Mesh: {fileID: 4300000, guid: bcdb635f26a56334da9660fe77d44fdb, type: 3}
+--- !u!65 &65372671825650768
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1138234051578484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7202541, y: 2.2777915, z: 2.7818818}
+  m_Center: {x: 0, y: 1.2021067, z: -0.073875666}
 --- !u!95 &95903605838767356
 Animator:
   serializedVersion: 3

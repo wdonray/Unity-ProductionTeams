@@ -1,15 +1,45 @@
 fileFormatVersion: 2
 guid: b66634ddc38f3f3448e6b3c80d1bd190
-timeCreated: 1496875821
+timeCreated: 1496962594
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: block1
+    100004: block2
+    100006: dish_stand
+    100008: satellite
+    100010: stairs
+    100012: trailer1
     400000: //RootNode
+    400002: block1
+    400004: block2
+    400006: dish_stand
+    400008: satellite
+    400010: stairs
+    400012: trailer1
     2300000: //RootNode
+    2300002: block1
+    2300004: block2
+    2300006: dish_stand
+    2300008: satellite
+    2300010: stairs
+    2300012: trailer1
     3300000: //RootNode
+    3300002: block1
+    3300004: block2
+    3300006: dish_stand
+    3300008: satellite
+    3300010: stairs
+    3300012: trailer1
     4300000: pCylinder1
+    4300002: dish_stand
+    4300004: satellite
+    4300006: block1
+    4300008: block2
+    4300010: trailer1
+    4300012: stairs
     9500000: //RootNode
   materials:
     importMaterials: 0
