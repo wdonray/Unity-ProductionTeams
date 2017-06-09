@@ -1,12 +1,9 @@
 fileFormatVersion: 2
-guid: 673661292e0d8224dbe6bef988f48e3f
-timeCreated: 1497042920
+guid: 3829335116c3b644c9a0cc672d2ceda1
+timeCreated: 1497041937
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: UI Interface_1
-    21300002: UI Interface_2
-    21300004: UI Interface_3
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -37,7 +34,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -79,46 +76,7 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: UI Interface_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 896
-        width: 712
-        height: 184
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: UI Interface_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 683
-        width: 716
-        height: 197
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: UI Interface_3
-      rect:
-        serializedVersion: 2
-        x: 725
-        y: 887
-        width: 699
-        height: 193
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 
