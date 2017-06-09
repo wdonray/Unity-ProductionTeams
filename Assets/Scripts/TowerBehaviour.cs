@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TowerBehaviour : MonoBehaviour
@@ -17,5 +20,13 @@ public class TowerBehaviour : MonoBehaviour
     private void Update()
     {
         TowerHp.text = ATower.Health.ToString();
+        if (ATower.Health > 0) return;
+        StartCoroutine(Load(5, "10.MainMenu"));
+
+    }
+    IEnumerator Load(int delay, string load)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(load);
     }
 }
