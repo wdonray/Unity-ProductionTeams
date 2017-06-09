@@ -152,7 +152,7 @@ ModelImporter:
     400142: HughRig_Spine_TopSHJnt
     400144: polySurface1
     4300000: polySurface1
-    7400000: Take 001
+    7400000: EnemyWalk
     9500000: //RootNode
     13700000: polySurface1
   materials:
@@ -177,7 +177,181 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: EnemyWalk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: HughRig_SHJntGrp
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_l_Leg_HipSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_l_Leg_HipSHJnt/HughRig_l_Leg_KneeSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_l_Leg_HipSHJnt/HughRig_l_Leg_KneeSHJnt/HughRig_l_Leg_AnkleSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_l_Leg_HipSHJnt/HughRig_l_Leg_KneeSHJnt/HughRig_l_Leg_AnkleSHJnt/HughRig_l_Leg_BallSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_l_Leg_HipSHJnt/HughRig_l_Leg_KneeSHJnt/HughRig_l_Leg_AnkleSHJnt/HughRig_l_Leg_BallSHJnt/HughRig_l_Leg_ToeSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_r_Leg_HipSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_r_Leg_HipSHJnt/HughRig_r_Leg_KneeSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_r_Leg_HipSHJnt/HughRig_r_Leg_KneeSHJnt/HughRig_r_Leg_AnkleSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_r_Leg_HipSHJnt/HughRig_r_Leg_KneeSHJnt/HughRig_r_Leg_AnkleSHJnt/HughRig_r_Leg_BallSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_r_Leg_HipSHJnt/HughRig_r_Leg_KneeSHJnt/HughRig_r_Leg_AnkleSHJnt/HughRig_r_Leg_BallSHJnt/HughRig_r_Leg_ToeSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_01_01SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_01_01SHJnt/HughRig_l_Finger_01_02SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_01_01SHJnt/HughRig_l_Finger_01_02SHJnt/HughRig_l_Finger_01_03SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_01_01SHJnt/HughRig_l_Finger_01_02SHJnt/HughRig_l_Finger_01_03SHJnt/HughRig_l_Finger_01_04SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_02_01SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_02_01SHJnt/HughRig_l_Finger_02_02SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_02_01SHJnt/HughRig_l_Finger_02_02SHJnt/HughRig_l_Finger_02_03SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_02_01SHJnt/HughRig_l_Finger_02_02SHJnt/HughRig_l_Finger_02_03SHJnt/HughRig_l_Finger_02_04SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_03_01SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_03_01SHJnt/HughRig_l_Finger_03_02SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_03_01SHJnt/HughRig_l_Finger_03_02SHJnt/HughRig_l_Finger_03_03SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_03_01SHJnt/HughRig_l_Finger_03_02SHJnt/HughRig_l_Finger_03_03SHJnt/HughRig_l_Finger_03_04SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_04_01SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_04_01SHJnt/HughRig_l_Finger_04_02SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_04_01SHJnt/HughRig_l_Finger_04_02SHJnt/HughRig_l_Finger_04_03SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Finger_04_01SHJnt/HughRig_l_Finger_04_02SHJnt/HughRig_l_Finger_04_03SHJnt/HughRig_l_Finger_04_04SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Thumb_01_01SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Thumb_01_01SHJnt/HughRig_l_Thumb_01_02SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Thumb_01_01SHJnt/HughRig_l_Thumb_01_02SHJnt/HughRig_l_Thumb_01_03SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_l_Arm_ClavicleSHJnt/HughRig_l_Arm_ShoulderSHJnt/HughRig_l_Arm_ElbowSHJnt/HughRig_l_Arm_WristSHJnt/HughRig_l_Thumb_01_01SHJnt/HughRig_l_Thumb_01_02SHJnt/HughRig_l_Thumb_01_03SHJnt/HughRig_l_Thumb_01_04SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_Neck_01SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_Neck_01SHJnt/HughRig_Neck_02SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_Neck_01SHJnt/HughRig_Neck_02SHJnt/HughRig_Neck_TopSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_Neck_01SHJnt/HughRig_Neck_02SHJnt/HughRig_Neck_TopSHJnt/HughRig_Head_JawSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_Neck_01SHJnt/HughRig_Neck_02SHJnt/HughRig_Neck_TopSHJnt/HughRig_Head_JawSHJnt/HughRig_Head_JawEndSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_Neck_01SHJnt/HughRig_Neck_02SHJnt/HughRig_Neck_TopSHJnt/HughRig_Head_TopSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_01_01SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_01_01SHJnt/HughRig_r_Finger_01_02SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_01_01SHJnt/HughRig_r_Finger_01_02SHJnt/HughRig_r_Finger_01_03SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_01_01SHJnt/HughRig_r_Finger_01_02SHJnt/HughRig_r_Finger_01_03SHJnt/HughRig_r_Finger_01_04SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_02_01SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_02_01SHJnt/HughRig_r_Finger_02_02SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_02_01SHJnt/HughRig_r_Finger_02_02SHJnt/HughRig_r_Finger_02_03SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_02_01SHJnt/HughRig_r_Finger_02_02SHJnt/HughRig_r_Finger_02_03SHJnt/HughRig_r_Finger_02_04SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_03_01SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_03_01SHJnt/HughRig_r_Finger_03_02SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_03_01SHJnt/HughRig_r_Finger_03_02SHJnt/HughRig_r_Finger_03_03SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_03_01SHJnt/HughRig_r_Finger_03_02SHJnt/HughRig_r_Finger_03_03SHJnt/HughRig_r_Finger_03_04SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_04_01SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_04_01SHJnt/HughRig_r_Finger_04_02SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_04_01SHJnt/HughRig_r_Finger_04_02SHJnt/HughRig_r_Finger_04_03SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Finger_04_01SHJnt/HughRig_r_Finger_04_02SHJnt/HughRig_r_Finger_04_03SHJnt/HughRig_r_Finger_04_04SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Thumb_01_01SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Thumb_01_01SHJnt/HughRig_r_Thumb_01_02SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Thumb_01_01SHJnt/HughRig_r_Thumb_01_02SHJnt/HughRig_r_Thumb_01_03SHJnt
+        weight: 1
+      - path: HughRig_SHJntGrp/HughRig_ROOTSHJnt/HughRig_Spine_01SHJnt/HughRig_Spine_02SHJnt/HughRig_Spine_03SHJnt/HughRig_Spine_04SHJnt/HughRig_Spine_TopSHJnt/HughRig_r_Arm_ClavicleSHJnt/HughRig_r_Arm_ShoulderSHJnt/HughRig_r_Arm_ElbowSHJnt/HughRig_r_Arm_WristSHJnt/HughRig_r_Thumb_01_01SHJnt/HughRig_r_Thumb_01_02SHJnt/HughRig_r_Thumb_01_03SHJnt/HughRig_r_Thumb_01_04SHJnt
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
