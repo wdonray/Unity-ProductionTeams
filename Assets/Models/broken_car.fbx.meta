@@ -26,6 +26,8 @@ ModelImporter:
     100036: transform15
     100038: transform16
     100040: transform17
+    100042: brokencar1
+    100044: carblocks
     400000: //RootNode
     400002: broken_car
     400004: brokencar_finished_roadkill_prop_01:RoadKillOut
@@ -47,9 +49,20 @@ ModelImporter:
     400036: transform15
     400038: transform16
     400040: transform17
+    400042: brokencar1
+    400044: carblocks
     2300000: brokencar_finished_roadkill_prop_01:RoadKillOut1
+    2300002: brokencar1
+    2300004: carblocks
+    2300006: broken_car
     3300000: brokencar_finished_roadkill_prop_01:RoadKillOut1
+    3300002: brokencar1
+    3300004: carblocks
+    3300006: broken_car
     4300000: brokencar_finished_roadkill_prop_01:RoadKillOut1
+    4300002: brokencar1
+    4300004: carblocks
+    4300006: broken_car
     9500000: //RootNode
   materials:
     importMaterials: 0
