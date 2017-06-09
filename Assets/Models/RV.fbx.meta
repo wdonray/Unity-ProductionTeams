@@ -32,6 +32,17 @@ ModelImporter:
     100048: transform27
     100050: transform28
     100052: transform29
+    100054: axels
+    100056: cinderblocks
+    100058: hitch
+    100060: tires
+    100062: rv_finished
+    100064: rv_group1
+    100066: transform1
+    100068: transform2
+    100070: transform3
+    100072: transform4
+    100074: transform5
     400000: polySurface10
     400002: polySurface10 1
     400004: polySurface11
@@ -59,9 +70,38 @@ ModelImporter:
     400048: transform27
     400050: transform28
     400052: transform29
+    400054: axels
+    400056: cinderblocks
+    400058: hitch
+    400060: tires
+    400062: rv_finished
+    400064: rv_group1
+    400066: transform1
+    400068: transform2
+    400070: transform3
+    400072: transform4
+    400074: transform5
     2300000: polySurface8
+    2300002: axels
+    2300004: cinderblocks
+    2300006: hitch
+    2300008: rv
+    2300010: tires
+    2300012: rv_finished
     3300000: polySurface8
+    3300002: axels
+    3300004: cinderblocks
+    3300006: hitch
+    3300008: rv
+    3300010: tires
+    3300012: rv_finished
     4300000: polySurface8
+    4300002: hitch
+    4300004: rv
+    4300006: cinderblocks
+    4300008: axels
+    4300010: tires
+    4300012: rv_finished
     9500000: //RootNode
   materials:
     importMaterials: 0
