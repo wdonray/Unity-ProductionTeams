@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ProjectileBehavior : MonoBehaviour, IDamager
 {
 
     private int _attackPower = 5;
-    public IDamageable minion;
 
     private void Start()
     {
+        
     }
 
     public int AttackPower
@@ -27,14 +28,20 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
+            if (other.gameObject.GetComponent<EnemyBehavior>().Health <= 0)
+            {
+                return;
+            }
+            GetComponent<AudioSource>().Play();
             DoDamage(other.gameObject.GetComponent<EnemyBehavior>().Minion);
             Destroy(gameObject);
         }
     }
 
-    void Update()
+    public void Update()
     {
         this.transform.Rotate(360 * Time.deltaTime, 0, 0);
+        Debug.Log("attack " + AttackPower);
     }
 
 

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Animator))]
 public class PlayerBehavior : MonoBehaviour, IDamageable
 {
 
@@ -8,7 +9,13 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
     public GameObject bottlePrefab;
     private int _playerHealth = 100;
     public Text playerHp;
-    
+    private Animator animator;
+
+    public void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     public int PlayerHealth
     {
         get { return _playerHealth; }
@@ -20,25 +27,22 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
     {
         PlayerHealth -= amount;
     }
-   
 
     public void ThrowBottle()
     {
-        bottle = Instantiate(bottlePrefab, transform);
-        bottle.GetComponent<Rigidbody>().velocity += transform.TransformDirection(0, 0, 25);
+        bottle = Instantiate(bottlePrefab, transform, false);
+        Physics.IgnoreCollision(GetComponent<Collider>(), bottle.GetComponent<Collider>(), true);
+        bottle.GetComponent<Rigidbody>().velocity += transform.TransformDirection(0, 0, 50);
         Destroy(bottle, 5);
     }
 
     public void Update()
     {
-        if (PlayerHealth <= 0)
-            return;
+        playerHp.text = PlayerHealth.ToString();
 
         if (Input.GetMouseButtonDown(0))
-            ThrowBottle();
-
-        playerHp.text = PlayerHealth.ToString();
+            animator.SetTrigger("attack");
+        
+        animator.SetInteger("health", PlayerHealth);
     }
-
-  
 }

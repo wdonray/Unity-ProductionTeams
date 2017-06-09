@@ -2,12 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthPickUp1 : MonoBehaviour {
+public class AttackPickUp : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerBehavior>().bottlePrefab.GetComponent<ProjectileBehavior>().AttackPower += 5;
+            Destroy(gameObject);
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
