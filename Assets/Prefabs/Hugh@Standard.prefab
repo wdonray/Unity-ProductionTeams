@@ -1098,7 +1098,7 @@ GameObject:
   - component: {fileID: 136115812947283072}
   m_Layer: 0
   m_Name: Hugh@Standard
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2258,7 +2258,7 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1954953760669120}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: ee0fc9014e8e86349800c9b7408326bd, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 02bde70f3067ef948928b4d2392a40b0, type: 3}
   m_Controller: {fileID: 9100000, guid: b7156ba33a37cb648a2f0e700888d3e6, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
@@ -2363,6 +2363,7 @@ MonoBehaviour:
   _minion: {fileID: 0}
   _player: {fileID: 1316146417844626, guid: 3fdfca03ac60a5146a8c07b610f6cc13, type: 2}
   _target: {fileID: 1145489933482382, guid: e27bab3a2bdbc9a4492423f9ce5f17bb, type: 2}
+  ani: {fileID: 95621087759023688}
   ATower: {fileID: 0}
   CopHpText: {fileID: 0}
   Damage: 0
@@ -2372,7 +2373,6 @@ MonoBehaviour:
   Player: {fileID: 0}
   PlayerRange: 10
   SpawnerRef: {fileID: 0}
-  ani: {fileID: 95621087759023688}
 --- !u!136 &136115812947283072
 CapsuleCollider:
   m_ObjectHideFlags: 1
