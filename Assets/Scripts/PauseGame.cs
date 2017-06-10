@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -7,11 +8,13 @@ public class PauseGame : MonoBehaviour
     public Transform ControlsMenu;
     public Transform PauseMenu;
     public GameObject Player;
+    public Sprite NormalCan;
+    public List<Image> Buttons = new List<Image>();
 
     private void Start()
     {
         PauseMenu.gameObject.SetActive(false);
-        ControlsMenu.gameObject.SetActive(false);
+        ControlsMenu.gameObject.SetActive(false); 
     }
     // Update is called once per frame
     private void Update()
@@ -22,6 +25,11 @@ public class PauseGame : MonoBehaviour
 
     public void Pause()
     {
+        foreach(var button in Buttons)
+        {
+            if(button.sprite != NormalCan)
+                button.sprite = NormalCan;
+        }
         Player.GetComponent<InputBehaviour>();
         if (PauseMenu.gameObject.activeInHierarchy == false)
         {
@@ -46,6 +54,7 @@ public class PauseGame : MonoBehaviour
 
     public void Controls(bool open)
     {
+        //Buttons[2].sprite = NormalCan;
         if (open)
         {
             ControlsMenu.gameObject.SetActive(true);
@@ -55,6 +64,7 @@ public class PauseGame : MonoBehaviour
         {
             ControlsMenu.gameObject.SetActive(false);
             PauseMenu.gameObject.SetActive(true);
+            //Buttons[3].sprite = NormalCan;
         }
     }
 }
