@@ -42,7 +42,7 @@ public class EnemySpawner : MonoBehaviour
             var go = Instantiate(MinionCop);
             var spawnTime = 1;
             TheCops.Add(go);
-            go.transform.position = transform.position;
+            go.transform.position = new Vector3(transform.position.x + 20, transform.position.y, transform.position.z - 20);
             var minion = go.GetComponent<EnemyBehavior>().Minion;
 
             if (EasyMinion)

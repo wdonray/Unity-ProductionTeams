@@ -8,9 +8,16 @@ public class ChangeCan : MonoBehaviour
     public Sprite CrushedCan, NormalCan;
     private bool _isCrushed = false;
 
-    public void ChangeCanClick()
+    public void OnMouseEnter()
     {
         _isCrushed = !_isCrushed;
         GetComponent<Image>().sprite = (_isCrushed) ? CrushedCan : NormalCan;
+        Debug.Log("<color=green>Enter</color>");
+    }
+    public void OnMouseExit()
+    {
+        _isCrushed = !_isCrushed;
+        GetComponent<Image>().sprite = (_isCrushed) ? CrushedCan : NormalCan;
+        Debug.Log("<color=red>Exit</color>");
     }
 }
