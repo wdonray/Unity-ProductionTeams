@@ -51,6 +51,8 @@ public class EnemyBehavior : MonoBehaviour
     private void Start()
     {
         _nav = GetComponent<NavMeshAgent>();
+        SpawnerRef = GameObject.FindGameObjectWithTag("Spawner").GetComponent<EnemySpawner>();
+        _nav.Warp(new Vector3 (SpawnerRef.transform.position.x, SpawnerRef.transform.position.y,SpawnerRef.transform.position.z));
         _nav.SetDestination(_target.transform.position);
         _target = GameObject.FindWithTag("Target");
         _player = GameObject.FindWithTag("Player");
@@ -59,7 +61,7 @@ public class EnemyBehavior : MonoBehaviour
         Damage = Minion.CopDamage;
         _attackRange = _nav.stoppingDistance;
         ATower = _target.GetComponent<TowerBehaviour>().ATower;
-        Player = _player.GetComponent<PlayerBehavior>();
+        Player = _player.GetComponent<PlayerBehavior>();   
     }
 
     //Sinks the dying enemy through the floor
