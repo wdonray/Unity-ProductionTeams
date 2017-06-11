@@ -14,7 +14,7 @@ public class UIText : MonoBehaviour
         var min = Mathf.FloorToInt(Timer / 60f);
         var sec = Mathf.FloorToInt(Timer - min * 60);
         var niceTime = string.Format("{0:00}:{1:00}", min, sec);
-        _countTest = GameObject.FindGameObjectWithTag("Spawner").GetComponent<EnemySpawner>().TheCops.Count;
+        _countTest = EnemySpawner.TheCops.Count;
         TimeText.text = "Time: " + niceTime;
         MinionCount.text = "Cops Alive: " + _countTest.ToString();
     }

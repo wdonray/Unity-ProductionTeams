@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class EnemySpawner : MonoBehaviour
 
     public Text SpawnText;
 
-    public List<GameObject> TheCops;
+    public static List<GameObject> TheCops;
 
     public bool EasyMinion
     {
@@ -40,9 +41,10 @@ public class EnemySpawner : MonoBehaviour
         while (CurrentlyActive)
         {
             var go = Instantiate(MinionCop);
+            go.GetComponent<NavMeshAgent>().Warp(this.transform.position);
             var spawnTime = 1;
             TheCops.Add(go);
-            go.transform.position = new Vector3(224, -1.6f, 449);
+            //go.transform.position = new Vector3(224, -1.6f, 449);
             var minion = go.GetComponent<EnemyBehavior>().Minion;
             
             if (EasyMinion)
@@ -68,7 +70,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     minion.CopHealth = 25;
                     minion.CopDamage = 25;
-                    go.transform.localScale = new Vector3(12.5f, 12.5f, 12.5f);
+                    //go.transform.localScale = new Vector3(12.5f, 12.5f, 12.5f);
                 }
                 SpawnText.text = "Spawning: Meduim Cops";
             }
@@ -81,7 +83,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     minion.CopHealth = 45;
                     minion.CopDamage = 35;
-                    go.transform.localScale = new Vector3(12.5f, 12.5f, 12.5f);
+                    //go.transform.localScale = new Vector3(12.5f, 12.5f, 12.5f);
                 }
                 SpawnText.text = "Spawning: Hard Cops";
             }

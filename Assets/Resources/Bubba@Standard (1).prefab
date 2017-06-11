@@ -2402,7 +2402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ani: {fileID: 95664661144308298}
-  Speed: 6
+  Speed: 20
 --- !u!114 &114734198203155844
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -29,7 +29,7 @@ public class EnemyBehavior : MonoBehaviour
     [HideInInspector]
     public PlayerBehavior Player;
 
-    [Range(1, 10)]
+    [Range(1, 50)]
     public int PlayerRange;
 
     public EnemySpawner SpawnerRef;
@@ -51,8 +51,6 @@ public class EnemyBehavior : MonoBehaviour
     private void Start()
     {
         _nav = GetComponent<NavMeshAgent>();
-        SpawnerRef = GameObject.FindGameObjectWithTag("Spawner").GetComponent<EnemySpawner>();
-        _nav.Warp(new Vector3 (SpawnerRef.transform.position.x, SpawnerRef.transform.position.y,SpawnerRef.transform.position.z));
         _nav.SetDestination(_target.transform.position);
         _target = GameObject.FindWithTag("Target");
         _player = GameObject.FindWithTag("Player");
@@ -61,7 +59,7 @@ public class EnemyBehavior : MonoBehaviour
         Damage = Minion.CopDamage;
         _attackRange = _nav.stoppingDistance;
         ATower = _target.GetComponent<TowerBehaviour>().ATower;
-        Player = _player.GetComponent<PlayerBehavior>();   
+        Player = _player.GetComponent<PlayerBehavior>();
     }
 
     //Sinks the dying enemy through the floor
@@ -71,8 +69,7 @@ public class EnemyBehavior : MonoBehaviour
         _nav.enabled = false;
         GetComponent<Collider>().isTrigger = true;
         Destroy(gameObject, 2f);
-        SpawnerRef = GameObject.FindGameObjectWithTag("Spawner").GetComponent<EnemySpawner>();
-        SpawnerRef.TheCops.Remove(gameObject);
+        EnemySpawner.TheCops.Remove(gameObject);
     }
 
     //Sets the Target to the Player
@@ -87,7 +84,7 @@ public class EnemyBehavior : MonoBehaviour
     //Sets the Target to the Tower
     public void TargetTower()
     {
-        transform.LookAt(_target.transform.position);
+        //transform.LookAt(_target.transform.position);
         Debug.DrawLine(transform.position, _target.transform.position, Color.blue);
         _nav.SetDestination(_target.transform.position);
         ani.SetTrigger("walk");
@@ -96,7 +93,7 @@ public class EnemyBehavior : MonoBehaviour
     public void HitPlayer()
     {
         var inPlayerRange = Vector3.Distance(transform.position,
-                                _player.transform.position) < PlayerRange;
+                                _player.transform.position) < 10;
         if (inPlayerRange)
             Minion.DoDamage(Player);
         else
@@ -128,7 +125,7 @@ public class EnemyBehavior : MonoBehaviour
             if (inPlayerRange) //chase player
             {
                 if (Vector3.Distance(transform.position,
-                        _player.transform.position) < 4)
+                        _player.transform.position) < 10)
                 {
                     ani.SetTrigger("attack");
                     _attackTimer = _attackCd;
