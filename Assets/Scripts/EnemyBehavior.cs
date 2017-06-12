@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class EnemyBehavior : MonoBehaviour
 {
     private float _attackCd;
-    private float _attackRange = 2f;
+    //private float _attackRange = 50f;
     private float _attackTimer = 2.0f;
     private AudioSource _enemyAudio;
 
@@ -57,7 +57,7 @@ public class EnemyBehavior : MonoBehaviour
 
         Health = Minion.CopHealth;
         Damage = Minion.CopDamage;
-        _attackRange = _nav.stoppingDistance;
+        //_attackRange = _nav.stoppingDistance;
         ATower = _target.GetComponent<TowerBehaviour>().ATower;
         Player = _player.GetComponent<PlayerBehavior>();
     }
@@ -93,11 +93,14 @@ public class EnemyBehavior : MonoBehaviour
     public void HitPlayer()
     {
         var inPlayerRange = Vector3.Distance(transform.position,
-                                _player.transform.position) < 10;
+                                _player.transform.position) < 20;
+        var inTowerRange = Vector3.Distance(transform.position,
+                               _target.transform.position) < 50;
         if (inPlayerRange)
             Minion.DoDamage(Player);
-        else
+        else if (inTowerRange)
             Minion.DoDamage(ATower);
+
         if (!_enemyAudio.isPlaying)
         {
             _enemyAudio.clip = AttackClip;
@@ -110,7 +113,7 @@ public class EnemyBehavior : MonoBehaviour
         var inPlayerRange = Vector3.Distance(transform.position,
                                 _player.transform.position) < PlayerRange;
         var inTowerRange = Vector3.Distance(transform.position,
-                               _target.transform.position) < _attackRange;
+                               _target.transform.position) < 60;
         if (Health <= 0)
         {
             Sink();
@@ -125,7 +128,7 @@ public class EnemyBehavior : MonoBehaviour
             if (inPlayerRange) //chase player
             {
                 if (Vector3.Distance(transform.position,
-                        _player.transform.position) < 10)
+                        _player.transform.position) < 20)
                 {
                     ani.SetTrigger("attack");
                     _attackTimer = _attackCd;
@@ -133,16 +136,17 @@ public class EnemyBehavior : MonoBehaviour
                 else
                     TargetPlayer();
             }
-            else
+            else if (inTowerRange)
             {
-                if (inTowerRange) //if a tower is in range
+                if (Vector3.Distance(transform.position,
+                    _target.transform.position) < 40)
                 {
                     ani.SetTrigger("attack");
                     _attackTimer = _attackCd;
                 }
-                else
-                    TargetTower();
             }
+            else
+                TargetTower();
         }
         CopHpText = gameObject.GetComponentInChildren<Text>();
         CopHpText.text = Minion.CopHealth.ToString();
