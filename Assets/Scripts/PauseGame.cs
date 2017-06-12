@@ -54,17 +54,21 @@ public class PauseGame : MonoBehaviour
 
     public void Controls(bool open)
     {
-        //Buttons[2].sprite = NormalCan;
-        if (open)
+        if (open == true)
         {
+            Buttons[2].sprite = NormalCan;
+            Buttons[3].sprite = NormalCan;
             ControlsMenu.gameObject.SetActive(true);
             PauseMenu.gameObject.SetActive(false);
+            //Debug.Log("open");
         }
-        else
+        else if (open == false)
         {
-            ControlsMenu.gameObject.SetActive(false);
+            Buttons[3].sprite = NormalCan;
+            Buttons[2].sprite = NormalCan;
             PauseMenu.gameObject.SetActive(true);
-            //Buttons[3].sprite = NormalCan;
+            ControlsMenu.gameObject.SetActive(false);
+            //Debug.Log("closed");
         }
     }
 }

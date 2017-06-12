@@ -4,18 +4,29 @@ using UnityEngine;
 
 public class CameraBehaviour : MonoBehaviour
 {
-    public GameObject Player;
+    public GameObject Player, Starter;
 
+    private bool test = true;
     private Vector3 _offset;
 	// Use this for initialization
 	void Start ()
 	{
 	    _offset = transform.position - Player.transform.position;
-	}
+        StartCoroutine(Scene());
+    }
 	
 	// Update is called once per frame
 	void Update ()
 	{
-	    transform.position = Player.transform.position + _offset;
-	}
+        if (test == false)
+            transform.position = Player.transform.position + _offset;
+    }
+
+    public IEnumerator Scene()
+    {
+        transform.position = Starter.transform.position + _offset;
+        yield return new WaitForSeconds(3);
+        test = false;
+    }
+      
 }
