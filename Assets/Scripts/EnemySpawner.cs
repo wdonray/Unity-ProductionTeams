@@ -51,38 +51,38 @@ public class EnemySpawner : MonoBehaviour
             
             if (EasyMinion)
             {
-                minion.CopHealth = 10;
+                minion.CopHealth = 50;
                 minion.CopDamage = 5;
                 spawnTime = Random.Range(10, 15);
                 if (spawnTime == 11)
                 {
                     minion.CopDamage = 15;
-                    minion.CopHealth = 15;
+                    minion.CopHealth = 55;
                     go.transform.localScale = new Vector3(9, 9, 9);
                 }
                 SpawnText.text = "Spawning: Easy Cops";
             }
             else if (MediumMinion)
             {
-                minion.CopHealth = 20;
+                minion.CopHealth = 70;
                 minion.CopDamage = 10;
                 spawnTime = Random.Range(5, 11);
                 if (spawnTime == 6)
                 {
                     minion.CopHealth = 25;
-                    minion.CopDamage = 25;
+                    minion.CopDamage = 75;
                     go.transform.localScale = new Vector3(9, 9, 9);
                 }
                 SpawnText.text = "Spawning: Meduim Cops";
             }
             else if (HardMinion)
             {
-                minion.CopHealth = 35;
+                minion.CopHealth = 100;
                 minion.CopDamage = 25;
                 spawnTime = Random.Range(1, 6);
                 if (spawnTime == 1)
                 {
-                    minion.CopHealth = 45;
+                    minion.CopHealth = 145;
                     minion.CopDamage = 35;
                     go.transform.localScale = new Vector3(9, 9, 9);
                 }
@@ -90,7 +90,7 @@ public class EnemySpawner : MonoBehaviour
             }
             else
             {
-                minion.CopHealth = 50;
+                minion.CopHealth = 250;
                 minion.CopDamage = 50;
                 spawnTime = 1;
                 SpawnText.text = "Wow why are you still playing";

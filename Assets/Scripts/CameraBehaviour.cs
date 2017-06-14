@@ -14,12 +14,15 @@ public class CameraBehaviour : MonoBehaviour
 	    _offset = transform.position - Player.transform.position;
         StartCoroutine(Scene());
     }
-	
-	// Update is called once per frame
-	void Update ()
-	{
-        if (test == false)
-            transform.position = Player.transform.position + _offset;
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (!test)
+        {
+            var b = Player.transform.position + _offset;
+            transform.position = Vector3.Lerp(transform.position, b, Time.deltaTime);
+        }
     }
 
     public IEnumerator Scene()
@@ -30,5 +33,4 @@ public class CameraBehaviour : MonoBehaviour
         yield return new WaitForSeconds(3);
         test = false;
     }
-      
 }
