@@ -21,7 +21,7 @@ public class TowerBehaviour : MonoBehaviour
     {
         TowerHp.text = ATower.Health.ToString();
         if (ATower.Health > 0) return;
-        StartCoroutine(Load(5, "10.MainMenu"));
+        StartCoroutine(Load(2, "10.MainMenu"));
 
     }
     IEnumerator Load(int delay, string load)

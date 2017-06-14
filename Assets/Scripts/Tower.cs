@@ -13,7 +13,7 @@ public class Tower : ScriptableObject, IDamageable
         }
         else
             Health -= amount;
-        Debug.Log("health is " + Health);
+        //Debug.Log("health is " + Health);
     }
 }
 
