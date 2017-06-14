@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickUpSpawner : MonoBehaviour
 {
 
-    public float timer = 30.0f;
+    public float timer = 60.0f;
     public GameObject pickup;
     private bool pickedUp;
 

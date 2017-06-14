@@ -30,7 +30,7 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
 
     public void ThrowBottle()
     {
-		bottle = Instantiate(bottlePrefab, transform.position, new Quaternion(0,0,0,0));
+		bottle = Instantiate(bottlePrefab, new Vector3(transform.position.x, transform.position.y + 6, transform.position.z), new Quaternion(0,0,0,0));
         Physics.IgnoreCollision(GetComponent<Collider>(), bottle.GetComponent<Collider>(), true);
         bottle.GetComponent<Rigidbody>().velocity += transform.TransformDirection(0, 0, 50);
         Destroy(bottle, 5);
