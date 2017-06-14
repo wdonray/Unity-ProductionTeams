@@ -7,7 +7,8 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
 {
 
     private int _attackPower = 5;
-
+    private AudioSource bottleSound;
+    public AudioClip breakSound;
     private void Start()
     {
         
@@ -22,6 +23,11 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
     public void DoDamage(IDamageable defender)
     {
         defender.TakeDamage(AttackPower);
+        if (!bottleSound.isPlaying)
+        {
+            bottleSound.clip = breakSound;
+            bottleSound.Play();
+        }
     }
 
     public void OnCollisionEnter(Collision other)
@@ -32,7 +38,7 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
             {
                 return;
             }
-            GetComponent<AudioSource>().Play();
+            
             DoDamage(other.gameObject.GetComponent<EnemyBehavior>().Minion);
             Destroy(gameObject);
         }
