@@ -17,7 +17,6 @@ public class PlayerRotation : MonoBehaviour
 		
 	public void Update ()
 	{
-
 			// Create a ray from the mouse cursor on screen in the direction of the camera.
 			Ray camRay = Camera.main.ScreenPointToRay (Input.mousePosition);
 
