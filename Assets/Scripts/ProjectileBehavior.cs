@@ -11,7 +11,7 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
     public AudioClip breakSound;
     private void Start()
     {
-        
+        bottleSound = GetComponent<AudioSource>();
     }
 
     public int AttackPower
