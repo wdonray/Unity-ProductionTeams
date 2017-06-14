@@ -30,7 +30,7 @@ public class AttackPickUp : MonoBehaviour
     public IEnumerator Test()
     {
         attackText.text = "Working";
-        attackText.CrossFadeAlpha(1, 1, true);
+ 
         yield return new WaitForSeconds(2);
         attackText.CrossFadeAlpha(0, 1, true);
     }
