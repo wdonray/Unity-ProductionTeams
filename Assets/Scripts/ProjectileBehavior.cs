@@ -41,7 +41,6 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
     public void Update()
     {
         this.transform.Rotate(360 * Time.deltaTime, 0, 0);
-        Debug.Log("attack " + AttackPower);
     }
 
 
