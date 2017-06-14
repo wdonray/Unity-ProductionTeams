@@ -95,7 +95,7 @@ public class EnemyBehavior : MonoBehaviour
         var inPlayerRange = Vector3.Distance(transform.position,
                                 _player.transform.position) < 20;
         var inTowerRange = Vector3.Distance(transform.position,
-                               _target.transform.position) < 50;
+                               _target.transform.position) < 60;
         if (inPlayerRange)
             Minion.DoDamage(Player);
         else if (inTowerRange)
@@ -139,7 +139,7 @@ public class EnemyBehavior : MonoBehaviour
             else if (inTowerRange)
             {
                 if (Vector3.Distance(transform.position,
-                    _target.transform.position) < 40)
+                    _target.transform.position) < 60)
                 {
                     ani.SetTrigger("attack");
                     _attackTimer = _attackCd;
