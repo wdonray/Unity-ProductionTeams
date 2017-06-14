@@ -5,24 +5,25 @@ using UnityEngine;
 public class PickUpSpawner : MonoBehaviour
 {
 
-    public float timer = 60.0f;
+    public float timer;
     public GameObject pickup;
-    private bool pickedUp;
+    public bool pickedUp;
 
 	// Use this for initialization
 	void Start ()
 	{
-	    
+	    timer = 90.0f;
+        pickedUp = true;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
         timer -= 0.1f;
-	    if (timer <= 0)
+	    if (pickedUp == true && timer <= 0)
 	    {
 	        Instantiate(pickup, transform);
-	        timer = 30.0f;
+	        pickedUp = false;
 	    }
 	}
 }

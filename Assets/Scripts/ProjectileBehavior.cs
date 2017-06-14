@@ -6,42 +6,35 @@ using UnityEngine.UI;
 public class ProjectileBehavior : MonoBehaviour, IDamager
 {
 
-    private int _attackPower = 5;
+    //private int _attackPower = 5;
     private AudioSource bottleSound;
     public AudioClip breakSound;
+    private IDamageable defender;
+    private GameObject playerPower;
     private void Start()
     {
         bottleSound = GetComponent<AudioSource>();
-    }
-
-    public int AttackPower
-    {
-        get { return _attackPower; }
-        set { _attackPower = value; }
+        bottleSound.clip = breakSound;
+         playerPower = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void DoDamage(IDamageable defender)
     {
-        defender.TakeDamage(AttackPower);
-        if (!bottleSound.isPlaying)
-        {
-            bottleSound.clip = breakSound;
-            bottleSound.Play();
-        }
+        defender.TakeDamage(playerPower.GetComponent<PlayerBehavior>().AttackPower);
+
     }
 
     public void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            if (other.gameObject.GetComponent<EnemyBehavior>().Health <= 0)
-            {
-                return;
-            }
-            
-            DoDamage(other.gameObject.GetComponent<EnemyBehavior>().Minion);
-            Destroy(gameObject);
+            defender = other.gameObject.GetComponent<EnemyBehavior>().Minion;
+            DoDamage(defender);           
         }
+        bottleSound.clip = breakSound;
+        bottleSound.Play();
+
+        Destroy(gameObject, 1);    
     }
 
     public void Update()
