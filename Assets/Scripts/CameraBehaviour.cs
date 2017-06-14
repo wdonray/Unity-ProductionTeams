@@ -24,7 +24,9 @@ public class CameraBehaviour : MonoBehaviour
 
     public IEnumerator Scene()
     {
-        transform.position = Starter.transform.position + _offset;
+        //transform.position = Starter.transform.position + _offset;
+        transform.position = new Vector3(Starter.transform.position.x, Starter.transform.position.y, 
+            Starter.transform.position.z - 45) + _offset;
         yield return new WaitForSeconds(3);
         test = false;
     }
