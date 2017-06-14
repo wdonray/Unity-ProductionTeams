@@ -10,6 +10,9 @@ TagManager:
   - TowerHP
   - EnemyHp
   - PlayerHP
+  - APS
+  - SPS
+  - HPS
   layers:
   - Default
   - TransparentFX

@@ -7,6 +7,7 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
 
     private GameObject bottle;
     public GameObject bottlePrefab;
+    private int attackPower = 5;
     private int _playerHealth = 100;
     public Text playerHp;
     private Animator animator;
@@ -20,6 +21,12 @@ public class PlayerBehavior : MonoBehaviour, IDamageable
     {
         get { return _playerHealth; }
         set { _playerHealth = value; }
+    }
+
+    public int AttackPower
+    {
+        get { return attackPower; }
+        set { attackPower = value; }
     }
 
 

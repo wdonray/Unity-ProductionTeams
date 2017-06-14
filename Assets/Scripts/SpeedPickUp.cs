@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class SpeedPickUp : MonoBehaviour {
 
+
+    private GameObject spawner;
+    public void Start()
+    {
+        spawner = GameObject.FindGameObjectWithTag("SPS");
+    }
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<BubbaInputBehaviour>().Speed += 2;
+            other.gameObject.GetComponent<BubbaInputBehaviour>().Speed += 3;
               Destroy(gameObject);
+            spawner.GetComponent<PickUpSpawner>().pickedUp = true;
+            spawner.GetComponent<PickUpSpawner>().timer = 90.0f;
         }
     }
 
