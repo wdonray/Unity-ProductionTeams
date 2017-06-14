@@ -29,11 +29,14 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
         if (other.gameObject.CompareTag("Enemy"))
         {
             defender = other.gameObject.GetComponent<EnemyBehavior>().Minion;
-            DoDamage(defender);           
+            DoDamage(defender);
+            bottleSound.clip = breakSound;
+            bottleSound.Play();
         }
-        bottleSound.clip = breakSound;
-        bottleSound.Play();
-
+        else
+        {
+            Destroy(gameObject);
+        }
         Destroy(gameObject, 1);    
     }
 
