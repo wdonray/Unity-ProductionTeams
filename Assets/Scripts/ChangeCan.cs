@@ -11,13 +11,15 @@ public class ChangeCan : MonoBehaviour
     public void OnMouseEnter()
     {
         _isCrushed = !_isCrushed;
-        GetComponent<Image>().sprite = (_isCrushed) ? CrushedCan : NormalCan;
-        Debug.Log("<color=green>Enter</color>");
+        //GetComponent<Image>().sprite = (_isCrushed) ? CrushedCan : NormalCan;
+        GetComponent<Image>().sprite = CrushedCan;
+        //Debug.Log("<color=green>Enter</color>");
     }
     public void OnMouseExit()
     {
         _isCrushed = !_isCrushed;
-        GetComponent<Image>().sprite = (_isCrushed) ? CrushedCan : NormalCan;
-        Debug.Log("<color=red>Exit</color>");
+        //GetComponent<Image>().sprite = (_isCrushed) ? CrushedCan : NormalCan;
+        GetComponent<Image>().sprite = NormalCan;
+        //Debug.Log("<color=red>Exit</color>");
     }
 }

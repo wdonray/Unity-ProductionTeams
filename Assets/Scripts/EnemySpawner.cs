@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class EnemySpawner : MonoBehaviour
 
     public Text SpawnText;
 
-    public List<GameObject> TheCops;
+    public static List<GameObject> TheCops;
 
     public bool EasyMinion
     {
@@ -28,9 +29,12 @@ public class EnemySpawner : MonoBehaviour
         get { return Time.time < 620; }
     }
 
+    private GameObject Filler;
+
     private void Start()
     {
         TheCops = new List<GameObject>();
+        TheCops.Add(Filler);
         CurrentlyActive = true;
         StartCoroutine(Spawner());
     }
@@ -40,14 +44,13 @@ public class EnemySpawner : MonoBehaviour
         while (CurrentlyActive)
         {
             var go = Instantiate(MinionCop);
+            go.GetComponent<NavMeshAgent>().Warp(this.transform.position);
             var spawnTime = 1;
             TheCops.Add(go);
-            go.transform.position = new Vector3(224, -1.6f, 449);
             var minion = go.GetComponent<EnemyBehavior>().Minion;
             
             if (EasyMinion)
             {
-                //go.transform.localPosition = new Vector3(224, -1.6f, 449);
                 minion.CopHealth = 10;
                 minion.CopDamage = 5;
                 spawnTime = Random.Range(10, 15);
@@ -55,7 +58,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     minion.CopDamage = 15;
                     minion.CopHealth = 15;
-                    //go.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
+                    go.transform.localScale = new Vector3(9, 9, 9);
                 }
                 SpawnText.text = "Spawning: Easy Cops";
             }
@@ -68,7 +71,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     minion.CopHealth = 25;
                     minion.CopDamage = 25;
-                    go.transform.localScale = new Vector3(12.5f, 12.5f, 12.5f);
+                    go.transform.localScale = new Vector3(9, 9, 9);
                 }
                 SpawnText.text = "Spawning: Meduim Cops";
             }
@@ -81,7 +84,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     minion.CopHealth = 45;
                     minion.CopDamage = 35;
-                    go.transform.localScale = new Vector3(12.5f, 12.5f, 12.5f);
+                    go.transform.localScale = new Vector3(9, 9, 9);
                 }
                 SpawnText.text = "Spawning: Hard Cops";
             }
