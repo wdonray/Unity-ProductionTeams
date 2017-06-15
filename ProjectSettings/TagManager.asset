@@ -13,6 +13,8 @@ TagManager:
   - APS
   - SPS
   - HPS
+  - Bottle
+  - PickupText
   layers:
   - Default
   - TransparentFX
