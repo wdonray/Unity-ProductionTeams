@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33479281364559304}
   - component: {fileID: 135307888478178190}
   - component: {fileID: 23199049180742048}
-  - component: {fileID: 114926133457372336}
+  - component: {fileID: 114329421239924178}
   m_Layer: 0
   m_Name: AttackPickUp
   m_TagString: Untagged
@@ -82,7 +82,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1398928437821264}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114926133457372336
+--- !u!114 &114329421239924178
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -93,8 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b486233f93c0e4d819511de58cb35f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackText: {fileID: 114448247840820860, guid: e8f68a996061f4149988b9eaaffe4b2f,
-    type: 2}
+  attackText: {fileID: 0}
 --- !u!135 &135307888478178190
 SphereCollider:
   m_ObjectHideFlags: 1
