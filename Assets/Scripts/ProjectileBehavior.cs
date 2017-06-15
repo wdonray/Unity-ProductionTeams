@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class ProjectileBehavior : MonoBehaviour, IDamager
@@ -23,13 +24,16 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
         defender.TakeDamage(playerPower.GetComponent<PlayerBehavior>().AttackPower);
 
     }
-
+    public class DamageEvent : UnityEvent<GameObject> { }
+    public DamageEvent OnDamaged = new DamageEvent();
     public void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
             defender = other.gameObject.GetComponent<EnemyBehavior>().Minion;
             DoDamage(defender);
+            OnDamaged.Invoke(other.gameObject);
+
             bottleSound.clip = breakSound;
             bottleSound.Play();
         }
@@ -37,7 +41,7 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
         {
             Destroy(gameObject);
         }
-        Destroy(gameObject, 1);    
+        Destroy(gameObject);    
     }
 
     public void Update()

@@ -199,7 +199,31 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.18445297
+        functionName: FootDown
+        data: 
+        objectReferenceParameter: {fileID: 1676064504917098, guid: 0a8c5790b68c8d9478ed10d8b55b0788,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5910219
+        functionName: FootDown
+        data: 
+        objectReferenceParameter: {fileID: 1676064504917098, guid: 0a8c5790b68c8d9478ed10d8b55b0788,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.99423754
+        functionName: FootDown
+        data: 
+        objectReferenceParameter: {fileID: 1676064504917098, guid: 0a8c5790b68c8d9478ed10d8b55b0788,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
