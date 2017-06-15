@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 222382365441946354}
   - component: {fileID: 114354056299440014}
   m_Layer: 5
-  m_Name: Buttons (1)
+  m_Name: Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,6 +80,7 @@ GameObject:
   - component: {fileID: 114066633138579960}
   - component: {fileID: 114788148340166510}
   - component: {fileID: 114358175900107674}
+  - component: {fileID: 95567624215021570}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -156,8 +157,10 @@ GameObject:
   - component: {fileID: 224354832462798634}
   - component: {fileID: 222867455383727448}
   - component: {fileID: 114681736098795366}
+  - component: {fileID: 95851867623163002}
+  - component: {fileID: 114797052881877770}
   m_Layer: 5
-  m_Name: PauseMenu (1)
+  m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,6 +185,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &95567624215021570
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1591631516276570}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c82752bfa5e64a4d9f8bc4f2856d1ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95851867623163002
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1733544400911294}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ed6a56d47522e74cb3891f096e3eb2f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114000645669496152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -222,8 +259,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300002, guid: d8ce15aebd89ac34e8232cbaeac71e45,
+      type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: d8ce15aebd89ac34e8232cbaeac71e45, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -231,7 +269,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 114126635600226114}
+  m_TargetGraphic: {fileID: 114489233014696750}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -511,8 +549,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300002, guid: d8ce15aebd89ac34e8232cbaeac71e45,
+      type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: d8ce15aebd89ac34e8232cbaeac71e45, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -520,12 +559,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 114632616294245802}
+  m_TargetGraphic: {fileID: 114861173019009054}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_MethodName: Exit
+        m_MethodName: Pause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -609,8 +648,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300002, guid: d8ce15aebd89ac34e8232cbaeac71e45,
+      type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: d8ce15aebd89ac34e8232cbaeac71e45, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -618,20 +658,20 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 114265127309851104}
+  m_TargetGraphic: {fileID: 114868529787771608}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_MethodName: Controls
-        m_Mode: 6
+        m_MethodName: Pause
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -654,7 +694,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6d4ba58845fbb804b8ae66ca6a27d63c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a5d03cc1607c8a04f95b692da84c4f55, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -693,6 +733,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CrushedCan: {fileID: 21300006, guid: d8ce15aebd89ac34e8232cbaeac71e45, type: 3}
   NormalCan: {fileID: 21300000, guid: d8ce15aebd89ac34e8232cbaeac71e45, type: 3}
+--- !u!114 &114797052881877770
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1733544400911294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded9e326205717d44b4875c3b16fce25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ac:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.11348516
+      value: 0.145803
+      inSlope: 1.1881052
+      outSlope: 1.1881052
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.37121582
+      value: 0.2
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  anim: {fileID: 95851867623163002}
+  PausedText: {fileID: 114131405885555650}
 --- !u!114 &114805908041484378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -970,7 +1047,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1054258054483786}
-  m_LocalRotation: {x: -0, y: -0, z: 0.009556247, w: -0.99995434}
+  m_LocalRotation: {x: -0, y: -0, z: 0.011201133, w: -0.99993736}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -979,7 +1056,7 @@ RectTransform:
   - {fileID: 224890137188235498}
   m_Father: {fileID: 224354832462798634}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.095}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.284}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -18, y: -69.3}
@@ -1047,17 +1124,17 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1610885317240644}
-  m_LocalRotation: {x: -0, y: 0.28707775, z: -0, w: 0.9579073}
+  m_LocalRotation: {x: 0.22635125, y: 0.045041278, z: -0.016662091, w: 0.9728611}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0748435, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 224354832462798634}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 33.366, z: 0}
+  m_LocalEulerAnglesHint: {x: 26.226002, y: 5.123, z: -0.768}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 132.5, y: -58.699997}
-  m_SizeDelta: {x: 160, y: 42}
+  m_AnchoredPosition: {x: 189.1, y: -104.5}
+  m_SizeDelta: {x: 125.6, y: 33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224783016878387708
 RectTransform:
