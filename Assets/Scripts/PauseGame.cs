@@ -30,19 +30,19 @@ public class PauseGame : MonoBehaviour
             if(button.sprite != NormalCan)
                 button.sprite = NormalCan;
         }
-        Player.GetComponent<InputBehaviour>();
+        var rb = Player.GetComponent<Rigidbody>();
         if (PauseMenu.gameObject.activeInHierarchy == false)
         {
             PauseMenu.gameObject.SetActive(true);
             ControlsMenu.gameObject.SetActive(false);
             Time.timeScale = 0;
-            Player.SetActive(false);
+            rb.isKinematic = true;
             PauseMenu.gameObject.SetActive(true);
         }
         else
         {
             Time.timeScale = 1;
-            Player.SetActive(true);
+            rb.isKinematic = false; 
             PauseMenu.gameObject.SetActive(false);
         }
     }

@@ -113,7 +113,7 @@ public class EnemyBehavior : MonoBehaviour
         var inPlayerRange = Vector3.Distance(transform.position,
                                 _player.transform.position) < PlayerRange;
         var inTowerRange = Vector3.Distance(transform.position,
-                               _target.transform.position) < 60;
+                               _target.transform.position) < 50;
         if (Health <= 0)
         {
             Sink();
@@ -138,12 +138,10 @@ public class EnemyBehavior : MonoBehaviour
             }
             else if (inTowerRange)
             {
-                if (Vector3.Distance(transform.position,
-                    _target.transform.position) < 40)
-                {
-                    ani.SetTrigger("attack");
-                    _attackTimer = _attackCd;
-                }
+
+                ani.SetTrigger("attack");
+                _attackTimer = _attackCd;
+
             }
             else
                 TargetTower();
