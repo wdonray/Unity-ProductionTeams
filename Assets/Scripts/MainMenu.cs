@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         _backSound = GetComponent<AudioSource>();
+        MiddleText.resizeTextForBestFit = true;
         MiddleText.text = "Welcome To King of The Booze";
         Time.timeScale = 1;
         StartCoroutine(ColorPicker());
@@ -23,18 +24,21 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        MiddleText.resizeTextForBestFit = true;
         MiddleText.text = "Sad To See You Go";
         StartCoroutine(Exit());
     }
 
     public void StartGame()
     {
+        MiddleText.resizeTextForBestFit = true;
         MiddleText.text = "Starting in 3...";
         StartCoroutine(Load());
     }
 
     public void Controls()
     {
+        MiddleText.resizeTextForBestFit = true;
         MiddleText.text = "[Left Click] Shoots " +
                           "\n\n[W,A,S,D] Moves" +
                           "\n\nESC: Pause";
@@ -42,8 +46,10 @@ public class MainMenu : MonoBehaviour
 
     public void Credits()
     {
-        MiddleText.text = "Programmers:\n <color=green>Donray Williams</color>\n <color=green>Reginald Reed</color> " +
-                          "\n\nArtist:\n <color=green>Michael Muguira</color>\n <color=red>Shane Clarius</color>\n <color=red>Wedge Denaille</color>";
+        MiddleText.resizeTextForBestFit = false;
+        MiddleText.fontSize = 12;
+        MiddleText.text = "Programmers:\n <color=red>Donray Williams</color>\n <color=white>Reginald Reed</color> " +
+                          "\n\nArtist:\n <color=lightblue>Michael Muguira</color>\n <color=red>Shane Clarius</color>\n <color=white>Wedge Denaille</color>";
     }
 
     public void Slider(float value)

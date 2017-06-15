@@ -1,17 +1,20 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseGame : MonoBehaviour
 {
     public Transform ControlsMenu;
     public Transform PauseMenu;
-
     public GameObject Player;
+    public Sprite NormalCan;
+    public List<Image> Buttons = new List<Image>();
 
     private void Start()
     {
         PauseMenu.gameObject.SetActive(false);
-        ControlsMenu.gameObject.SetActive(false);
+        ControlsMenu.gameObject.SetActive(false); 
     }
     // Update is called once per frame
     private void Update()
@@ -22,19 +25,24 @@ public class PauseGame : MonoBehaviour
 
     public void Pause()
     {
-        Player.GetComponent<InputBehaviour>();
+        foreach(var button in Buttons)
+        {
+            if(button.sprite != NormalCan)
+                button.sprite = NormalCan;
+        }
+        var rb = Player.GetComponent<Rigidbody>();
         if (PauseMenu.gameObject.activeInHierarchy == false)
         {
             PauseMenu.gameObject.SetActive(true);
             ControlsMenu.gameObject.SetActive(false);
             Time.timeScale = 0;
-            Player.SetActive(false);
+            rb.isKinematic = true;
             PauseMenu.gameObject.SetActive(true);
         }
         else
         {
             Time.timeScale = 1;
-            Player.SetActive(true);
+            rb.isKinematic = false; 
             PauseMenu.gameObject.SetActive(false);
         }
     }
@@ -46,15 +54,21 @@ public class PauseGame : MonoBehaviour
 
     public void Controls(bool open)
     {
-        if (open)
+        if (open == true)
         {
+            Buttons[2].sprite = NormalCan;
+            Buttons[3].sprite = NormalCan;
             ControlsMenu.gameObject.SetActive(true);
             PauseMenu.gameObject.SetActive(false);
+            //Debug.Log("open");
         }
-        else
+        else if (open == false)
         {
-            ControlsMenu.gameObject.SetActive(false);
+            Buttons[3].sprite = NormalCan;
+            Buttons[2].sprite = NormalCan;
             PauseMenu.gameObject.SetActive(true);
+            ControlsMenu.gameObject.SetActive(false);
+            //Debug.Log("closed");
         }
     }
 }

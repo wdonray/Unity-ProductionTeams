@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class EnemySpawner : MonoBehaviour
 
     public Text SpawnText;
 
-    public List<GameObject> TheCops;
+    public static List<GameObject> TheCops;
 
     public bool EasyMinion
     {
@@ -28,9 +29,12 @@ public class EnemySpawner : MonoBehaviour
         get { return Time.time < 620; }
     }
 
+    private GameObject Filler;
+
     private void Start()
     {
         TheCops = new List<GameObject>();
+        TheCops.Add(Filler);
         CurrentlyActive = true;
         StartCoroutine(Spawner());
     }
@@ -40,54 +44,54 @@ public class EnemySpawner : MonoBehaviour
         while (CurrentlyActive)
         {
             var go = Instantiate(MinionCop);
+            go.GetComponent<NavMeshAgent>().Warp(this.transform.position);
             var spawnTime = 1;
             TheCops.Add(go);
-            go.transform.position = transform.position;
             var minion = go.GetComponent<EnemyBehavior>().Minion;
-
+            
             if (EasyMinion)
             {
-                minion.CopHealth = 10;
+                minion.CopHealth = 50;
                 minion.CopDamage = 5;
                 spawnTime = Random.Range(10, 15);
                 if (spawnTime == 11)
                 {
+                    minion.CopHealth = 55;
                     minion.CopDamage = 15;
-                    minion.CopHealth = 15;
-                    //go.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
+                    go.transform.localScale = new Vector3(9, 9, 9);
                 }
                 SpawnText.text = "Spawning: Easy Cops";
             }
             else if (MediumMinion)
             {
-                minion.CopHealth = 20;
-                minion.CopDamage = 10;
+                minion.CopHealth = 70;
+                minion.CopDamage = 15;
                 spawnTime = Random.Range(5, 11);
                 if (spawnTime == 6)
                 {
-                    minion.CopHealth = 25;
+                    minion.CopHealth = 80;
                     minion.CopDamage = 25;
-                    go.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
+                    go.transform.localScale = new Vector3(9, 9, 9);
                 }
                 SpawnText.text = "Spawning: Meduim Cops";
             }
             else if (HardMinion)
             {
-                minion.CopHealth = 35;
-                minion.CopDamage = 25;
+                minion.CopHealth = 100;
+                minion.CopDamage = 30;
                 spawnTime = Random.Range(1, 6);
                 if (spawnTime == 1)
                 {
-                    minion.CopHealth = 45;
-                    minion.CopDamage = 35;
-                    go.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
+                    minion.CopHealth = 145;
+                    minion.CopDamage = 45;
+                    go.transform.localScale = new Vector3(9, 9, 9);
                 }
                 SpawnText.text = "Spawning: Hard Cops";
             }
             else
             {
-                minion.CopHealth = 50;
-                minion.CopDamage = 50;
+                minion.CopHealth = 250;
+                minion.CopDamage = 150;
                 spawnTime = 1;
                 SpawnText.text = "Wow why are you still playing";
             }

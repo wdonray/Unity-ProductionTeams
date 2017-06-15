@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class EnemyBehavior : MonoBehaviour
 {
     private float _attackCd;
-    private float _attackRange = 2f;
+    //private float _attackRange = 50f;
     private float _attackTimer = 2.0f;
     private AudioSource _enemyAudio;
 
@@ -29,7 +30,7 @@ public class EnemyBehavior : MonoBehaviour
     [HideInInspector]
     public PlayerBehavior Player;
 
-    [Range(1, 10)]
+    [Range(1, 50)]
     public int PlayerRange;
 
     public EnemySpawner SpawnerRef;
@@ -57,7 +58,7 @@ public class EnemyBehavior : MonoBehaviour
 
         Health = Minion.CopHealth;
         Damage = Minion.CopDamage;
-        _attackRange = _nav.stoppingDistance;
+        //_attackRange = _nav.stoppingDistance;
         ATower = _target.GetComponent<TowerBehaviour>().ATower;
         Player = _player.GetComponent<PlayerBehavior>();
     }
@@ -69,8 +70,7 @@ public class EnemyBehavior : MonoBehaviour
         _nav.enabled = false;
         GetComponent<Collider>().isTrigger = true;
         Destroy(gameObject, 2f);
-        SpawnerRef = GameObject.FindGameObjectWithTag("Spawner").GetComponent<EnemySpawner>();
-        SpawnerRef.TheCops.Remove(gameObject);
+        EnemySpawner.TheCops.Remove(gameObject);
     }
 
     //Sets the Target to the Player
@@ -85,20 +85,33 @@ public class EnemyBehavior : MonoBehaviour
     //Sets the Target to the Tower
     public void TargetTower()
     {
-        transform.LookAt(_target.transform.position);
+        //transform.LookAt(_target.transform.position);
         Debug.DrawLine(transform.position, _target.transform.position, Color.blue);
         _nav.SetDestination(_target.transform.position);
         ani.SetTrigger("walk");
     }
-
+    public class CopDamageEvent : UnityEvent<GameObject> { }
+    
+    public CopDamageEvent OnCopDoDamage = new CopDamageEvent();
     public void HitPlayer()
     {
         var inPlayerRange = Vector3.Distance(transform.position,
-                                _player.transform.position) < PlayerRange;
+                                _player.transform.position) < 20;
+        var inTowerRange = Vector3.Distance(transform.position,
+                               _target.transform.position) < 50;
         if (inPlayerRange)
+        {
             Minion.DoDamage(Player);
-        else
+            OnCopDoDamage.Invoke(gameObject);
+        }
+            
+        else if (inTowerRange)
+        {
             Minion.DoDamage(ATower);
+            OnCopDoDamage.Invoke(gameObject);
+        }
+            
+
         if (!_enemyAudio.isPlaying)
         {
             _enemyAudio.clip = AttackClip;
@@ -111,7 +124,7 @@ public class EnemyBehavior : MonoBehaviour
         var inPlayerRange = Vector3.Distance(transform.position,
                                 _player.transform.position) < PlayerRange;
         var inTowerRange = Vector3.Distance(transform.position,
-                               _target.transform.position) < _attackRange;
+                               _target.transform.position) < 50;
         if (Health <= 0)
         {
             Sink();
@@ -126,7 +139,7 @@ public class EnemyBehavior : MonoBehaviour
             if (inPlayerRange) //chase player
             {
                 if (Vector3.Distance(transform.position,
-                        _player.transform.position) < 4)
+                        _player.transform.position) < 20)
                 {
                     ani.SetTrigger("attack");
                     _attackTimer = _attackCd;
@@ -134,16 +147,15 @@ public class EnemyBehavior : MonoBehaviour
                 else
                     TargetPlayer();
             }
-            else
+            else if (inTowerRange)
             {
-                if (inTowerRange) //if a tower is in range
-                {
-                    ani.SetTrigger("attack");
-                    _attackTimer = _attackCd;
-                }
-                else
-                    TargetTower();
+
+                ani.SetTrigger("attack");
+                _attackTimer = _attackCd;
+
             }
+            else
+                TargetTower();
         }
         CopHpText = gameObject.GetComponentInChildren<Text>();
         CopHpText.text = Minion.CopHealth.ToString();

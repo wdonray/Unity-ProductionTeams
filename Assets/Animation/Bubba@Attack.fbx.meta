@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 14db24bb0fe72cd47bdeaf5a34a229ec
-timeCreated: 1497044928
+guid: eb7968f8c2fcbe44e9c585bc3bd3e1ff
+timeCreated: 1497046246
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -150,7 +150,7 @@ ModelImporter:
     400140: BubbaRig_Spine_TopSHJnt
     400142: finished_quaddraw_bubba_RoadKillOut
     4300000: finished_quaddraw_bubba_RoadKillOut
-    7400000: Take 001
+    7400000: Attack
     9500000: //RootNode
     13700000: finished_quaddraw_bubba_RoadKillOut
   materials:
@@ -175,7 +175,187 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Attack
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.6932886
+        functionName: ThrowBottle
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 8f100eca51c8fef429fe1322cd2a0446,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_l_Leg_HipSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_l_Leg_HipSHJnt/BubbaRig_l_Leg_KneeSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_l_Leg_HipSHJnt/BubbaRig_l_Leg_KneeSHJnt/BubbaRig_l_Leg_AnkleSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_l_Leg_HipSHJnt/BubbaRig_l_Leg_KneeSHJnt/BubbaRig_l_Leg_AnkleSHJnt/BubbaRig_l_Leg_BallSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_l_Leg_HipSHJnt/BubbaRig_l_Leg_KneeSHJnt/BubbaRig_l_Leg_AnkleSHJnt/BubbaRig_l_Leg_BallSHJnt/BubbaRig_l_Leg_ToeSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_r_Leg_HipSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_r_Leg_HipSHJnt/BubbaRig_r_Leg_KneeSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_r_Leg_HipSHJnt/BubbaRig_r_Leg_KneeSHJnt/BubbaRig_r_Leg_AnkleSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_r_Leg_HipSHJnt/BubbaRig_r_Leg_KneeSHJnt/BubbaRig_r_Leg_AnkleSHJnt/BubbaRig_r_Leg_BallSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_r_Leg_HipSHJnt/BubbaRig_r_Leg_KneeSHJnt/BubbaRig_r_Leg_AnkleSHJnt/BubbaRig_r_Leg_BallSHJnt/BubbaRig_r_Leg_ToeSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_01_01SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_01_01SHJnt/BubbaRig_l_Finger_01_02SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_01_01SHJnt/BubbaRig_l_Finger_01_02SHJnt/BubbaRig_l_Finger_01_03SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_01_01SHJnt/BubbaRig_l_Finger_01_02SHJnt/BubbaRig_l_Finger_01_03SHJnt/BubbaRig_l_Finger_01_04SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_02_01SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_02_01SHJnt/BubbaRig_l_Finger_02_02SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_02_01SHJnt/BubbaRig_l_Finger_02_02SHJnt/BubbaRig_l_Finger_02_03SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_02_01SHJnt/BubbaRig_l_Finger_02_02SHJnt/BubbaRig_l_Finger_02_03SHJnt/BubbaRig_l_Finger_02_04SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_03_01SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_03_01SHJnt/BubbaRig_l_Finger_03_02SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_03_01SHJnt/BubbaRig_l_Finger_03_02SHJnt/BubbaRig_l_Finger_03_03SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_03_01SHJnt/BubbaRig_l_Finger_03_02SHJnt/BubbaRig_l_Finger_03_03SHJnt/BubbaRig_l_Finger_03_04SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_04_01SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_04_01SHJnt/BubbaRig_l_Finger_04_02SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_04_01SHJnt/BubbaRig_l_Finger_04_02SHJnt/BubbaRig_l_Finger_04_03SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Finger_04_01SHJnt/BubbaRig_l_Finger_04_02SHJnt/BubbaRig_l_Finger_04_03SHJnt/BubbaRig_l_Finger_04_04SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Thumb_01_01SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Thumb_01_01SHJnt/BubbaRig_l_Thumb_01_02SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Thumb_01_01SHJnt/BubbaRig_l_Thumb_01_02SHJnt/BubbaRig_l_Thumb_01_03SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_l_Arm_ClavicleSHJnt/BubbaRig_l_Arm_ShoulderSHJnt/BubbaRig_l_Arm_ElbowSHJnt/BubbaRig_l_Arm_WristSHJnt/BubbaRig_l_Thumb_01_01SHJnt/BubbaRig_l_Thumb_01_02SHJnt/BubbaRig_l_Thumb_01_03SHJnt/BubbaRig_l_Thumb_01_04SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_Neck_01SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_Neck_01SHJnt/BubbaRig_Neck_02SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_Neck_01SHJnt/BubbaRig_Neck_02SHJnt/BubbaRig_Neck_TopSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_Neck_01SHJnt/BubbaRig_Neck_02SHJnt/BubbaRig_Neck_TopSHJnt/BubbaRig_Head_JawSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_Neck_01SHJnt/BubbaRig_Neck_02SHJnt/BubbaRig_Neck_TopSHJnt/BubbaRig_Head_JawSHJnt/BubbaRig_Head_JawEndSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_Neck_01SHJnt/BubbaRig_Neck_02SHJnt/BubbaRig_Neck_TopSHJnt/BubbaRig_Head_TopSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_01_01SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_01_01SHJnt/BubbaRig_r_Finger_01_02SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_01_01SHJnt/BubbaRig_r_Finger_01_02SHJnt/BubbaRig_r_Finger_01_03SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_01_01SHJnt/BubbaRig_r_Finger_01_02SHJnt/BubbaRig_r_Finger_01_03SHJnt/BubbaRig_r_Finger_01_04SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_02_01SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_02_01SHJnt/BubbaRig_r_Finger_02_02SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_02_01SHJnt/BubbaRig_r_Finger_02_02SHJnt/BubbaRig_r_Finger_02_03SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_02_01SHJnt/BubbaRig_r_Finger_02_02SHJnt/BubbaRig_r_Finger_02_03SHJnt/BubbaRig_r_Finger_02_04SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_03_01SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_03_01SHJnt/BubbaRig_r_Finger_03_02SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_03_01SHJnt/BubbaRig_r_Finger_03_02SHJnt/BubbaRig_r_Finger_03_03SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_03_01SHJnt/BubbaRig_r_Finger_03_02SHJnt/BubbaRig_r_Finger_03_03SHJnt/BubbaRig_r_Finger_03_04SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_04_01SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_04_01SHJnt/BubbaRig_r_Finger_04_02SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_04_01SHJnt/BubbaRig_r_Finger_04_02SHJnt/BubbaRig_r_Finger_04_03SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Finger_04_01SHJnt/BubbaRig_r_Finger_04_02SHJnt/BubbaRig_r_Finger_04_03SHJnt/BubbaRig_r_Finger_04_04SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Thumb_01_01SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Thumb_01_01SHJnt/BubbaRig_r_Thumb_01_02SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Thumb_01_01SHJnt/BubbaRig_r_Thumb_01_02SHJnt/BubbaRig_r_Thumb_01_03SHJnt
+        weight: 1
+      - path: BubbaRig_ROOTSHJnt/BubbaRig_Spine_01SHJnt/BubbaRig_Spine_02SHJnt/BubbaRig_Spine_03SHJnt/BubbaRig_Spine_04SHJnt/BubbaRig_Spine_TopSHJnt/BubbaRig_r_Arm_ClavicleSHJnt/BubbaRig_r_Arm_ShoulderSHJnt/BubbaRig_r_Arm_ElbowSHJnt/BubbaRig_r_Arm_WristSHJnt/BubbaRig_r_Thumb_01_01SHJnt/BubbaRig_r_Thumb_01_02SHJnt/BubbaRig_r_Thumb_01_03SHJnt/BubbaRig_r_Thumb_01_04SHJnt
+        weight: 1
+      - path: finished_quaddraw_bubba_RoadKillOut
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
