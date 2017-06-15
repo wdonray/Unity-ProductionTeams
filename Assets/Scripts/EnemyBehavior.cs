@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class EnemyBehavior : MonoBehaviour
@@ -89,7 +90,9 @@ public class EnemyBehavior : MonoBehaviour
         _nav.SetDestination(_target.transform.position);
         ani.SetTrigger("walk");
     }
-
+    public class CopDamageEvent : UnityEvent<GameObject> { }
+    
+    public CopDamageEvent OnCopDoDamage = new CopDamageEvent();
     public void HitPlayer()
     {
         var inPlayerRange = Vector3.Distance(transform.position,
@@ -97,9 +100,17 @@ public class EnemyBehavior : MonoBehaviour
         var inTowerRange = Vector3.Distance(transform.position,
                                _target.transform.position) < 50;
         if (inPlayerRange)
+        {
             Minion.DoDamage(Player);
+            OnCopDoDamage.Invoke(gameObject);
+        }
+            
         else if (inTowerRange)
+        {
             Minion.DoDamage(ATower);
+            OnCopDoDamage.Invoke(gameObject);
+        }
+            
 
         if (!_enemyAudio.isPlaying)
         {

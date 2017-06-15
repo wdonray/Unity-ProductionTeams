@@ -897,6 +897,8 @@ GameObject:
   - component: {fileID: 195119255892545228}
   - component: {fileID: 82410828155956602}
   - component: {fileID: 136550696000317008}
+  - component: {fileID: 114874265912596258}
+  - component: {fileID: 114816043033776872}
   m_Layer: 0
   m_Name: Correct Enemy
   m_TagString: Enemy
@@ -2415,6 +2417,32 @@ MonoBehaviour:
   Player: {fileID: 0}
   PlayerRange: 50
   SpawnerRef: {fileID: 0}
+--- !u!114 &114816043033776872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1800986911369200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 345f04f3662ede44fb7a3f07b53dd214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 1000010715882420, guid: 14d81e2c407975245973a11cdfbeb902,
+    type: 2}
+--- !u!114 &114874265912596258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1800986911369200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7117c21ac341264b80709adf249ae44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 1000012909287652, guid: d812173e879aac141a93839be68af953,
+    type: 2}
 --- !u!114 &114914881758496340
 MonoBehaviour:
   m_ObjectHideFlags: 1

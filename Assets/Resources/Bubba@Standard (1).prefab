@@ -66,6 +66,7 @@ GameObject:
   - component: {fileID: 224101601933317526}
   - component: {fileID: 222951843935426296}
   - component: {fileID: 114055271393273918}
+  - component: {fileID: 114739108370911042}
   m_Layer: 0
   m_Name: PLAYER.Hp
   m_TagString: PlayerHP
@@ -783,10 +784,11 @@ GameObject:
   - component: {fileID: 114843072289478254}
   - component: {fileID: 114073025554743542}
   - component: {fileID: 114734198203155844}
+  - component: {fileID: 114179129868158932}
   m_Layer: 0
   m_Name: Bubba@Standard (1)
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2250,7 +2252,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdd05e424278fba4ca526104a16dfe6d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2390,6 +2392,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114179129868158932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1676064504917098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 345f04f3662ede44fb7a3f07b53dd214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 1000010715882420, guid: 14d81e2c407975245973a11cdfbeb902,
+    type: 2}
 --- !u!114 &114608678560535592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2416,6 +2431,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   RestartDelay: 5
+--- !u!114 &114739108370911042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1040961793390374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!114 &114815658475355702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2598,7 +2627,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &224101601933317526
 RectTransform:
