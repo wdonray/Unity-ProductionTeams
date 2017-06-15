@@ -13,7 +13,6 @@ TagManager:
   - APS
   - SPS
   - HPS
-  - Bottle
   layers:
   - Default
   - TransparentFX

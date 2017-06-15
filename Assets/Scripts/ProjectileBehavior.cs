@@ -22,7 +22,6 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
     public void DoDamage(IDamageable defender)
     {
         defender.TakeDamage(playerPower.GetComponent<PlayerBehavior>().AttackPower);
-
     }
     public class DamageEvent : UnityEvent<GameObject> { }
     public DamageEvent OnDamaged = new DamageEvent();
@@ -32,8 +31,6 @@ public class ProjectileBehavior : MonoBehaviour, IDamager
         {
             defender = other.gameObject.GetComponent<EnemyBehavior>().Minion;
             DoDamage(defender);
-            OnDamaged.Invoke(other.gameObject);
-
             bottleSound.clip = breakSound;
             bottleSound.Play();
         }

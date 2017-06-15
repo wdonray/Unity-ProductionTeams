@@ -12,7 +12,7 @@ public class PickUpSpawner : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-	    timer = 90.0f;
+	    timer = 90;
         pickedUp = true;
 	}
 	
