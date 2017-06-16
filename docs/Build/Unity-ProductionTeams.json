@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "Unity-ProductionTeams.data.unityweb",
+"asmCodeUrl": "Unity-ProductionTeams.asm.code.unityweb",
+"asmMemoryUrl": "Unity-ProductionTeams.asm.memory.unityweb",
+"asmFrameworkUrl": "Unity-ProductionTeams.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
